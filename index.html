@@ -4,12 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Market Clock – world stock markets & what might move them today</title>
-<meta name="description" content="Live open/close countdowns for 11 world stock exchanges, with a daily colour-coded summary of market-moving news by region.">
+<meta name="description" content="Live open/close countdowns for 11 world stock exchanges, with a twice-daily colour-coded summary of market-moving news by region. Free, in English and French.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="icon.png">
+<link rel="canonical" href="https://maxfechner84.github.io/market-clock-news/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Market Clock">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:title" content="Market Clock – which stock markets are open, and what might move them today">
+<meta property="og:description" content="Live countdowns for 11 world exchanges plus a colour-coded summary of today's market-moving news.">
+<meta property="og:image" content="https://maxfechner84.github.io/market-clock-news/og.png">
+<meta property="og:url" content="https://maxfechner84.github.io/market-clock-news/">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root {
   --bg: #f2f2f7; --card: #ffffff; --ink: #000000; --soft: rgba(60,60,67,.85); --muted: rgba(60,60,67,.6);
@@ -115,7 +125,21 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
 .key i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
 .disc { border-top: 1px solid var(--line); padding-top: 10px; }
 @media (max-width: 420px) { h1 { font-size: 30px; } .next .cd { font-size: 24px; } }
+
+.top .tools { flex-wrap: wrap; justify-content: flex-end; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 4px; }
+.chipbtn { border: 0; background: var(--card); color: var(--ink); font: 500 14px var(--font); padding: 7px 12px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; box-shadow: 0 0 0 1px var(--line) inset; }
+.chipbtn[aria-pressed="true"] { background: var(--blue); color: #fff; box-shadow: none; }
+.chipbtn[hidden] { display: none; }
+.hint { font-size: 13px; color: var(--muted); margin: 0 4px; }
+.hint:empty { display: none; }
+.m .stb { border: 0; background: none; color: var(--muted); font-size: 17px; padding: 0 2px; cursor: pointer; line-height: 1; }
+.m .stb.on { color: var(--orange); }
+.links { display: flex; gap: 16px; flex-wrap: wrap; }
+.links a { color: var(--blue); text-decoration: none; }
+.links a:hover { text-decoration: underline; }
 </style>
+<!-- visitor counter: not configured yet -->
 </head>
 <body>
 <div class="wrap">
@@ -123,17 +147,29 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
     <h1>Market Clock</h1>
     <div class="tools">
       <span class="now num" id="now">--:--:--</span>
-      <div class="seg" role="group" aria-label="Appearance">
-        <button type="button" data-t="auto" aria-pressed="true" title="Follow your device">Auto</button>
-        <button type="button" data-t="light" aria-pressed="false">Light</button>
-        <button type="button" data-t="dark" aria-pressed="false">Dark</button>
+      <div class="seg lang" role="group" aria-label="Language">
+        <button type="button" data-l="en" aria-pressed="true">EN</button>
+        <button type="button" data-l="fr" aria-pressed="false">FR</button>
+      </div>
+      <div class="seg theme" role="group" aria-label="Appearance">
+        <button type="button" data-t="auto" aria-pressed="true" data-i="auto">Auto</button>
+        <button type="button" data-t="light" aria-pressed="false" data-i="light">Light</button>
+        <button type="button" data-t="dark" aria-pressed="false" data-i="dark">Dark</button>
       </div>
     </div>
   </div>
-  <p class="sub">World stock markets at a glance, and what might move them today.</p>
+  <p class="sub" data-i="sub">World stock markets at a glance, and what might move them today.</p>
+  <div class="actions">
+    <button type="button" class="chipbtn" id="alertBtn" aria-pressed="false">🔔 <span data-i="alerts">Alerts</span></button>
+    <button type="button" class="chipbtn" id="shareBtn">↗︎ <span data-i="share">Share today</span></button>
+    <button type="button" class="chipbtn" id="installBtn" hidden>⬇︎ <span data-i="install">Install app</span></button>
+    <a class="chipbtn" href="week.html">🗓 <span data-i="week">Week ahead</span></a>
+    <a class="chipbtn" href="markets/">🕘 <span data-i="hours">Exchange hours</span></a>
+  </div>
+  <p class="hint" id="hint"></p>
 
   <div class="card next" id="nextCard">
-    <div class="lbl">🔔 Next to open</div>
+    <div class="lbl" id="nLbl">🔔 Next to open</div>
     <div class="row">
       <span class="flag" id="nFlag"></span>
       <div><div class="city" id="nCity">…</div><div class="meta" id="nMeta"></div></div>
@@ -145,16 +181,16 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
 
   <div class="foot">
     <div class="key">
-      <span><i style="background:var(--green)"></i>Low impact</span>
-      <span><i style="background:var(--orange)"></i>Watch</span>
-      <span><i style="background:var(--red)"></i>Important</span>
-      <span><i style="background:var(--blue)"></i>Market open</span>
-      <span><i style="border:1.5px solid var(--muted)"></i>Market closed</span>
+      <span><i style="background:var(--green)"></i><span data-i="green">Low impact</span></span>
+      <span><i style="background:var(--orange)"></i><span data-i="orange">Watch</span></span>
+      <span><i style="background:var(--red)"></i><span data-i="red">Important</span></span>
+      <span><i style="background:var(--blue)"></i><span data-i="mOpen">Market open</span></span>
+      <span><i style="border:1.5px solid var(--muted)"></i><span data-i="mClosed">Market closed</span></span>
     </div>
     <div id="upd"></div>
     <div id="acc"></div>
-    <div>Times follow your device's clock and time zone. Regular sessions only; holidays and early closes are included through 2027 (India's 2027 dates are provisional).</div>
-    <div class="disc">Headlines are short AI-written summaries, refreshed twice each weekday (before Europe opens and before New York opens), double-checked against their sources, with links to the original articles. They can contain mistakes. Nothing here is investment advice.</div>
+    <div data-i="times"></div>
+    <div class="disc" data-i="disc"></div>
   </div>
 </div>
 
@@ -163,16 +199,103 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
   /* ---------- theme ---------- */
   var root = document.documentElement, mq = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;
   function savedTheme() { try { return localStorage.getItem("mc-theme") || "auto"; } catch (e) { return "auto"; } }
-  function applyTheme(t) {
-    var dark = t === "dark" || (t === "auto" && mq && mq.matches);
+  function applyTheme(th) {
+    var dark = th === "dark" || (th === "auto" && mq && mq.matches);
     root.dataset.theme = dark ? "dark" : "light";
-    document.querySelectorAll(".seg button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.t === t ? "true" : "false"); });
+    document.querySelectorAll(".theme button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.t === th ? "true" : "false"); });
   }
   var theme = savedTheme(); applyTheme(theme);
   if (mq && mq.addEventListener) mq.addEventListener("change", function () { if (theme === "auto") applyTheme("auto"); });
-  document.querySelectorAll(".seg button").forEach(function (b) {
+  document.querySelectorAll(".theme button").forEach(function (b) {
     b.addEventListener("click", function () { theme = b.dataset.t; try { localStorage.setItem("mc-theme", theme); } catch (e) {} applyTheme(theme); });
   });
+
+  /* ---------- language ---------- */
+  var I18N = {
+    en: {
+      sub: "World stock markets at a glance, and what might move them today.",
+      next: "Next to open", nextMine: "Next of your markets",
+      auto: "Auto", light: "Light", dark: "Dark",
+      am: "Americas", eu: "Europe", as: "Asia-Pacific",
+      green: "Low impact", orange: "Watch", red: "Important",
+      tagRed: "MARKET-MOVING", tagOrange: "WATCH",
+      headlines: "Headlines", scheduled: "Scheduled", why: "Why",
+      open: "Open", closed: "Closed", closing: "Closing soon", lunch: "Lunch break", soon: "Opening soon",
+      closesIn: "closes in", opensIn: "opens in", reopensIn: "reopens in",
+      ofOpen: "{n} of {t} open", allClosed: "All closed",
+      local: "local", yours: "your time",
+      closedToday: "Closed today", earlyClose: "Early close",
+      updated: "News updated {d}.", loadFail: "News couldn't be loaded right now.",
+      track: "Track record: the colours matched how markets actually moved on {h} of the last {n} region-days.",
+      mOpen: "Market open", mClosed: "Market closed",
+      times: "Times follow your device's clock and time zone. Regular sessions only; holidays and early closes are included through 2027 (India's 2027 dates are provisional).",
+      disc: "Headlines are short AI-written summaries, refreshed twice each weekday (before Europe opens and before New York opens), double-checked against their sources, with links to the original articles. They can contain mistakes. Nothing here is investment advice.",
+      star: "Pin to your markets", unstar: "Unpin",
+      alerts: "Alerts", alertsOn: "Alerts on", alertsNote: "Alerts: 5 minutes before {which} open, and when a region turns red. They work while this page or the installed app is open.",
+      allMarkets: "markets", yourMarkets: "your pinned markets",
+      alertsBlocked: "Notifications are blocked for this site in your browser settings.",
+      share: "Share today", install: "Install app",
+      iosTip: "Install on iPhone: tap Share, then “Add to Home Screen”.",
+      week: "Week ahead", hours: "Exchange hours",
+      nOpen: "{city} opens in 5 minutes", nRed: "{region} is now Important",
+      shareTitle: "Today's market map", pinHint: "Tip: tap ☆ to pin the markets you follow."
+    },
+    fr: {
+      sub: "Les bourses mondiales en un coup d'œil, et ce qui pourrait les faire bouger aujourd'hui.",
+      next: "Prochaine ouverture", nextMine: "Prochaine de vos places",
+      auto: "Auto", light: "Clair", dark: "Sombre",
+      am: "Amériques", eu: "Europe", as: "Asie-Pacifique",
+      green: "Impact faible", orange: "À surveiller", red: "Important",
+      tagRed: "IMPACT FORT", tagOrange: "À SURVEILLER",
+      headlines: "À la une", scheduled: "Agenda", why: "Pourquoi",
+      open: "Ouvert", closed: "Fermé", closing: "Ferme bientôt", lunch: "Pause déjeuner", soon: "Ouvre bientôt",
+      closesIn: "ferme dans", opensIn: "ouvre dans", reopensIn: "rouvre dans",
+      ofOpen: "{n} sur {t} ouvertes", allClosed: "Toutes fermées",
+      local: "heure locale", yours: "votre heure",
+      closedToday: "Fermé aujourd'hui", earlyClose: "Clôture anticipée",
+      updated: "Actualités mises à jour {d}.", loadFail: "Les actualités ne peuvent pas être chargées pour le moment.",
+      track: "Bilan : les couleurs ont correspondu aux mouvements réels des marchés {h} fois sur les {n} derniers jours-régions.",
+      mOpen: "Marché ouvert", mClosed: "Marché fermé",
+      times: "Les heures suivent l'horloge et le fuseau de votre appareil. Séances normales uniquement ; jours fériés et clôtures anticipées inclus jusqu'à fin 2027 (dates 2027 de l'Inde provisoires).",
+      disc: "Les titres sont de courts résumés rédigés par une IA, mis à jour deux fois par jour ouvré (avant l'ouverture de l'Europe et avant celle de New York), vérifiés auprès de leurs sources, avec un lien vers l'article d'origine. Ils peuvent contenir des erreurs. Rien ici ne constitue un conseil en investissement.",
+      star: "Épingler dans vos places", unstar: "Désépingler",
+      alerts: "Alertes", alertsOn: "Alertes activées", alertsNote: "Alertes : 5 minutes avant l'ouverture de {which}, et quand une région passe au rouge. Elles fonctionnent tant que cette page ou l'app installée est ouverte.",
+      allMarkets: "chaque place", yourMarkets: "vos places épinglées",
+      alertsBlocked: "Les notifications sont bloquées pour ce site dans les réglages de votre navigateur.",
+      share: "Partager", install: "Installer l'app",
+      iosTip: "Installer sur iPhone : touchez Partager, puis « Sur l'écran d'accueil ».",
+      week: "Semaine à venir", hours: "Horaires des bourses",
+      nOpen: "{city} ouvre dans 5 minutes", nRed: "{region} passe en Important",
+      shareTitle: "La carte des marchés du jour", pinHint: "Astuce : touchez ☆ pour épingler les places que vous suivez."
+    }
+  };
+  var CITY_FR = { "London": "Londres", "Frankfurt": "Francfort", "Singapore": "Singapour", "Mumbai": "Bombay" };
+  var WD_FR = { Mon: "lun.", Tue: "mar.", Wed: "mer.", Thu: "jeu.", Fri: "ven.", Sat: "sam.", Sun: "dim." };
+  function savedLang() {
+    try { var l = localStorage.getItem("mc-lang"); if (l === "en" || l === "fr") return l; } catch (e) {}
+    return /^fr/i.test(navigator.language || "") ? "fr" : "en";
+  }
+  var lang = savedLang();
+  function t(k, vars) {
+    var s = (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k;
+    if (vars) Object.keys(vars).forEach(function (v) { s = s.split("{" + v + "}").join(vars[v]); });
+    return s;
+  }
+  function cityName(c) { return lang === "fr" && CITY_FR[c] ? CITY_FR[c] : c; }
+  function loc(obj, key) { var fr = obj && obj[key + "_fr"]; return lang === "fr" && typeof fr === "string" && fr ? fr : obj && obj[key]; }
+  function applyStatic() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i]").forEach(function (el) { el.textContent = t(el.dataset.i); });
+    document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.l === lang ? "true" : "false"); });
+  }
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      lang = b.dataset.l; try { localStorage.setItem("mc-lang", lang); } catch (e) {}
+      applyStatic(); if (window.__mcRelang) window.__mcRelang();
+    });
+  });
+  applyStatic();
+
 
   /* ---------- markets ---------- */
   var MARKETS = [
@@ -189,8 +312,7 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
     { region: "as", flag: "🇦🇺", city: "Sydney", ex: "ASX", tz: "Australia/Sydney", s: [[10, 0, 16, 0]] }
   ];
   var ORDER = ["am", "eu", "as"];
-  var REGIONS = { am: "Americas", eu: "Europe", as: "Asia-Pacific" };
-  var LV = { green: { label: "Low impact", icon: "✓", c: "var(--green)" }, orange: { label: "Watch", icon: "!", c: "var(--orange)" }, red: { label: "Important", icon: "⚠︎", c: "var(--red)" } };
+  var LV = { green: { icon: "✓", c: "var(--green)" }, orange: { icon: "!", c: "var(--orange)" }, red: { icon: "⚠︎", c: "var(--red)" } };
   var HOUR = 3600000;
   var viewerTz = "UTC";
   try { viewerTz = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) {}
@@ -231,8 +353,8 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
   function holidayNote(m, now) {
     var p = parts(now, m.tz), key = p.year + "-" + pad(+p.month) + "-" + pad(+p.day), hol = HOL[m.city];
     if (!hol) return "";
-    if (hol.closed[key]) return "Closed today · " + hol.closed[key];
-    if (hol.early[key]) return "Early close " + pad(hol.early[key][0]) + ":" + pad(hol.early[key][1]) + " · " + hol.early[key][2];
+    if (hol.closed[key]) return t("closedToday") + " · " + hol.closed[key];
+    if (hol.early[key]) return t("earlyClose") + " " + pad(hol.early[key][0]) + ":" + pad(hol.early[key][1]) + " · " + hol.early[key][2];
     return "";
   }
   function sessionsFor(m, now, back, fwd) {
@@ -281,57 +403,79 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
   function dayKey(ts, tz) { var p = parts(ts, tz); return p.year + "-" + p.month + "-" + p.day; }
   function yourTime(ts, now) {
     var p = parts(ts, viewerTz), t = pad(+p.hour % 24) + ":" + pad(+p.minute);
-    return dayKey(ts, viewerTz) === dayKey(now, viewerTz) ? t : p.weekday + " " + t;
+    return dayKey(ts, viewerTz) === dayKey(now, viewerTz) ? t : (lang === "fr" ? (WD_FR[p.weekday] || p.weekday) : p.weekday) + " " + t;
   }
   function localHm(ts, tz) { var p = parts(ts, tz); return pad(+p.hour % 24) + ":" + pad(+p.minute); }
-  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
 
 
-  function esc2(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  /* ---------- pinned markets ---------- */
+  var stars = [];
+  try { stars = JSON.parse(localStorage.getItem("mc-stars") || "[]"); if (!Array.isArray(stars)) stars = []; } catch (e) { stars = []; }
+  function isStar(m) { return stars.indexOf(m.city) >= 0; }
+  function saveStars() { try { localStorage.setItem("mc-stars", JSON.stringify(stars)); } catch (e) {} }
 
   /* ---------- build ---------- */
-  var regionsEl = document.getElementById("regions"), R = {};
+  var regionsEl = document.getElementById("regions"), R = {}, NEWS = null;
   ORDER.forEach(function (r) {
     var sec = document.createElement("section");
     sec.className = "card accent";
     sec.style.setProperty("--acc", LV.green.c);
-    sec.setAttribute("aria-label", REGIONS[r]);
     sec.innerHTML =
       '<div class="rhead">' +
-        '<div class="rtitle"><h2>' + REGIONS[r] + '</h2><span class="badge"></span></div>' +
+        '<div class="rtitle"><h2></h2><span class="badge"></span></div>' +
         '<div class="rline"><span class="ic"></span><span class="vb"></span><span class="v num"></span><span class="cnt"></span></div>' +
         '<div class="note"></div><div class="pulse"></div>' +
       '</div><div class="div"></div><div class="mlist"></div><div class="events"></div><div class="stories"></div>';
     regionsEl.appendChild(sec);
-    R[r] = { sec: sec, badge: sec.querySelector(".badge"), line: sec.querySelector(".rline"), ic: sec.querySelector(".ic"),
-      vb: sec.querySelector(".vb"), v: sec.querySelector(".v"), cnt: sec.querySelector(".cnt"), note: sec.querySelector(".note"), pulse: sec.querySelector(".pulse"), events: sec.querySelector(".events"),
+    R[r] = { sec: sec, h2: sec.querySelector("h2"), badge: sec.querySelector(".badge"), line: sec.querySelector(".rline"), ic: sec.querySelector(".ic"),
+      vb: sec.querySelector(".vb"), v: sec.querySelector(".v"), cnt: sec.querySelector(".cnt"), note: sec.querySelector(".note"),
+      pulse: sec.querySelector(".pulse"), events: sec.querySelector(".events"),
       list: sec.querySelector(".mlist"), stories: sec.querySelector(".stories") };
-    setLevel(r, "green", "", [], null);
   });
   MARKETS.forEach(function (m) {
     var row = document.createElement("div");
     row.className = "m";
     row.innerHTML =
       '<span class="flag">' + m.flag + '</span>' +
-      '<div class="mid"><div class="nm"><b>' + m.city + '</b><span>' + m.ex + '</span></div><div class="st"><span class="dot"></span><span class="stt"></span></div></div>' +
+      '<div class="mid"><div class="nm"><b></b><span>' + m.ex + '</span> <button type="button" class="stb"></button></div><div class="st"><span class="dot"></span><span class="stt"></span></div></div>' +
       '<div class="right"><div class="lt num"></div><div class="cd num"></div></div>';
-    R[m.region].list.appendChild(row);
-    m.el = { row: row, st: row.querySelector(".st"), stt: row.querySelector(".stt"), lt: row.querySelector(".lt"), cd: row.querySelector(".cd") };
+    m.el = { row: row, nm: row.querySelector(".nm b"), stb: row.querySelector(".stb"), st: row.querySelector(".st"), stt: row.querySelector(".stt"), lt: row.querySelector(".lt"), cd: row.querySelector(".cd") };
+    m.el.stb.addEventListener("click", function () {
+      var i = stars.indexOf(m.city);
+      if (i >= 0) stars.splice(i, 1); else stars.push(m.city);
+      saveStars(); placeRows(); tick(); updateHint();
+    });
   });
+  function placeRows() {
+    ORDER.forEach(function (r) {
+      var ms = MARKETS.filter(function (m) { return m.region === r; });
+      ms.filter(isStar).concat(ms.filter(function (m) { return !isStar(m); })).forEach(function (m) { R[r].list.appendChild(m.el.row); });
+    });
+    MARKETS.forEach(function (m) {
+      var on = isStar(m);
+      m.el.stb.textContent = on ? "★" : "☆";
+      m.el.stb.classList.toggle("on", on);
+      m.el.stb.title = t(on ? "unstar" : "star");
+      m.el.stb.setAttribute("aria-label", t(on ? "unstar" : "star") + " – " + m.city);
+    });
+  }
 
-  function setLevel(r, level, note, stories, n) {
-    var x = R[r], lv = LV[level] ? level : "green";
-    x.pulse.textContent = n && typeof n.pulse === "string" ? n.pulse.slice(0, 120) : "";
-    renderEvents(x, n && Array.isArray(n.events) ? n.events : []);
+  function setRegion(r, n) {
+    n = n || {};
+    var x = R[r], lv = LV[n.level] ? n.level : "green";
+    x.h2.textContent = t(r);
+    x.sec.setAttribute("aria-label", t(r));
     x.sec.style.setProperty("--acc", LV[lv].c);
-    x.badge.textContent = LV[lv].icon + " " + LV[lv].label;
-    x.note.textContent = note || "";
+    x.badge.textContent = LV[lv].icon + " " + t(lv);
+    x.note.textContent = loc(n, "note") || "";
+    x.pulse.textContent = typeof n.pulse === "string" ? n.pulse.slice(0, 120) : "";
+    renderEvents(x, Array.isArray(n.events) ? n.events : []);
     var rank = { red: 0, orange: 1, green: 2 };
-    var list = (stories || []).slice(0, 5).map(function (s, i) { return { s: s, i: i }; })
-      .sort(function (a, b) { return (rank[a.s.level] ?? 2) - (rank[b.s.level] ?? 2) || a.i - b.i; }).map(function (o) { return o.s; });
+    var list = (Array.isArray(n.stories) ? n.stories : []).slice(0, 5).map(function (s, i) { return { s: s, i: i }; })
+      .sort(function (a, b) { return (rank[a.s && a.s.level] ?? 2) - (rank[b.s && b.s.level] ?? 2) || a.i - b.i; }).map(function (o) { return o.s; });
     x.stories.textContent = "";
     if (!list.length) return;
-    var h = document.createElement("div"); h.className = "lbl"; h.textContent = "Headlines"; x.stories.appendChild(h);
+    var h = document.createElement("div"); h.className = "lbl"; h.textContent = t("headlines"); x.stories.appendChild(h);
     list.forEach(function (s) {
       if (!s || typeof s.title !== "string") return;
       var sl = LV[s.level] ? s.level : "green";
@@ -340,93 +484,199 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
       el.className = "story " + sl;
       el.style.setProperty("--sc", LV[sl].c);
       if (url) { el.href = url; el.target = "_blank"; el.rel = "noopener noreferrer"; }
-      var meta = [s.source, s.date].filter(function (v) { return typeof v === "string" && v; }).map(esc2).join(" · ");
-      el.innerHTML = '<span class="bar"></span><span class="tx"><span class="t"></span><span class="s">' +
-        (sl !== "green" ? '<span class="tag">' + LV[sl].icon + " " + (sl === "red" ? "MARKET-MOVING" : "WATCH") + '</span>' : "") +
-        '<span>' + meta + '</span></span></span>' + (url ? '<span class="arr">↗</span>' : "");
-      el.querySelector(".t").textContent = s.title.slice(0, 200);
-      if (typeof s.why === "string" && s.why) {
-        var w = document.createElement("span"); w.className = "why"; w.textContent = "Why: " + s.why.slice(0, 160);
-        el.querySelector(".s").before(w);
-      }
+      el.innerHTML = '<span class="bar"></span><span class="tx"><span class="t"></span><span class="why"></span><span class="s"><span class="tag"></span><span class="meta"></span></span></span>' + (url ? '<span class="arr">↗</span>' : "");
+      el.querySelector(".t").textContent = String(loc(s, "title")).slice(0, 200);
+      var why = loc(s, "why");
+      if (typeof why === "string" && why) el.querySelector(".why").textContent = t("why") + " : ".slice(lang === "fr" ? 0 : 1) + why.slice(0, 160);
+      else el.querySelector(".why").remove();
+      var tag = el.querySelector(".tag");
+      if (sl === "green") tag.remove(); else tag.textContent = LV[sl].icon + " " + t(sl === "red" ? "tagRed" : "tagOrange");
+      el.querySelector(".meta").textContent = [s.source, s.date].filter(function (v) { return typeof v === "string" && v; }).join(" · ");
       x.stories.appendChild(el);
     });
   }
-
   function renderEvents(x, evs) {
     x.events.textContent = "";
     var now = Date.now();
     var list = evs.filter(function (e) { return e && typeof e.title === "string" && !isNaN(Date.parse(e.time)); })
       .sort(function (a, b) { return Date.parse(a.time) - Date.parse(b.time); }).slice(0, 5);
     if (!list.length) return;
-    var h = document.createElement("div"); h.className = "lbl"; h.textContent = "Scheduled"; x.events.appendChild(h);
+    var h = document.createElement("div"); h.className = "lbl"; h.textContent = t("scheduled"); x.events.appendChild(h);
     list.forEach(function (e) {
-      var t = Date.parse(e.time), lv = LV[e.level] ? e.level : "green";
+      var tm = Date.parse(e.time), lv = LV[e.level] ? e.level : "green";
       var row = document.createElement("div");
-      row.className = "ev" + (t < now - HOUR ? " past" : "");
+      row.className = "ev" + (tm < now - HOUR ? " past" : "");
       row.style.setProperty("--ec", LV[lv].c);
       row.innerHTML = '<span class="et num"></span><span class="ed"></span><span class="en"></span>';
-      row.querySelector(".et").textContent = yourTime(t, now);
-      row.querySelector(".en").textContent = e.title.slice(0, 120);
+      row.querySelector(".et").textContent = yourTime(tm, now);
+      row.querySelector(".en").textContent = String(loc(e, "title")).slice(0, 120);
       x.events.appendChild(row);
     });
   }
 
   /* ---------- news ---------- */
-  var upd = document.getElementById("upd");
+  var upd = document.getElementById("upd"), accEl = document.getElementById("acc");
+  function renderNews() {
+    ORDER.forEach(function (r) { setRegion(r, NEWS && NEWS.regions && NEWS.regions[r]); });
+    var tt = NEWS ? Date.parse(NEWS.updatedAt) : NaN;
+    upd.textContent = NEWS === false ? t("loadFail") : isNaN(tt) ? "" :
+      t("updated", { d: new Date(tt).toLocaleString(lang === "fr" ? "fr-FR" : undefined, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) });
+    var a = NEWS && NEWS.accuracy;
+    accEl.textContent = a && a.days >= 5 && typeof a.hits === "number" ? t("track", { h: a.hits, n: a.days }) : "";
+  }
   function loadNews() {
     fetch("news.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
-      ORDER.forEach(function (r) {
-        var n = d && d.regions && d.regions[r];
-        if (n) setLevel(r, n.level, n.note, n.stories, n);
-      });
-      var t = Date.parse(d.updatedAt);
-      upd.textContent = isNaN(t) ? "" : "News updated " + new Date(t).toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) + ".";
-      var a = d && d.accuracy, acc = document.getElementById("acc");
-      acc.textContent = a && a.days >= 5 && typeof a.hits === "number" ? "Track record: the colours matched how markets actually moved on " + a.hits + " of the last " + a.days + " region-days." : "";
-    }).catch(function () { upd.textContent = "News couldn't be loaded right now."; });
+      NEWS = d; renderNews(); checkRed();
+    }).catch(function () { if (!NEWS) { NEWS = false; renderNews(); } });
   }
 
+  /* ---------- alerts ---------- */
+  var alertBtn = document.getElementById("alertBtn"), hint = document.getElementById("hint");
+  var alertsOn = false;
+  try { alertsOn = localStorage.getItem("mc-alerts") === "1" && "Notification" in window && Notification.permission === "granted"; } catch (e) {}
+  var fired = {};
+  function notify(title, body) {
+    if (!alertsOn) return;
+    var opts = { body: body || "", icon: "icon-192.png", badge: "icon-192.png", tag: title };
+    if (navigator.serviceWorker && navigator.serviceWorker.ready) {
+      navigator.serviceWorker.ready.then(function (reg) { reg.showNotification(title, opts); }).catch(function () { try { new Notification(title, opts); } catch (e) {} });
+    } else { try { new Notification(title, opts); } catch (e) {} }
+  }
+  function updateHint() {
+    alertBtn.setAttribute("aria-pressed", alertsOn ? "true" : "false");
+    alertBtn.querySelector("span").textContent = t(alertsOn ? "alertsOn" : "alerts");
+    var msg = "";
+    if (alertsOn) msg = t("alertsNote", { which: stars.length ? t("yourMarkets") : t("allMarkets") });
+    else if (!stars.length) msg = t("pinHint");
+    if (isIos && !standalone) msg = (msg ? msg + " " : "") + t("iosTip");
+    hint.textContent = msg;
+  }
+  alertBtn.addEventListener("click", function () {
+    if (alertsOn) { alertsOn = false; try { localStorage.setItem("mc-alerts", "0"); } catch (e) {} updateHint(); return; }
+    if (!("Notification" in window)) { hint.textContent = t("iosTip"); return; }
+    Notification.requestPermission().then(function (p) {
+      alertsOn = p === "granted";
+      try { localStorage.setItem("mc-alerts", alertsOn ? "1" : "0"); } catch (e) {}
+      updateHint();
+      if (p === "denied") hint.textContent = t("alertsBlocked");
+    });
+  });
+  function lastLevels() { try { return JSON.parse(localStorage.getItem("mc-levels") || "{}") || {}; } catch (e) { return {}; } }
+  function checkRed() {
+    if (!NEWS || !NEWS.regions) return;
+    var prev = lastLevels(), cur = {};
+    ORDER.forEach(function (r) {
+      var n = NEWS.regions[r]; if (!n) return;
+      cur[r] = n.level + "|" + NEWS.updatedAt;
+      var was = prev[r] ? prev[r].split("|")[0] : null;
+      if (n.level === "red" && was && was !== "red") notify(t("nRed", { region: t(r) }), loc(n, "note") || "");
+    });
+    try { localStorage.setItem("mc-levels", JSON.stringify(cur)); } catch (e) {}
+  }
+
+  /* ---------- install ---------- */
+  var installBtn = document.getElementById("installBtn"), deferred = null;
+  var isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+  window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); deferred = e; installBtn.hidden = false; });
+  installBtn.addEventListener("click", function () { if (deferred) { deferred.prompt(); deferred = null; installBtn.hidden = true; } });
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
+
+  /* ---------- share image ---------- */
+  function wrapText(ctx, text, x, y, maxW, lineH, maxLines) {
+    var words = String(text || "").split(/\s+/), line = "", n = 0;
+    for (var i = 0; i < words.length; i++) {
+      var test = line ? line + " " + words[i] : words[i];
+      if (ctx.measureText(test).width > maxW && line) {
+        if (++n >= maxLines) { ctx.fillText(line + " …", x, y); return y + lineH; }
+        ctx.fillText(line, x, y); y += lineH; line = words[i];
+      } else line = test;
+    }
+    if (line) { ctx.fillText(line, x, y); y += lineH; }
+    return y;
+  }
+  function makeImage() {
+    var W = 1200, H = 630, c = document.createElement("canvas"); c.width = W; c.height = H;
+    var g = c.getContext("2d"), F = '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif';
+    var col = { green: "#34c759", orange: "#ff9500", red: "#ff3b30" };
+    g.fillStyle = "#f2f2f7"; g.fillRect(0, 0, W, H);
+    g.fillStyle = "#000"; g.font = "700 52px " + F; g.fillText("Market Clock", 48, 92);
+    g.fillStyle = "rgba(60,60,67,.6)"; g.font = "500 26px " + F;
+    g.fillText(t("shareTitle") + " · " + new Date().toLocaleDateString(lang === "fr" ? "fr-FR" : "en-GB", { weekday: "long", day: "numeric", month: "long" }), 48, 134);
+    var cw = (W - 48 * 2 - 24 * 2) / 3;
+    ORDER.forEach(function (r, i) {
+      var n = (NEWS && NEWS.regions && NEWS.regions[r]) || {}, lv = col[n.level] ? n.level : "green";
+      var x = 48 + i * (cw + 24), y = 170;
+      g.fillStyle = "#fff"; g.beginPath(); g.roundRect ? g.roundRect(x, y, cw, 390, 22) : g.rect(x, y, cw, 390); g.fill();
+      g.fillStyle = col[lv]; g.fillRect(x, y, cw, 8);
+      g.fillStyle = "#000"; g.font = "700 32px " + F; g.fillText(t(r), x + 22, y + 58);
+      g.fillStyle = col[lv]; g.font = "700 24px " + F; g.fillText(LV[lv].icon + " " + t(lv), x + 22, y + 96);
+      g.fillStyle = "#3c3c43"; g.font = "500 22px " + F;
+      var yy = wrapText(g, loc(n, "note") || "", x + 22, y + 140, cw - 44, 30, 3);
+      var top = (Array.isArray(n.stories) ? n.stories : []).filter(function (s) { return s && s.level !== "green"; })[0];
+      if (top) { g.fillStyle = "#000"; g.font = "600 21px " + F; wrapText(g, "• " + loc(top, "title"), x + 22, yy + 16, cw - 44, 28, 5); }
+    });
+    g.fillStyle = "rgba(60,60,67,.6)"; g.font = "500 22px " + F; g.fillText("maxfechner84.github.io/market-clock-news", 48, 604);
+    return c;
+  }
+  document.getElementById("shareBtn").addEventListener("click", function () {
+    makeImage().toBlob(function (blob) {
+      var file = new File([blob], "market-clock-" + new Date().toISOString().slice(0, 10) + ".png", { type: "image/png" });
+      var data = { files: [file], title: "Market Clock", text: t("shareTitle") + " – https://maxfechner84.github.io/market-clock-news/" };
+      if (navigator.canShare && navigator.canShare(data)) { navigator.share(data).catch(function () {}); return; }
+      var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.appendChild(a); a.click(); a.remove();
+    }, "image/png");
+  });
+
   /* ---------- clock ---------- */
-  var nowEl = document.getElementById("now"), nFlag = document.getElementById("nFlag"), nCity = document.getElementById("nCity"),
+  var nowEl = document.getElementById("now"), nLbl = document.getElementById("nLbl"), nFlag = document.getElementById("nFlag"), nCity = document.getElementById("nCity"),
       nMeta = document.getElementById("nMeta"), nCd = document.getElementById("nCd");
   function tick() {
     var now = Date.now(), vp = parts(now, viewerTz);
     nowEl.textContent = pad(+vp.hour % 24) + ":" + pad(+vp.minute) + ":" + pad(+vp.second);
     var soonest = null, counts = { am: 0, eu: 0, as: 0 }, rClose = { am: 0, eu: 0, as: 0 }, rOpen = { am: Infinity, eu: Infinity, as: Infinity };
+    var pool = stars.length ? MARKETS.filter(isStar) : MARKETS;
     MARKETS.forEach(function (m) {
       var st = status(m, now), p = parts(now, m.tz), e = m.el;
       if (st.dayEnd) rClose[m.region] = Math.max(rClose[m.region], st.dayEnd);
       else if (st.next) rOpen[m.region] = Math.min(rOpen[m.region], st.next.start);
+      e.nm.textContent = cityName(m.city);
       e.lt.textContent = pad(+p.hour % 24) + ":" + pad(+p.minute);
       var open = st.state === "open" || st.state === "closing";
       e.row.className = "m " + (open ? "open" : st.state);
       var hn = holidayNote(m, now);
       e.st.classList.toggle("hol", !!hn);
-      e.stt.textContent = hn || (open ? (st.state === "closing" ? "Closing soon" : "Open") : st.state === "lunch" ? "Lunch break" : st.state === "soon" ? "Opening soon" : "Closed");
-      if (open) { counts[m.region]++; e.cd.textContent = "closes in " + countdown(st.cur.end - now); }
+      e.stt.textContent = hn || t(open ? (st.state === "closing" ? "closing" : "open") : st.state === "lunch" ? "lunch" : st.state === "soon" ? "soon" : "closed");
+      if (open) { counts[m.region]++; e.cd.textContent = t("closesIn") + " " + countdown(st.cur.end - now); }
       else {
-        e.cd.textContent = (st.state === "lunch" ? "reopens in " : "opens in ") + countdown(st.next.start - now);
-        if (st.state !== "lunch" && (!soonest || st.next.start < soonest.start)) soonest = { start: st.next.start, m: m };
+        e.cd.textContent = t(st.state === "lunch" ? "reopensIn" : "opensIn") + " " + countdown(st.next.start - now);
+        if (st.state !== "lunch" && pool.indexOf(m) >= 0 && (!soonest || st.next.start < soonest.start)) soonest = { start: st.next.start, m: m };
+        var left = st.next.start - now, key = m.city + st.next.start;
+        if (st.state !== "lunch" && pool.indexOf(m) >= 0 && left <= 5 * 60000 && left > 4 * 60000 && !fired[key]) {
+          fired[key] = 1; notify(t("nOpen", { city: cityName(m.city) }), m.ex + " · " + localHm(st.next.start, m.tz) + " " + t("local"));
+        }
       }
     });
     ORDER.forEach(function (r) {
       var x = R[r], total = MARKETS.filter(function (m) { return m.region === r; }).length, live = rClose[r] > now;
       x.line.classList.toggle("live", live);
       x.ic.textContent = live ? "☀️" : "🌙";
-      x.vb.textContent = live ? "closes in" : "opens in";
+      x.vb.textContent = t(live ? "closesIn" : "opensIn");
       x.v.textContent = countdown(live ? rClose[r] - now : rOpen[r] - now);
-      x.cnt.textContent = counts[r] ? counts[r] + " of " + total + " open" : "All closed";
+      x.cnt.textContent = counts[r] ? t("ofOpen", { n: counts[r], t: total }) : t("allClosed");
     });
+    nLbl.textContent = "🔔 " + t(stars.length ? "nextMine" : "next");
     if (soonest) {
-      nFlag.textContent = soonest.m.flag; nCity.textContent = soonest.m.city;
-      nMeta.textContent = soonest.m.ex + " · " + localHm(soonest.start, soonest.m.tz) + " local · " + yourTime(soonest.start, now) + " your time";
+      nFlag.textContent = soonest.m.flag; nCity.textContent = cityName(soonest.m.city);
+      nMeta.textContent = soonest.m.ex + " · " + localHm(soonest.start, soonest.m.tz) + " " + t("local") + " · " + yourTime(soonest.start, now) + " " + t("yours");
       nCd.textContent = countdown(soonest.start - now);
     }
   }
-  tick(); loadNews();
+  window.__mcRelang = function () { placeRows(); renderNews(); tick(); updateHint(); };
+  placeRows(); renderNews(); updateHint(); tick(); loadNews();
   setInterval(tick, 1000);
   setInterval(loadNews, 15 * 60 * 1000);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) loadNews(); });
 })();
 </script>
 </body>

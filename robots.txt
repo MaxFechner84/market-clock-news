@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maxfechner84.github.io/market-clock-news/sitemap.xml
