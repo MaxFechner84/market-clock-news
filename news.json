@@ -1,80 +1,168 @@
 {
-  "updatedAt": "2026-11-17T06:35:38Z",
+  "updatedAt": "2026-11-17T13:29:21Z",
+  "edition": "us-preopen",
   "regions": {
     "am": {
       "level": "red",
-      "note": "Nvidia earnings tonight after the close; US retail sales due today",
+      "note": "Nvidia reports after the close tonight; S&P 500 fell 1.9% on Monday",
+      "note_fr": "Nvidia publie ce soir après la clôture ; le S&P 500 a perdu 1,9 % lundi",
+      "pulse": "S&P 500 closed −1.9% · S&P futures 0.0% · Nasdaq futures +0.4% · VIX 22.7 · US 10-yr 5.12%",
+      "events": [
+        {
+          "time": "2026-11-17T13:30:00Z",
+          "title": "US retail sales (Oct)",
+          "title_fr": "Ventes au détail américaines (oct.)",
+          "level": "orange"
+        },
+        {
+          "time": "2026-11-17T14:15:00Z",
+          "title": "US industrial production (Oct)",
+          "title_fr": "Production industrielle américaine (oct.)",
+          "level": "green"
+        },
+        {
+          "time": "2026-11-17T21:20:00Z",
+          "title": "Nvidia Q3 results (after close)",
+          "title_fr": "Résultats T3 de Nvidia (après la clôture)",
+          "level": "red"
+        },
+        {
+          "time": "2026-11-18T13:30:00Z",
+          "title": "US housing starts (Oct)",
+          "title_fr": "Mises en chantier aux États-Unis (oct.)",
+          "level": "green"
+        },
+        {
+          "time": "2026-11-18T19:00:00Z",
+          "title": "Fed minutes (October meeting)",
+          "title_fr": "Compte rendu de la Fed (réunion d'octobre)",
+          "level": "orange"
+        }
+      ],
       "stories": [
         {
-          "date": "16 Nov",
-          "level": "red",
-          "source": "CNN",
-          "title": "Nvidia reports after today's close, its first results since Jensen Huang's resignation",
-          "url": "https://www.cnn.com/2026/11/16/business/stocks-nvidia-ai-anthropic"
-        },
-        {
-          "date": "16 Nov",
-          "level": "orange",
-          "source": "AP",
-          "title": "S&P 500 falls 1.9% for a third straight loss as Nvidia leads another tech selloff",
-          "url": "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-monday-11-16-2026"
-        },
-        {
+          "title": "Nvidia reports after today's close, its first results since Jensen Huang resigned as CEO",
+          "title_fr": "Nvidia publie ses résultats ce soir, les premiers depuis la démission de Jensen Huang",
+          "source": "Yahoo Finance",
           "date": "17 Nov",
-          "level": "orange",
-          "source": "Saxo",
-          "title": "US restricts remote access to advanced AI chips, closing a China cloud loophole",
-          "url": "https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take--17-november-2026-17112026"
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html",
+          "level": "red",
+          "why": "Nvidia is one of the S&P 500's biggest stocks, so its results can move the whole market.",
+          "why_fr": "Nvidia pèse parmi les plus lourd du S&P 500 : ses résultats peuvent faire bouger tout le marché."
         },
         {
-          "date": "10 Nov",
-          "level": "orange",
-          "source": "Newsquawk",
-          "title": "A December Fed hike is fully priced after hot October CPI and hawkish Waller comments",
-          "url": "https://www.newsquawk.com/headlines/newsquawk-fed-speak-primerschedule-rate-hike-bets-pick-up-after-waller-and-hot-cpi"
-        },
-        {
+          "title": "S&P 500 fell 1.9% on Monday, a third straight loss, as Nvidia led another tech sell-off",
+          "title_fr": "Le S&P 500 a reculé de 1,9 % lundi, troisième baisse d'affilée, Nvidia en tête des ventes",
+          "source": "AP",
           "date": "16 Nov",
-          "level": "green",
-          "source": "CappNotes",
-          "title": "Empire State manufacturing index drops to 7.8, well below the 16.7 consensus",
-          "url": "https://cappnotes.substack.com/p/closing-look-monday-november-16-2026"
+          "url": "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-monday-11-16-2026",
+          "level": "orange",
+          "why": "A big fall in the whole index shows nervous investors, but it has already happened.",
+          "why_fr": "Une forte baisse de tout l'indice traduit la nervosité des investisseurs, mais elle est déjà passée."
+        },
+        {
+          "title": "US moves to stop China reaching advanced AI chips remotely through data centres abroad",
+          "title_fr": "Washington veut empêcher la Chine d'accéder à distance aux puces d'IA via des centres de données étrangers",
+          "source": "NPR",
+          "date": "16 Nov",
+          "url": "https://www.npr.org/2026/11/16/nx-s1-6042883/nvidia-jensen-huang-commerce-department",
+          "level": "orange",
+          "why": "New export limits weigh on chipmakers, a large part of the US market.",
+          "why_fr": "Les nouvelles restrictions pèsent sur les fabricants de puces, un pan important de la cote américaine."
+        },
+        {
+          "title": "Anthropic is set to price its giant IPO on Wednesday evening, with Nasdaq trading due Thursday",
+          "title_fr": "Anthropic doit fixer mercredi soir le prix de son IPO géante, avant ses débuts au Nasdaq jeudi",
+          "source": "CNBC",
+          "date": "16 Nov",
+          "url": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
+          "level": "orange",
+          "why": "A record listing later this week will test how much appetite is left for AI stocks.",
+          "why_fr": "Cette introduction record, plus tard cette semaine, testera l'appétit restant pour les valeurs de l'IA."
         }
-      ]
+      ],
+      "updatedAt": "2026-11-17T13:29:21Z"
     },
     "eu": {
       "level": "orange",
-      "note": "UK inflation data this week after hawkish Bank of England comments",
+      "note": "Tech and Deutsche Bank drag; Nvidia tonight, UK inflation tomorrow",
+      "note_fr": "La tech et Deutsche Bank pèsent ; Nvidia ce soir, inflation britannique demain",
+      "pulse": "STOXX 600 −0.8% · Euro Stoxx 50 −1.0% · DAX −0.9% · CAC 40 −0.9%",
+      "events": [
+        {
+          "time": "2026-11-17T07:00:00Z",
+          "title": "UK jobless rate: 4.6% vs 4.7% expected",
+          "title_fr": "Chômage au Royaume-Uni : 4,6 % contre 4,7 % attendu",
+          "level": "green"
+        },
+        {
+          "time": "2026-11-17T10:00:00Z",
+          "title": "German ZEW expectations (Nov): 35.6 vs 28.8 expected",
+          "title_fr": "ZEW allemand, anticipations (nov.) : 35,6 contre 28,8 attendu",
+          "level": "orange"
+        },
+        {
+          "time": "2026-11-17T10:00:00Z",
+          "title": "EU Commission autumn forecasts: euro-area growth 1.4% in 2026",
+          "title_fr": "Prévisions d'automne de Bruxelles : croissance de 1,4 % en zone euro en 2026",
+          "level": "green"
+        },
+        {
+          "time": "2026-11-18T07:00:00Z",
+          "title": "UK CPI inflation (Oct)",
+          "title_fr": "Inflation britannique (IPC, oct.)",
+          "level": "orange"
+        },
+        {
+          "time": "2026-11-18T14:25:00Z",
+          "title": "ECB President Lagarde speaks",
+          "title_fr": "Discours de Christine Lagarde (BCE)",
+          "level": "orange"
+        }
+      ],
       "stories": [
         {
-          "date": "16 Nov",
+          "title": "Deutsche Bank drops about 5% after leaked documents tie it to past clients such as Russian oligarchs",
+          "title_fr": "Deutsche Bank chute d'environ 5 % après des fuites sur d'anciens clients, dont des oligarques russes",
+          "source": "Reuters",
+          "date": "17 Nov",
+          "url": "https://ca.marketscreener.com/news/european-shares-fall-as-deutsche-bank-slides-tech-stocks-tumble-ahead-of-nvidia-earnings-ce785edfd08df123",
           "level": "orange",
-          "source": "RTTNews via Panthere Group",
-          "title": "Investors weigh hawkish Bank of England remarks ahead of key UK inflation data this week",
-          "url": "https://www.pantheregroup.com/2026/11/16/european-stocks-close-weak-after-cautious-session-5/"
+          "why": "A big bank under fresh scrutiny drags on bank shares, but it is one company.",
+          "why_fr": "Une grande banque à nouveau sur la sellette pèse sur le secteur, mais il s'agit d'une seule société."
         },
         {
-          "date": "16 Nov",
+          "title": "European shares slip from record highs as new US chip curbs hit tech stocks before Nvidia's results",
+          "title_fr": "Les Bourses européennes reculent de leurs records, la tech pâtit des restrictions américaines avant Nvidia",
+          "source": "Reuters",
+          "date": "17 Nov",
+          "url": "https://uk.marketscreener.com/news/european-shares-ease-as-tech-stocks-deutsche-bank-slide-ce785edfd18ff326",
           "level": "orange",
-          "source": "Yahoo Finance",
-          "title": "STOXX 600 slips 0.3% and DAX 0.6% as Europe waits on Nvidia results",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-close-weak-cautious-190339591.html"
+          "why": "The whole index is lower and tonight's Nvidia results could push it further.",
+          "why_fr": "Tout l'indice recule et les résultats de Nvidia ce soir pourraient accentuer le mouvement."
         },
         {
-          "date": "16 Nov",
-          "level": "green",
-          "source": "Newsquawk",
-          "title": "Euro zone industrial production disappoints while European tech stocks lag",
-          "url": "https://www.newsquawk.com/headlines/newsquawk-european-market-wrap---16th-november-2026"
+          "title": "German investor confidence jumps in November, with the ZEW index rising to 35.6",
+          "title_fr": "Le moral des investisseurs allemands bondit en novembre, l'indice ZEW monte à 35,6",
+          "source": "ZEW",
+          "date": "17 Nov",
+          "url": "http://www.zew.de/en/press/latest-press-releases/economic-expectations-rise-in-november",
+          "level": "orange",
+          "why": "A clearly better reading than forecast, but surveys rarely move markets much.",
+          "why_fr": "Un chiffre nettement meilleur que prévu, mais ces enquêtes font rarement beaucoup bouger les marchés."
         },
         {
-          "date": "16 Nov",
+          "title": "EU Commission raises its euro-area growth forecast for 2026 to 1.4% from 1.1%",
+          "title_fr": "Bruxelles relève sa prévision de croissance 2026 pour la zone euro à 1,4 %, contre 1,1 %",
+          "source": "CNBC",
+          "date": "17 Nov",
+          "url": "https://www.cnbc.com/2026/11/16/stock-market-today-live-updates.html",
           "level": "green",
-          "source": "Yahoo Finance",
-          "title": "Richemont results lift Switzerland's SMI against the weaker European trend",
-          "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-close-weak-cautious-190339591.html"
+          "why": "Good news for the economy, but a forecast update rarely moves share prices.",
+          "why_fr": "Une bonne nouvelle pour l'économie, mais une révision de prévision fait rarement bouger les cours."
         }
-      ]
+      ],
+      "updatedAt": "2026-11-17T13:29:21Z"
     },
     "as": {
       "level": "orange",
@@ -115,7 +203,148 @@
           "title": "Former BoJ chief Kuroda says Japan's rates may need to rise above neutral",
           "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-rba-minutes-lean-hawkish/"
         }
+      ],
+      "events": [
+        {
+          "time": "2026-11-17T23:50:00Z",
+          "title": "Japan trade balance (Oct)",
+          "title_fr": "Balance commerciale japonaise (oct.)",
+          "level": "green"
+        },
+        {
+          "time": "2026-11-18T00:30:00Z",
+          "title": "Australia wage price index (Q3)",
+          "title_fr": "Indice des salaires australien (T3)",
+          "level": "green"
+        },
+        {
+          "time": "2026-11-18T12:00:00Z",
+          "title": "Tencent Q3 results call",
+          "title_fr": "Conférence sur les résultats T3 de Tencent",
+          "level": "orange"
+        }
       ]
     }
-  }
+  },
+  "week": [
+    {
+      "time": "2026-11-17T13:30:00Z",
+      "title": "US retail sales (Oct)",
+      "title_fr": "Ventes au détail américaines (oct.)",
+      "level": "orange",
+      "region": "am"
+    },
+    {
+      "time": "2026-11-17T21:20:00Z",
+      "title": "Nvidia Q3 results (after close)",
+      "title_fr": "Résultats T3 de Nvidia (après la clôture)",
+      "level": "red",
+      "region": "am"
+    },
+    {
+      "time": "2026-11-18T07:00:00Z",
+      "title": "UK CPI inflation (Oct)",
+      "title_fr": "Inflation britannique (IPC, oct.)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-18T12:00:00Z",
+      "title": "Tencent Q3 results call",
+      "title_fr": "Conférence sur les résultats T3 de Tencent",
+      "level": "red",
+      "region": "as"
+    },
+    {
+      "time": "2026-11-18T14:25:00Z",
+      "title": "ECB President Lagarde speaks",
+      "title_fr": "Discours de Christine Lagarde (BCE)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-18T19:00:00Z",
+      "title": "Fed minutes (October meeting)",
+      "title_fr": "Compte rendu de la Fed (réunion d'octobre)",
+      "level": "orange",
+      "region": "am"
+    },
+    {
+      "time": "2026-11-19T12:00:00Z",
+      "title": "Walmart Q3 results (before open)",
+      "title_fr": "Résultats T3 de Walmart (avant l'ouverture)",
+      "level": "orange",
+      "region": "am"
+    },
+    {
+      "time": "2026-11-19T13:30:00Z",
+      "title": "ECB President Lagarde speaks",
+      "title_fr": "Discours de Christine Lagarde (BCE)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-19T23:30:00Z",
+      "title": "Japan CPI inflation (Oct)",
+      "title_fr": "Inflation japonaise (IPC, oct.)",
+      "level": "orange",
+      "region": "as"
+    },
+    {
+      "time": "2026-11-20T01:15:00Z",
+      "title": "China loan prime rates (Nov)",
+      "title_fr": "Taux de référence des prêts en Chine (nov.)",
+      "level": "red",
+      "region": "as"
+    },
+    {
+      "time": "2026-11-20T08:30:00Z",
+      "title": "ECB President Lagarde speaks",
+      "title_fr": "Discours de Christine Lagarde (BCE)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-22T22:00:00Z",
+      "title": "Australia flash PMI (Nov)",
+      "title_fr": "PMI flash australien (nov.)",
+      "level": "orange",
+      "region": "as"
+    },
+    {
+      "time": "2026-11-23T08:30:00Z",
+      "title": "Germany flash PMI (Nov)",
+      "title_fr": "PMI flash allemand (nov.)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-23T09:00:00Z",
+      "title": "Euro-area flash PMI (Nov)",
+      "title_fr": "PMI flash de la zone euro (nov.)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-23T09:30:00Z",
+      "title": "UK flash PMI (Nov)",
+      "title_fr": "PMI flash britannique (nov.)",
+      "level": "orange",
+      "region": "eu"
+    },
+    {
+      "time": "2026-11-23T14:45:00Z",
+      "title": "US flash PMI (Nov)",
+      "title_fr": "PMI flash américain (nov.)",
+      "level": "orange",
+      "region": "am"
+    },
+    {
+      "time": "2026-11-24T00:30:00Z",
+      "title": "Japan flash PMI (Nov)",
+      "title_fr": "PMI flash japonais (nov.)",
+      "level": "orange",
+      "region": "as"
+    }
+  ]
 }

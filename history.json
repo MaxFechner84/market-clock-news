@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "date": "2026-11-17",
+      "region": "am",
+      "edition": "us-preopen",
+      "level": "red",
+      "note": "Nvidia reports after the close tonight; S&P 500 fell 1.9% on Monday",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-17",
+      "region": "eu",
+      "edition": "us-preopen",
+      "level": "orange",
+      "note": "Tech and Deutsche Bank drag; Nvidia tonight, UK inflation tomorrow",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    }
+  ]
+}
