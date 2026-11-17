@@ -1,6 +1,6 @@
 {
-  "name": "Market Clock",
-  "short_name": "Market Clock",
+  "name": "NextBell",
+  "short_name": "NextBell",
   "description": "World stock markets at a glance, and what might move them today.",
   "start_url": "./",
   "scope": "./",

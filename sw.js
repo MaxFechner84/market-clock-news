@@ -1,5 +1,5 @@
-/* Market Clock service worker: works offline, always tries fresh news first. */
-var CACHE = "mc-v2";
+/* NextBell service worker: works offline, always tries fresh news first. */
+var CACHE = "mc-v3";
 var SHELL = ["./", "index.html", "week.html", "manifest.webmanifest", "icon.png", "icon-192.png", "icon-512.png"];
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));

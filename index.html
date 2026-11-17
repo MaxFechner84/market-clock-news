@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Market Clock – world stock markets & what might move them today</title>
+<title>NextBell – world market timer & what might move markets today</title>
 <meta name="description" content="Live open/close countdowns for 11 world stock exchanges, with a twice-daily colour-coded summary of market-moving news by region. Free, in English and French.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
@@ -14,9 +14,9 @@
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Market Clock">
+<meta name="apple-mobile-web-app-title" content="NextBell">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta property="og:title" content="Market Clock – which stock markets are open, and what might move them today">
+<meta property="og:title" content="NextBell – which stock markets are open, and what might move them today">
 <meta property="og:description" content="Live countdowns for 11 world exchanges plus a colour-coded summary of today's market-moving news.">
 <meta property="og:image" content="https://maxfechner84.github.io/market-clock-news/og.png">
 <meta property="og:url" content="https://maxfechner84.github.io/market-clock-news/">
@@ -147,7 +147,7 @@ h1 { white-space: nowrap; }
 <body>
 <div class="wrap">
   <div class="top">
-    <h1>Market Clock</h1>
+    <h1>NextBell</h1>
     <div class="tools">
       <span class="now num" id="now">--:--:--</span>
       <div class="seg lang" role="group" aria-label="Language">
@@ -604,7 +604,7 @@ h1 { white-space: nowrap; }
     var g = c.getContext("2d"), F = '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif';
     var col = { green: "#34c759", orange: "#ff9500", red: "#ff3b30" };
     g.fillStyle = "#f2f2f7"; g.fillRect(0, 0, W, H);
-    g.fillStyle = "#000"; g.font = "700 52px " + F; g.fillText("Market Clock", 48, 92);
+    g.fillStyle = "#000"; g.font = "700 52px " + F; g.fillText("NextBell", 48, 92);
     g.fillStyle = "rgba(60,60,67,.6)"; g.font = "500 26px " + F;
     g.fillText(t("shareTitle") + " · " + new Date().toLocaleDateString(lang === "fr" ? "fr-FR" : "en-GB", { weekday: "long", day: "numeric", month: "long" }), 48, 134);
     var cw = (W - 48 * 2 - 24 * 2) / 3;
@@ -626,7 +626,7 @@ h1 { white-space: nowrap; }
   document.getElementById("shareBtn").addEventListener("click", function () {
     makeImage().toBlob(function (blob) {
       var file = new File([blob], "market-clock-" + new Date().toISOString().slice(0, 10) + ".png", { type: "image/png" });
-      var data = { files: [file], title: "Market Clock", text: t("shareTitle") + " – https://maxfechner84.github.io/market-clock-news/" };
+      var data = { files: [file], title: "NextBell", text: t("shareTitle") + " – https://maxfechner84.github.io/market-clock-news/" };
       if (navigator.canShare && navigator.canShare(data)) { navigator.share(data).catch(function () {}); return; }
       var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.appendChild(a); a.click(); a.remove();
     }, "image/png");
