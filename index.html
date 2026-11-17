@@ -97,6 +97,16 @@ h1 { margin: 0; font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
 .story.red { background: color-mix(in srgb, var(--red) 10%, transparent); padding: 8px 8px 8px 0; }
 .story.red .t { font-weight: 600; }
 a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
+.story .why { font-size: 12px; color: var(--soft); }
+.pulse { font-size: 13px; color: var(--muted); }
+.pulse:empty { display: none; }
+.events { padding: 12px 16px 0; display: flex; flex-direction: column; gap: 6px; }
+.events:empty { display: none; }
+.ev { display: flex; gap: 10px; align-items: baseline; font-size: 14px; }
+.ev .et { font-size: 13px; color: var(--muted); width: 74px; flex: none; }
+.ev .ed { width: 7px; height: 7px; border-radius: 50%; background: var(--ec); flex: none; align-self: center; }
+.ev.past { opacity: .5; }
+#acc:empty { display: none; }
 .story .arr { color: var(--muted); font-size: 13px; align-self: flex-start; }
 
 .foot { color: var(--muted); font-size: 13px; padding: 4px; display: flex; flex-direction: column; gap: 8px; }
@@ -142,8 +152,9 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
       <span><i style="border:1.5px solid var(--muted)"></i>Market closed</span>
     </div>
     <div id="upd"></div>
+    <div id="acc"></div>
     <div>Times follow your device's clock and time zone. Regular sessions only; holidays and early closes are included through 2027 (India's 2027 dates are provisional).</div>
-    <div class="disc">Headlines are short AI-written summaries, refreshed each weekday morning, with links to the original articles. They can contain mistakes. Nothing here is investment advice.</div>
+    <div class="disc">Headlines are short AI-written summaries, refreshed twice each weekday (before Europe opens and before New York opens), double-checked against their sources, with links to the original articles. They can contain mistakes. Nothing here is investment advice.</div>
   </div>
 </div>
 
@@ -289,13 +300,13 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
       '<div class="rhead">' +
         '<div class="rtitle"><h2>' + REGIONS[r] + '</h2><span class="badge"></span></div>' +
         '<div class="rline"><span class="ic"></span><span class="vb"></span><span class="v num"></span><span class="cnt"></span></div>' +
-        '<div class="note"></div>' +
-      '</div><div class="div"></div><div class="mlist"></div><div class="stories"></div>';
+        '<div class="note"></div><div class="pulse"></div>' +
+      '</div><div class="div"></div><div class="mlist"></div><div class="events"></div><div class="stories"></div>';
     regionsEl.appendChild(sec);
     R[r] = { sec: sec, badge: sec.querySelector(".badge"), line: sec.querySelector(".rline"), ic: sec.querySelector(".ic"),
-      vb: sec.querySelector(".vb"), v: sec.querySelector(".v"), cnt: sec.querySelector(".cnt"), note: sec.querySelector(".note"),
+      vb: sec.querySelector(".vb"), v: sec.querySelector(".v"), cnt: sec.querySelector(".cnt"), note: sec.querySelector(".note"), pulse: sec.querySelector(".pulse"), events: sec.querySelector(".events"),
       list: sec.querySelector(".mlist"), stories: sec.querySelector(".stories") };
-    setLevel(r, "green", "", []);
+    setLevel(r, "green", "", [], null);
   });
   MARKETS.forEach(function (m) {
     var row = document.createElement("div");
@@ -308,8 +319,10 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
     m.el = { row: row, st: row.querySelector(".st"), stt: row.querySelector(".stt"), lt: row.querySelector(".lt"), cd: row.querySelector(".cd") };
   });
 
-  function setLevel(r, level, note, stories) {
+  function setLevel(r, level, note, stories, n) {
     var x = R[r], lv = LV[level] ? level : "green";
+    x.pulse.textContent = n && typeof n.pulse === "string" ? n.pulse.slice(0, 120) : "";
+    renderEvents(x, n && Array.isArray(n.events) ? n.events : []);
     x.sec.style.setProperty("--acc", LV[lv].c);
     x.badge.textContent = LV[lv].icon + " " + LV[lv].label;
     x.note.textContent = note || "";
@@ -332,7 +345,30 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
         (sl !== "green" ? '<span class="tag">' + LV[sl].icon + " " + (sl === "red" ? "MARKET-MOVING" : "WATCH") + '</span>' : "") +
         '<span>' + meta + '</span></span></span>' + (url ? '<span class="arr">↗</span>' : "");
       el.querySelector(".t").textContent = s.title.slice(0, 200);
+      if (typeof s.why === "string" && s.why) {
+        var w = document.createElement("span"); w.className = "why"; w.textContent = "Why: " + s.why.slice(0, 160);
+        el.querySelector(".s").before(w);
+      }
       x.stories.appendChild(el);
+    });
+  }
+
+  function renderEvents(x, evs) {
+    x.events.textContent = "";
+    var now = Date.now();
+    var list = evs.filter(function (e) { return e && typeof e.title === "string" && !isNaN(Date.parse(e.time)); })
+      .sort(function (a, b) { return Date.parse(a.time) - Date.parse(b.time); }).slice(0, 5);
+    if (!list.length) return;
+    var h = document.createElement("div"); h.className = "lbl"; h.textContent = "Scheduled"; x.events.appendChild(h);
+    list.forEach(function (e) {
+      var t = Date.parse(e.time), lv = LV[e.level] ? e.level : "green";
+      var row = document.createElement("div");
+      row.className = "ev" + (t < now - HOUR ? " past" : "");
+      row.style.setProperty("--ec", LV[lv].c);
+      row.innerHTML = '<span class="et num"></span><span class="ed"></span><span class="en"></span>';
+      row.querySelector(".et").textContent = yourTime(t, now);
+      row.querySelector(".en").textContent = e.title.slice(0, 120);
+      x.events.appendChild(row);
     });
   }
 
@@ -342,10 +378,12 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
     fetch("news.json?t=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
       ORDER.forEach(function (r) {
         var n = d && d.regions && d.regions[r];
-        if (n) setLevel(r, n.level, n.note, n.stories);
+        if (n) setLevel(r, n.level, n.note, n.stories, n);
       });
       var t = Date.parse(d.updatedAt);
       upd.textContent = isNaN(t) ? "" : "News updated " + new Date(t).toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) + ".";
+      var a = d && d.accuracy, acc = document.getElementById("acc");
+      acc.textContent = a && a.days >= 5 && typeof a.hits === "number" ? "Track record: the colours matched how markets actually moved on " + a.hits + " of the last " + a.days + " region-days." : "";
     }).catch(function () { upd.textContent = "News couldn't be loaded right now."; });
   }
 
