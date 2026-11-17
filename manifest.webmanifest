@@ -1,6 +1,6 @@
 {
-  "name": "NextBell",
-  "short_name": "NextBell",
+  "name": "ExchangeDial",
+  "short_name": "ExchangeDial",
   "description": "World stock markets at a glance, and what might move them today.",
   "start_url": "./",
   "scope": "./",
