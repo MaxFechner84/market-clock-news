@@ -1,84 +1,119 @@
 {
-  "updatedAt": "2026-11-15T12:33:00Z",
+  "updatedAt": "2026-11-17T06:35:38Z",
   "regions": {
     "am": {
       "level": "red",
-      "note": "Hot US inflation and Fed hike talk; Nvidia reports this week",
+      "note": "Nvidia earnings tonight after the close; US retail sales due today",
       "stories": [
         {
-          "title": "US inflation came in above forecasts, reviving talk of a large Fed rate hike next month",
-          "source": "AFP via BSS",
-          "date": "11 Nov",
-          "url": "https://www.bssnews.net/business/444417",
-          "level": "red"
+          "date": "16 Nov",
+          "level": "red",
+          "source": "CNN",
+          "title": "Nvidia reports after today's close, its first results since Jensen Huang's resignation",
+          "url": "https://www.cnn.com/2026/11/16/business/stocks-nvidia-ai-anthropic"
         },
         {
-          "title": "Nvidia's quarterly results, due this coming week, are the next big test for the AI trade",
-          "source": "investingLive",
-          "date": "11 Nov",
-          "url": "https://investinglive.com/stock-market-update/asia-midday-nikkei-up-for-third-day-kosdaq-jumps-5-as-ai-stocks-rebound/",
-          "level": "orange"
+          "date": "16 Nov",
+          "level": "orange",
+          "source": "AP",
+          "title": "S&P 500 falls 1.9% for a third straight loss as Nvidia leads another tech selloff",
+          "url": "https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-monday-11-16-2026"
         },
         {
-          "title": "Wall Street swung from post-midterm optimism to its worst day in a year and a half",
-          "source": "Seeking Alpha",
-          "date": "Early Nov",
-          "url": "https://seekingalpha.com/article/4964579-what-moved-markets-this-week",
-          "level": "green"
+          "date": "17 Nov",
+          "level": "orange",
+          "source": "Saxo",
+          "title": "US restricts remote access to advanced AI chips, closing a China cloud loophole",
+          "url": "https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take--17-november-2026-17112026"
+        },
+        {
+          "date": "10 Nov",
+          "level": "orange",
+          "source": "Newsquawk",
+          "title": "A December Fed hike is fully priced after hot October CPI and hawkish Waller comments",
+          "url": "https://www.newsquawk.com/headlines/newsquawk-fed-speak-primerschedule-rate-hike-bets-pick-up-after-waller-and-hot-cpi"
+        },
+        {
+          "date": "16 Nov",
+          "level": "green",
+          "source": "CappNotes",
+          "title": "Empire State manufacturing index drops to 7.8, well below the 16.7 consensus",
+          "url": "https://cappnotes.substack.com/p/closing-look-monday-november-16-2026"
         }
       ]
     },
     "eu": {
       "level": "orange",
-      "note": "Eurozone inflation and growth data in focus for the ECB",
+      "note": "UK inflation data this week after hawkish Bank of England comments",
       "stories": [
         {
-          "title": "Investors are watching eurozone inflation and growth data for clues on the ECB's next move",
-          "source": "Economies.com",
-          "date": "9 Nov",
-          "url": "https://economies.com/markets/europe-news/european-stocks-climb-as-banking-rally-and-lower-oil-prices-lift-sentiment-50554",
-          "level": "orange"
+          "date": "16 Nov",
+          "level": "orange",
+          "source": "RTTNews via Panthere Group",
+          "title": "Investors weigh hawkish Bank of England remarks ahead of key UK inflation data this week",
+          "url": "https://www.pantheregroup.com/2026/11/16/european-stocks-close-weak-after-cautious-session-5/"
         },
         {
-          "title": "STOXX 600 climbed 0.6% as worries about the AI trade eased",
-          "source": "RTTNews",
-          "date": "11 Nov",
-          "url": "https://www.rttnews.com/list/european-commentary.aspx?Id=1712361&SM=1",
-          "level": "green"
+          "date": "16 Nov",
+          "level": "orange",
+          "source": "Yahoo Finance",
+          "title": "STOXX 600 slips 0.3% and DAX 0.6% as Europe waits on Nvidia results",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-close-weak-cautious-190339591.html"
         },
         {
-          "title": "Bank mergers and a sharp drop in oil prices lifted European shares after two down days",
-          "source": "Sharecast via HL",
-          "date": "9 Nov",
-          "url": "https://www.hl.co.uk/shares/stock-market-news/market-reports/europe-close-stocks-bounce-back-on-banking-m-and-a,-oil-price-slump",
-          "level": "green"
+          "date": "16 Nov",
+          "level": "green",
+          "source": "Newsquawk",
+          "title": "Euro zone industrial production disappoints while European tech stocks lag",
+          "url": "https://www.newsquawk.com/headlines/newsquawk-european-market-wrap---16th-november-2026"
+        },
+        {
+          "date": "16 Nov",
+          "level": "green",
+          "source": "Yahoo Finance",
+          "title": "Richemont results lift Switzerland's SMI against the weaker European trend",
+          "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-close-weak-cautious-190339591.html"
         }
       ]
     },
     "as": {
       "level": "orange",
-      "note": "Bank of Japan leaning hawkish",
+      "note": "US chip curbs hit Taiwan and Korea; hawkish RBA minutes",
       "stories": [
         {
-          "title": "China's trade surplus passed $1 trillion while the Bank of Japan leaned hawkish",
-          "source": "investingLive",
-          "date": "10 Nov",
-          "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-ai-rebound-rolls-on-oil-slips/",
-          "level": "orange"
+          "date": "17 Nov",
+          "level": "orange",
+          "source": "Bloomberg",
+          "title": "Asian stocks slide toward an April low as US curbs on China AI chip access hit Taiwan and Korea",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/stock-market-today-dow-s-p-live-updates"
         },
         {
-          "title": "Nikkei rose for a third session and Korea's KOSDAQ jumped about 5% as AI stocks rebounded",
+          "date": "17 Nov",
+          "level": "orange",
           "source": "investingLive",
-          "date": "11 Nov",
-          "url": "https://investinglive.com/stock-market-update/asia-midday-nikkei-up-for-third-day-kosdaq-jumps-5-as-ai-stocks-rebound/",
-          "level": "green"
+          "title": "RBA minutes: most members saw the 4.85% cash rate as not clearly enough to tame inflation",
+          "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-rba-minutes-lean-hawkish/"
         },
         {
-          "title": "SoftBank posted a quarterly net loss of about $7 billion",
-          "source": "AP",
-          "date": "Nov",
-          "url": "https://www.wpxi.com/news/business/asian-shares-mostly/RXDWAASOVU4OJEDRZPQEZU3OZA/",
-          "level": "green"
+          "date": "17 Nov",
+          "level": "orange",
+          "source": "Market Index",
+          "title": "ASX 200 heads for a fourth straight fall as BHP and Rio slide with copper at multi-month lows",
+          "url": "https://www.marketindex.com.au/news/asx-200-live-today-tuesday-17th-november"
+        },
+        {
+          "date": "17 Nov",
+          "level": "orange",
+          "source": "Saxo",
+          "title": "Chinese A-shares hit a 16-month low after weak October activity data",
+          "url": "https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take--17-november-2026-17112026"
+        },
+        {
+          "date": "17 Nov",
+          "level": "green",
+          "source": "investingLive",
+          "title": "Former BoJ chief Kuroda says Japan's rates may need to rise above neutral",
+          "url": "https://investinglive.com/news/investinglive-asia-pacific-market-news-rba-minutes-lean-hawkish/"
         }
       ]
     }
