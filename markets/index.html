@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://maxfechner84.github.io/market-clock-news/markets/">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" href="../icon-192.png">
+<meta property="og:image" content="https://maxfechner84.github.io/market-clock-news/og.png">
 <style>
 :root {
   --bg: #f2f2f7; --card: #ffffff; --ink: #000000; --soft: rgba(60,60,67,.85); --muted: rgba(60,60,67,.6);
@@ -127,6 +128,8 @@ a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
 .links { display: flex; gap: 16px; flex-wrap: wrap; }
 .links a { color: var(--blue); text-decoration: none; }
 .links a:hover { text-decoration: underline; }
+h1 { white-space: nowrap; }
+@media (max-width: 480px) { .top { flex-wrap: wrap; } .top .tools { width: 100%; justify-content: space-between; } }
 
 .page { max-width: 760px; }
 .card.pad { padding: 18px; }
