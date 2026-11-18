@@ -32,7 +32,8 @@ Last updated: 2026-11-18
 - "Share today": draws a 1200×630 image of today's colours and shares or downloads it (`exchangedial-YYYY-MM-DD.png`).
 - Install button (web app), "Week ahead" link (`week.html`), "Exchange hours" link (`markets/`).
 - Visitor analytics: Savri script.
-- Not on the site yet: newsletter sign-up, Pro offer, footer, link to X, "not financial advice" disclaimer.
+- Footer on home and week pages: colour key, update time, exchange-hours links, AI/"not investment advice" disclaimer, link to @ExchangeDial. Exchange pages end with an "information only, not investment advice" line and the X link.
+- Not on the site yet: newsletter sign-up, Pro offer.
 
 ## Automation (Claude scheduled tasks)
 - **ExchangeDial news – morning**: weekdays 07:34 Paris. Redoes all three regions.
@@ -48,8 +49,7 @@ Last updated: 2026-11-18
 
 ## To do
 - [ ] Confirm "Enforce HTTPS" is ticked in GitHub → Settings → Pages (needs the owner's browser).
-- [ ] Link @ExchangeDial from the site footer and add the `twitter:site` tag.
-- [ ] Add a short "information only, not financial advice" disclaimer (the site currently has none).
+- [x] Link @ExchangeDial on every page + `twitter:site` tag (2026-11-18).
 - [ ] Review the X profile (picture, banner, bio, website link, pinned post) — needs the owner's browser or a screenshot.
 - [ ] iPhone app.
 - Business plans (launch tests, revenue ideas) are kept in Claude's private notes, not in this public file.
@@ -59,3 +59,4 @@ Last updated: 2026-11-18
 - 2026-11-17 Public website added; rebranded to ExchangeDial; scheduled tasks created; HTTPS check run.
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
 - 2026-11-18 Site features reviewed and written into this file.
+- 2026-11-18 X link and twitter:site tag added to all pages; disclaimer line added to exchange pages.
