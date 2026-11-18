@@ -8,7 +8,7 @@ Last updated: 2026-11-18
 
 ## What it is
 - ExchangeDial (formerly "Market Clock"): shows which world stock exchanges are open and colours each region (Americas, Europe, Asia-Pacific) green / orange / red by how likely today's news is to move it.
-- Language: English first, with an English/French switch on the site. International audience, not France-focused.
+- Language: English by default, with a language menu (EN, FR, ES, DE, RU, ZH). International audience, not France-focused.
 
 ## What exists
 | Thing | Where | Status |
@@ -25,7 +25,9 @@ Last updated: 2026-11-18
 | iPhone app | Started in Xcode | In progress |
 
 ## What the site does (home page, `index.html`)
-- Live clock; EN/FR switch; Auto/Light/Dark theme (saved in the browser).
+- Live clock; language menu (English default, Français, Español, Deutsch, Русский, 中文); Auto/Light/Dark theme (both saved in the browser).
+- Site texts are translated into all 6 languages on the home and week pages. News (headlines, notes, events) exists in English + French only; other languages show the English news, and the disclaimer says so.
+- Exchange-hours pages (`markets/`) exist only in English and French.
 - "Next to open" card with countdown; 11 exchanges grouped by region (NYSE, TSX · LSE, Xetra, Euronext Paris · TSE, HKEX, SSE, SGX, NSE, ASX) with open/closed status, lunch breaks, holidays and countdowns. Visitors can star exchanges to pin them first.
 - Per region: colour level, note, market "pulse" line, up to 5 stories (source · date, sorted red → orange → green) and up to 5 events, all from `news.json`. Shows the update time and, once 5+ days are scored, the accuracy from `news.json`.
 - Alerts: browser notification when a region turns red (opt-in; on iPhone only after "Add to Home Screen").
@@ -49,6 +51,9 @@ Last updated: 2026-11-18
 
 ## To do
 - [ ] Confirm "Enforce HTTPS" is ticked in GitHub → Settings → Pages (needs the owner's browser).
+- [ ] Decide: should the news runs also write headlines in Spanish, German, Russian and Chinese?
+- [ ] Exchange-hours pages in ES/DE/RU/ZH (22 → 66 pages).
+- [x] Language menu with 6 languages, English default (2026-11-18).
 - [x] Link @ExchangeDial on every page + `twitter:site` tag (2026-11-18).
 - [ ] Review the X profile (picture, banner, bio, website link, pinned post) — needs the owner's browser or a screenshot.
 - [ ] iPhone app.
@@ -59,4 +64,5 @@ Last updated: 2026-11-18
 - 2026-11-17 Public website added; rebranded to ExchangeDial; scheduled tasks created; HTTPS check run.
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
 - 2026-11-18 Site features reviewed and written into this file.
+- 2026-11-18 Language menu: EN (default), FR, ES, DE, RU, ZH.
 - 2026-11-18 X link and twitter:site tag added to all pages; disclaimer line added to exchange pages.
