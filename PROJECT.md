@@ -70,7 +70,7 @@ Rule: any new idea goes in "Ideas inbox" straight away, even half-formed, so not
 - [ ] hello@exchangedial.com forwarding points to the right inbox.
 
 ### Growth: free channels
-- [ ] **Reddit posts** (biggest quick win): "I built a free tool that shows which markets are open and today's key news", with a screenshot, not an ad. Candidates: r/Daytrading, r/stocks, r/investing, r/eupersonalfinance, r/vosfinances, r/BourseFrance. Read each subreddit's self-promotion rules first. Claude drafts, owner posts.
+- [ ] **Reddit posts** (biggest quick win): "I built a free tool that shows which markets are open and today's key news", with a screenshot, not an ad. Drafts written 2026-11-18. Where: r/Daytrading only in its weekly "Software Sunday" thread; r/SideProject (open to launches); r/eupersonalfinance, r/vosfinances, r/BourseFrance: answer "why is the exchange closed today?" questions helpfully, link only if it fits. **Never post in r/investing** (no tools/apps, permanent ban). Check r/stocks rules before posting. Claude drafts, owner posts.
 - [ ] **Show HN** (Hacker News) launch post, once.
 - [ ] **Product Hunt** launch, once, ideally after the newsletter sign-up exists.
 - [ ] **X daily**: morning post with a screenshot of the three regions + the red headline (e.g. "Today's market map: … 🔴"). Could be generated from the morning news task.
