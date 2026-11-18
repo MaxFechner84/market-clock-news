@@ -23,9 +23,9 @@
     {
       "date": "2026-11-18",
       "region": "am",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "red",
-      "note": "Nvidia beat vs SEC probe report; Fed minutes at 19:00 UTC, Anthropic IPO prices tonight",
+      "note": "Nvidia rebound vs SEC probe report; Fed minutes at 19:00 UTC; Anthropic IPO prices tonight",
       "outcome": null,
       "move": null,
       "hit": null
@@ -33,9 +33,9 @@
     {
       "date": "2026-11-18",
       "region": "eu",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "orange",
-      "note": "UK CPI at 07:00 UTC after Europe's worst day since March; Lagarde at 14:25 UTC",
+      "note": "UK inflation at a 1-year high of 3.6%; Lagarde speaks at 14:25 UTC, Fed minutes tonight",
       "outcome": null,
       "move": null,
       "hit": null
