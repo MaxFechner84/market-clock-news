@@ -16,7 +16,15 @@
           "url": "https://live.euronext.com/en/financial-news/huang-pitches-nvidia-comeback-wsj-reports-sec-probing-chipmaker",
           "level": "red",
           "why": "Nvidia is one of the biggest US stocks, so its results and troubles sway the whole index.",
-          "why_fr": "Nvidia est l'une des plus grosses valeurs américaines : ses résultats et ses déboires pèsent sur tout l'indice."
+          "why_fr": "Nvidia est l'une des plus grosses valeurs américaines : ses résultats et ses déboires pèsent sur tout l'indice.",
+          "title_es": "Nvidia supera las previsiones y espera unos 130.000 M$ de ventas el próximo trimestre, pero una supuesta investigación de la SEC enfría el repunte",
+          "title_de": "Nvidia übertrifft die Prognosen und erwartet rund 130 Mrd. $ Umsatz im nächsten Quartal, doch ein Bericht über SEC-Ermittlungen trübt die Erholung",
+          "title_ru": "Nvidia превзошла прогнозы и ждёт около $130 млрд выручки в следующем квартале, но сообщения о проверке SEC омрачают рост",
+          "title_zh": "英伟达业绩超预期，预计下季度营收约1300亿美元，但有关SEC调查的报道给反弹蒙上阴影",
+          "why_es": "Nvidia es uno de los mayores valores de EE. UU., así que sus resultados y problemas mueven todo el índice.",
+          "why_de": "Nvidia ist einer der größten US-Werte – seine Zahlen und Probleme bewegen den ganzen Index.",
+          "why_ru": "Nvidia — одна из крупнейших акций США, поэтому её отчёты и проблемы влияют на весь индекс.",
+          "why_zh": "英伟达是美国市值最大的股票之一，其业绩和风波会影响整个指数。"
         },
         {
           "title": "Anthropic prices its IPO tonight in a $70–78 range; shares are due to start trading on Nasdaq on Thursday",
@@ -26,7 +34,15 @@
           "url": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
           "level": "orange",
           "why": "One of the largest IPOs ever is a test of how much investors still want AI stocks.",
-          "why_fr": "L'une des plus grosses introductions de l'histoire : un test de l'appétit des investisseurs pour l'IA."
+          "why_fr": "L'une des plus grosses introductions de l'histoire : un test de l'appétit des investisseurs pour l'IA.",
+          "title_es": "Anthropic fija esta noche el precio de su OPV (rango de 70–78 $); sus acciones empezarán a cotizar en el Nasdaq el jueves",
+          "title_de": "Anthropic legt heute Abend den Ausgabepreis fest (Spanne 70–78 $); der Handel an der Nasdaq soll am Donnerstag starten",
+          "title_ru": "Anthropic вечером определит цену IPO (диапазон $70–78); торги на Nasdaq должны начаться в четверг",
+          "title_zh": "Anthropic今晚为IPO定价（区间70–78美元），股票预计周四在纳斯达克开始交易",
+          "why_es": "Una de las mayores OPV de la historia pone a prueba el apetito de los inversores por la IA.",
+          "why_de": "Einer der größten Börsengänge aller Zeiten testet, wie gefragt KI-Aktien noch sind.",
+          "why_ru": "Одно из крупнейших IPO в истории проверит, насколько инвесторы ещё хотят акции ИИ.",
+          "why_zh": "这是史上规模最大的IPO之一，将检验投资者对AI股票的兴趣。"
         },
         {
           "title": "S&P 500 fell 1% and the Dow 1.6% on Tuesday, a fourth straight loss for the S&P 500 and Nasdaq",
@@ -36,7 +52,15 @@
           "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-jump-as-nvidia-earnings-revive-ai-optimism-5034391",
           "level": "orange",
           "why": "A losing streak across the whole market shows nerves are high going into today.",
-          "why_fr": "Une série de baisses sur tout le marché montre une forte nervosité avant la séance du jour."
+          "why_fr": "Une série de baisses sur tout le marché montre une forte nervosité avant la séance du jour.",
+          "title_es": "El S&P 500 cayó un 1 % y el Dow un 1,6 % el martes, cuarta caída seguida del S&P 500 y el Nasdaq",
+          "title_de": "Der S&P 500 fiel am Dienstag um 1 %, der Dow um 1,6 % – der vierte Verlusttag in Folge für S&P 500 und Nasdaq",
+          "title_ru": "Во вторник S&P 500 упал на 1%, Dow — на 1,6%; S&P 500 и Nasdaq снижаются четвёртый день подряд",
+          "title_zh": "周二标普500指数跌1%，道指跌1.6%，标普500和纳指连跌四日",
+          "why_es": "Una racha de caídas en todo el mercado muestra mucho nerviosismo antes de la sesión de hoy.",
+          "why_de": "Eine Verlustserie im ganzen Markt zeigt, wie nervös Anleger vor dem heutigen Handel sind.",
+          "why_ru": "Серия падений по всему рынку показывает сильную нервозность перед сегодняшними торгами.",
+          "why_zh": "全市场连续下跌，显示今日开盘前市场情绪紧张。"
         }
       ],
       "events": [
@@ -44,27 +68,47 @@
           "time": "2026-11-18T13:30:00Z",
           "title": "US housing starts (Oct)",
           "title_fr": "Mises en chantier aux États-Unis (oct.)",
-          "level": "green"
+          "level": "green",
+          "title_es": "Inicio de viviendas en EE. UU. (oct.)",
+          "title_de": "US-Baubeginne (Okt.)",
+          "title_ru": "Начало строительства жилья в США (окт.)",
+          "title_zh": "美国新屋开工（10月）"
         },
         {
           "time": "2026-11-18T19:00:00Z",
           "title": "Fed minutes (October meeting)",
           "title_fr": "Compte rendu de la Fed (réunion d'octobre)",
-          "level": "orange"
+          "level": "orange",
+          "title_es": "Actas de la Fed (reunión de octubre)",
+          "title_de": "Fed-Protokoll (Oktober-Sitzung)",
+          "title_ru": "Протокол ФРС (октябрьское заседание)",
+          "title_zh": "美联储会议纪要（10月会议）"
         },
         {
           "time": "2026-11-19T12:00:00Z",
           "title": "Walmart Q3 results (before open)",
           "title_fr": "Résultats T3 de Walmart (avant l'ouverture)",
-          "level": "orange"
+          "level": "orange",
+          "title_es": "Resultados del 3T de Walmart (antes de la apertura)",
+          "title_de": "Walmart Q3-Zahlen (vor Börsenstart)",
+          "title_ru": "Отчёт Walmart за III кв. (до открытия)",
+          "title_zh": "沃尔玛第三季度业绩（开盘前）"
         },
         {
           "time": "2026-11-19T13:30:00Z",
           "title": "US jobless claims and Philly Fed index (Nov)",
           "title_fr": "Inscriptions au chômage et indice de la Fed de Philadelphie (nov.)",
-          "level": "green"
+          "level": "green",
+          "title_es": "Peticiones de subsidio por desempleo e índice de la Fed de Filadelfia (nov.)",
+          "title_de": "US-Erstanträge und Philly-Fed-Index (Nov.)",
+          "title_ru": "Заявки на пособие по безработице и индекс ФРБ Филадельфии (нояб.)",
+          "title_zh": "美国初请失业金人数和费城联储指数（11月）"
         }
-      ]
+      ],
+      "note_es": "Nvidia supera previsiones pero la SEC la investiga; actas de la Fed a las 19:00 UTC, OPV de Anthropic esta noche",
+      "note_de": "Nvidia übertrifft Erwartungen, Bericht über SEC-Ermittlungen; Fed-Protokoll um 19:00 UTC, Anthropic-IPO heute Abend",
+      "note_ru": "Nvidia превзошла прогнозы, но её проверяет SEC; протокол ФРС в 19:00 UTC, IPO Anthropic вечером",
+      "note_zh": "英伟达业绩超预期但传遭SEC调查；美联储会议纪要UTC 19:00公布，Anthropic今晚IPO定价"
     },
     "eu": {
       "level": "orange",
@@ -80,7 +124,15 @@
           "url": "https://ca.marketscreener.com/news/european-stocks-mark-worst-day-in-eight-months-on-ai-jitters-deutsche-bank-slides-ce785edcdd8df723",
           "level": "orange",
           "why": "A broad sell-off led by big tech names can carry over into today's session.",
-          "why_fr": "Un repli général mené par les grandes valeurs technologiques peut se prolonger aujourd'hui."
+          "why_fr": "Un repli général mené par les grandes valeurs technologiques peut se prolonger aujourd'hui.",
+          "title_es": "Las bolsas europeas vivieron su peor sesión desde marzo: STOXX 600 −1,75 %, tecnología −3,9 %, ASML −5,3 %",
+          "title_de": "Europas Börsen erlebten den schwächsten Tag seit März: STOXX 600 −1,75 %, Tech −3,9 %, ASML −5,3 %",
+          "title_ru": "Худший день европейских акций с марта: STOXX 600 −1,75%, техсектор −3,9%, ASML −5,3%",
+          "title_zh": "欧股创3月以来最差单日表现：STOXX 600跌1.75%，科技股跌3.9%，阿斯麦跌5.3%",
+          "why_es": "Una venta generalizada liderada por grandes tecnológicas puede prolongarse en la sesión de hoy.",
+          "why_de": "Ein breiter Ausverkauf, angeführt von großen Tech-Werten, kann sich heute fortsetzen.",
+          "why_ru": "Широкая распродажа во главе с крупными техкомпаниями может продолжиться сегодня.",
+          "why_zh": "由大型科技股带动的普遍抛售可能延续到今天。"
         },
         {
           "title": "ECB publishes its Financial Stability Review today, with AI and government debt flagged as top risks",
@@ -90,7 +142,15 @@
           "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html",
           "level": "orange",
           "why": "Central bank warnings about AI valuations can weigh on tech and bank shares.",
-          "why_fr": "Les mises en garde de la banque centrale sur les valorisations de l'IA peuvent peser sur la tech et les banques."
+          "why_fr": "Les mises en garde de la banque centrale sur les valorisations de l'IA peuvent peser sur la tech et les banques.",
+          "title_es": "El BCE publica hoy su Informe de Estabilidad Financiera, con la IA y la deuda pública como riesgos principales",
+          "title_de": "Die EZB veröffentlicht heute ihren Finanzstabilitätsbericht – KI und Staatsschulden gelten als größte Risiken",
+          "title_ru": "ЕЦБ сегодня публикует обзор финансовой стабильности; главные риски — ИИ и госдолг",
+          "title_zh": "欧洲央行今日发布金融稳定评估，将AI和政府债务列为主要风险",
+          "why_es": "Las advertencias del banco central sobre las valoraciones de la IA pueden pesar sobre tecnológicas y bancos.",
+          "why_de": "Warnungen der Notenbank vor KI-Bewertungen können Tech- und Bankaktien belasten.",
+          "why_ru": "Предупреждения центробанка о завышенной оценке ИИ могут давить на акции техкомпаний и банков.",
+          "why_zh": "央行对AI估值的警告可能拖累科技股和银行股。"
         },
         {
           "title": "US jets struck an Iranian missile site near Hormuz after Iranian drone attacks on Bahrain",
@@ -100,7 +160,15 @@
           "url": "https://www.arabnews.pk/world/us-warplanes-struck-iran-missile-site-on-qeshm-island-us-official-3007283",
           "level": "orange",
           "why": "Fighting near the main Gulf oil route can push up energy prices, which Europe imports.",
-          "why_fr": "Des combats près de la grande route pétrolière du Golfe peuvent faire monter l'énergie, que l'Europe importe."
+          "why_fr": "Des combats près de la grande route pétrolière du Golfe peuvent faire monter l'énergie, que l'Europe importe.",
+          "title_es": "Aviones de EE. UU. atacaron una base de misiles iraní cerca de Ormuz tras ataques con drones iraníes contra Baréin",
+          "title_de": "US-Kampfjets griffen nahe Hormus eine iranische Raketenstellung an, nach iranischen Drohnenangriffen auf Bahrain",
+          "title_ru": "Самолёты США нанесли удар по иранской ракетной площадке у Ормуза после атак иранских дронов на Бахрейн",
+          "title_zh": "伊朗无人机袭击巴林后，美国战机打击霍尔木兹附近一处伊朗导弹基地",
+          "why_es": "Los combates cerca de la principal ruta petrolera del Golfo pueden encarecer la energía que importa Europa.",
+          "why_de": "Kämpfe nahe der wichtigsten Ölroute am Golf können die Energiepreise treiben – und Europa importiert Energie.",
+          "why_ru": "Боевые действия у главного нефтяного маршрута Залива могут поднять цены на энергию, которую импортирует Европа.",
+          "why_zh": "海湾主要石油航道附近的冲突可能推高能源价格，而欧洲依赖能源进口。"
         }
       ],
       "events": [
@@ -108,27 +176,47 @@
           "time": "2026-11-18T07:00:00Z",
           "title": "UK CPI inflation (Oct)",
           "title_fr": "Inflation britannique (IPC, oct.)",
-          "level": "orange"
+          "level": "orange",
+          "title_es": "IPC del Reino Unido (oct.)",
+          "title_de": "Britische Inflation (VPI, Okt.)",
+          "title_ru": "Инфляция в Великобритании (ИПЦ, окт.)",
+          "title_zh": "英国CPI通胀（10月）"
         },
         {
           "time": "2026-11-18T09:00:00Z",
           "title": "ECB Financial Stability Review",
           "title_fr": "Revue de stabilité financière de la BCE",
-          "level": "green"
+          "level": "green",
+          "title_es": "Informe de Estabilidad Financiera del BCE",
+          "title_de": "EZB-Finanzstabilitätsbericht",
+          "title_ru": "Обзор финансовой стабильности ЕЦБ",
+          "title_zh": "欧洲央行金融稳定评估"
         },
         {
           "time": "2026-11-18T10:00:00Z",
           "title": "Euro-area inflation, final (Oct)",
           "title_fr": "Inflation de la zone euro, chiffre définitif (oct.)",
-          "level": "green"
+          "level": "green",
+          "title_es": "Inflación de la eurozona, dato final (oct.)",
+          "title_de": "Inflation Eurozone, endgültig (Okt.)",
+          "title_ru": "Инфляция в еврозоне, окончательная (окт.)",
+          "title_zh": "欧元区通胀终值（10月）"
         },
         {
           "time": "2026-11-18T14:25:00Z",
           "title": "ECB President Lagarde speaks (DealBook, New York)",
           "title_fr": "Christine Lagarde (BCE) s'exprime (DealBook, New York)",
-          "level": "orange"
+          "level": "orange",
+          "title_es": "Habla Lagarde, presidenta del BCE (DealBook, Nueva York)",
+          "title_de": "EZB-Präsidentin Lagarde spricht (DealBook, New York)",
+          "title_ru": "Выступление главы ЕЦБ Лагард (DealBook, Нью-Йорк)",
+          "title_zh": "欧洲央行行长拉加德讲话（DealBook，纽约）"
         }
-      ]
+      ],
+      "note_es": "IPC británico a las 07:00 UTC tras la peor sesión en Europa desde marzo; Lagarde a las 14:25 UTC",
+      "note_de": "Britische Inflation um 07:00 UTC nach Europas schwächstem Tag seit März; Lagarde um 14:25 UTC",
+      "note_ru": "Инфляция в Великобритании в 07:00 UTC после худшего дня в Европе с марта; Лагард в 14:25 UTC",
+      "note_zh": "欧股创3月以来最差单日表现后，英国CPI于UTC 07:00公布；拉加德UTC 14:25讲话"
     },
     "as": {
       "level": "red",
@@ -144,7 +232,15 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-set-snap-losing-014340794.html",
           "level": "orange",
           "why": "Asia's chip-heavy markets track Nvidia closely, so its news moves the whole region.",
-          "why_fr": "Les marchés asiatiques, riches en valeurs de puces, suivent Nvidia de près : ses nouvelles font bouger la région."
+          "why_fr": "Les marchés asiatiques, riches en valeurs de puces, suivent Nvidia de près : ses nouvelles font bouger la région.",
+          "title_es": "Las bolsas asiáticas oscilan tras los resultados de Nvidia y pierden las ganancias iniciales por dudas sobre su liderazgo",
+          "title_de": "Asiens Börsen schwanken nach Nvidias Zahlen; frühe Gewinne schwinden wegen Sorgen um die Führung",
+          "title_ru": "Азиатские рынки колеблются после отчёта Nvidia: утренний рост сошёл на нет из-за опасений по поводу её руководства",
+          "title_zh": "英伟达财报后亚洲股市震荡，因对其管理层的担忧，早盘涨幅回吐",
+          "why_es": "Los mercados asiáticos, con mucho peso de los chips, siguen de cerca a Nvidia: sus noticias mueven toda la región.",
+          "why_de": "Asiens chiplastige Märkte folgen Nvidia eng – Nachrichten von dort bewegen die ganze Region.",
+          "why_ru": "Азиатские рынки с большой долей чипмейкеров следят за Nvidia, поэтому её новости двигают весь регион.",
+          "why_zh": "亚洲市场芯片股权重大，紧跟英伟达动向，其消息会带动整个地区。"
         },
         {
           "title": "Xi, Trump and Putin hold their first three-way summit on Thursday in Shenzhen, on the APEC sidelines",
@@ -154,7 +250,15 @@
           "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html",
           "level": "orange",
           "why": "US-China relations drive trade and chip stocks across Asia, so the summit can move markets.",
-          "why_fr": "Les relations sino-américaines pèsent sur le commerce et les puces en Asie : le sommet peut faire bouger les marchés."
+          "why_fr": "Les relations sino-américaines pèsent sur le commerce et les puces en Asie : le sommet peut faire bouger les marchés.",
+          "title_es": "Xi, Trump y Putin celebran el jueves en Shenzhen su primera cumbre a tres, al margen de la APEC",
+          "title_de": "Xi, Trump und Putin treffen sich am Donnerstag in Shenzhen zu ihrem ersten Dreiergipfel am Rande des APEC-Treffens",
+          "title_ru": "Си, Трамп и Путин в четверг проведут в Шэньчжэне первый трёхсторонний саммит на полях АТЭС",
+          "title_zh": "习近平、特朗普和普京周四在深圳APEC会议期间举行首次三方会晤",
+          "why_es": "Las relaciones entre EE. UU. y China mueven el comercio y los chips en Asia, así que la cumbre puede mover los mercados.",
+          "why_de": "Die US-chinesischen Beziehungen treiben Handel und Chipwerte in Asien – der Gipfel kann die Märkte bewegen.",
+          "why_ru": "Отношения США и Китая влияют на торговлю и акции чипмейкеров в Азии, так что саммит может двигать рынки.",
+          "why_zh": "中美关系影响亚洲贸易和芯片股，因此这次会晤可能撼动市场。"
         },
         {
           "title": "Bank of Japan Governor Ueda says the central bank should keep raising interest rates",
@@ -164,7 +268,15 @@
           "url": "https://finance.yahoo.com/economy/policy/articles/ueda-says-boj-weigh-underlying-013428583.html",
           "level": "orange",
           "why": "Higher Japanese rates can lift the yen and weigh on Tokyo stocks.",
-          "why_fr": "Des taux japonais plus élevés peuvent soutenir le yen et peser sur la Bourse de Tokyo."
+          "why_fr": "Des taux japonais plus élevés peuvent soutenir le yen et peser sur la Bourse de Tokyo.",
+          "title_es": "El gobernador del Banco de Japón, Ueda, dice que el banco central debe seguir subiendo los tipos",
+          "title_de": "BoJ-Gouverneur Ueda: Die Notenbank sollte die Zinsen weiter anheben",
+          "title_ru": "Глава Банка Японии Уэда считает, что ЦБ должен и дальше повышать ставки",
+          "title_zh": "日本央行行长植田和男表示应继续加息",
+          "why_es": "Unos tipos más altos en Japón pueden apreciar el yen y pesar sobre la bolsa de Tokio.",
+          "why_de": "Höhere Zinsen in Japan können den Yen stärken und Tokioter Aktien belasten.",
+          "why_ru": "Более высокие ставки в Японии могут укрепить иену и надавить на акции в Токио.",
+          "why_zh": "日本利率上升可能推高日元并拖累东京股市。"
         },
         {
           "title": "Japan's exports hit a record in October, up 20.5% on strong chip-related demand",
@@ -174,7 +286,15 @@
           "url": "https://kfgo.com/2026/11/17/japan-exports-set-record-in-october-on-strong-chip-related-demand",
           "level": "green",
           "why": "Good news, but close to the 20% forecast, so it should barely move markets.",
-          "why_fr": "Bonne nouvelle, mais proche des 20 % attendus : peu d'effet attendu sur les marchés."
+          "why_fr": "Bonne nouvelle, mais proche des 20 % attendus : peu d'effet attendu sur les marchés.",
+          "title_es": "Las exportaciones de Japón marcan un récord en octubre, +20,5 %, gracias a la fuerte demanda ligada a los chips",
+          "title_de": "Japans Exporte erreichen im Oktober ein Rekordhoch, +20,5 % dank starker Chip-Nachfrage",
+          "title_ru": "Экспорт Японии в октябре достиг рекорда, +20,5% на фоне сильного спроса на чипы",
+          "title_zh": "日本10月出口创纪录，受芯片相关需求强劲推动增长20.5%",
+          "why_es": "Buena noticia, pero cerca del 20 % previsto, así que apenas debería mover los mercados.",
+          "why_de": "Gute Nachricht, aber nahe an der Prognose von 20 % – kaum Einfluss auf die Märkte.",
+          "why_ru": "Хорошая новость, но близка к прогнозу в 20%, поэтому вряд ли сильно повлияет на рынки.",
+          "why_zh": "消息积极，但接近20%的预期，对市场影响应不大。"
         }
       ],
       "events": [
@@ -182,27 +302,47 @@
           "time": "2026-11-18T12:00:00Z",
           "title": "Tencent Q3 results call (after HK close)",
           "title_fr": "Conférence sur les résultats T3 de Tencent (après la clôture à Hong Kong)",
-          "level": "red"
+          "level": "red",
+          "title_es": "Conferencia de resultados del 3T de Tencent (tras el cierre de Hong Kong)",
+          "title_de": "Tencent Q3-Telefonkonferenz (nach Börsenschluss in Hongkong)",
+          "title_ru": "Конференция Tencent по итогам III кв. (после закрытия в Гонконге)",
+          "title_zh": "腾讯第三季度业绩电话会（港股收市后）"
         },
         {
           "time": "2026-11-19T00:30:00Z",
           "title": "Australia jobs report (Oct)",
           "title_fr": "Emploi en Australie (oct.)",
-          "level": "green"
+          "level": "green",
+          "title_es": "Empleo en Australia (oct.)",
+          "title_de": "Australischer Arbeitsmarktbericht (Okt.)",
+          "title_ru": "Данные по занятости в Австралии (окт.)",
+          "title_zh": "澳大利亚就业报告（10月）"
         },
         {
           "time": "2026-11-19T12:00:00Z",
           "title": "Alibaba Sept-quarter results call",
           "title_fr": "Conférence sur les résultats trimestriels d'Alibaba (juil.-sept.)",
-          "level": "orange"
+          "level": "orange",
+          "title_es": "Conferencia de resultados trimestrales de Alibaba (jul.-sept.)",
+          "title_de": "Alibaba-Quartalszahlen (Jul.–Sep.), Telefonkonferenz",
+          "title_ru": "Конференция Alibaba по итогам квартала (июль–сентябрь)",
+          "title_zh": "阿里巴巴9月季度业绩电话会"
         },
         {
           "time": "2026-11-19T23:30:00Z",
           "title": "Japan CPI inflation (Oct)",
           "title_fr": "Inflation japonaise (IPC, oct.)",
-          "level": "orange"
+          "level": "orange",
+          "title_es": "IPC de Japón (oct.)",
+          "title_de": "Japanische Inflation (VPI, Okt.)",
+          "title_ru": "Инфляция в Японии (ИПЦ, окт.)",
+          "title_zh": "日本CPI通胀（10月）"
         }
-      ]
+      ],
+      "note_es": "Tencent publica resultados del 3T hoy; Hang Seng −1,1 % a mediodía, Kospi +1,3 %",
+      "note_de": "Tencent legt heute Q3-Zahlen vor; Hang Seng mittags −1,1 %, Kospi +1,3 %",
+      "note_ru": "Tencent сегодня отчитывается за III квартал; Hang Seng −1,1% к полудню, Kospi +1,3%",
+      "note_zh": "腾讯今日公布第三季度业绩；恒指午间跌1.1%，韩国综合指数涨1.3%"
     }
   },
   "week": [
@@ -211,126 +351,198 @@
       "title": "UK CPI inflation (Oct)",
       "title_fr": "Inflation britannique (IPC, oct.)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "IPC del Reino Unido (oct.)",
+      "title_de": "Britische Inflation (VPI, Okt.)",
+      "title_ru": "Инфляция в Великобритании (ИПЦ, окт.)",
+      "title_zh": "英国CPI通胀（10月）"
     },
     {
       "time": "2026-11-18T12:00:00Z",
       "title": "Tencent Q3 results call",
       "title_fr": "Conférence sur les résultats T3 de Tencent",
       "level": "red",
-      "region": "as"
+      "region": "as",
+      "title_es": "Conferencia de resultados del 3T de Tencent",
+      "title_de": "Tencent Q3-Telefonkonferenz",
+      "title_ru": "Конференция Tencent по итогам III кв.",
+      "title_zh": "腾讯第三季度业绩电话会"
     },
     {
       "time": "2026-11-18T14:25:00Z",
       "title": "ECB President Lagarde speaks (DealBook)",
       "title_fr": "Christine Lagarde (BCE) s'exprime (DealBook)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "Habla Lagarde, presidenta del BCE (DealBook)",
+      "title_de": "EZB-Präsidentin Lagarde spricht (DealBook)",
+      "title_ru": "Выступление главы ЕЦБ Лагард (DealBook)",
+      "title_zh": "欧洲央行行长拉加德讲话（DealBook）"
     },
     {
       "time": "2026-11-18T19:00:00Z",
       "title": "Fed minutes (October meeting)",
       "title_fr": "Compte rendu de la Fed (réunion d'octobre)",
       "level": "orange",
-      "region": "am"
+      "region": "am",
+      "title_es": "Actas de la Fed (reunión de octubre)",
+      "title_de": "Fed-Protokoll (Oktober-Sitzung)",
+      "title_ru": "Протокол ФРС (октябрьское заседание)",
+      "title_zh": "美联储会议纪要（10月会议）"
     },
     {
       "time": "2026-11-19T12:00:00Z",
       "title": "Walmart Q3 results (before open)",
       "title_fr": "Résultats T3 de Walmart (avant l'ouverture)",
       "level": "orange",
-      "region": "am"
+      "region": "am",
+      "title_es": "Resultados del 3T de Walmart (antes de la apertura)",
+      "title_de": "Walmart Q3-Zahlen (vor Börsenstart)",
+      "title_ru": "Отчёт Walmart за III кв. (до открытия)",
+      "title_zh": "沃尔玛第三季度业绩（开盘前）"
     },
     {
       "time": "2026-11-19T12:00:00Z",
       "title": "Alibaba Sept-quarter results call",
       "title_fr": "Conférence sur les résultats trimestriels d'Alibaba",
       "level": "orange",
-      "region": "as"
+      "region": "as",
+      "title_es": "Conferencia de resultados trimestrales de Alibaba (jul.-sept.)",
+      "title_de": "Alibaba-Quartalszahlen (Jul.–Sep.), Telefonkonferenz",
+      "title_ru": "Конференция Alibaba по итогам квартала (июль–сентябрь)",
+      "title_zh": "阿里巴巴9月季度业绩电话会"
     },
     {
       "time": "2026-11-19T23:30:00Z",
       "title": "Japan CPI inflation (Oct)",
       "title_fr": "Inflation japonaise (IPC, oct.)",
       "level": "orange",
-      "region": "as"
+      "region": "as",
+      "title_es": "IPC de Japón (oct.)",
+      "title_de": "Japanische Inflation (VPI, Okt.)",
+      "title_ru": "Инфляция в Японии (ИПЦ, окт.)",
+      "title_zh": "日本CPI通胀（10月）"
     },
     {
       "time": "2026-11-20T01:00:00Z",
       "title": "China loan prime rates (Nov)",
       "title_fr": "Taux de référence des prêts en Chine (nov.)",
       "level": "red",
-      "region": "as"
+      "region": "as",
+      "title_es": "Tipos preferenciales de préstamo de China (nov.)",
+      "title_de": "Chinas Kreditleitzinsen LPR (Nov.)",
+      "title_ru": "Базовые ставки кредитования в Китае (LPR, нояб.)",
+      "title_zh": "中国贷款市场报价利率（11月）"
     },
     {
       "time": "2026-11-20T08:30:00Z",
       "title": "ECB President Lagarde keynote (European Banking Congress)",
       "title_fr": "Discours de Christine Lagarde (European Banking Congress)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "Discurso de Lagarde, presidenta del BCE (European Banking Congress)",
+      "title_de": "Rede von EZB-Präsidentin Lagarde (European Banking Congress)",
+      "title_ru": "Речь главы ЕЦБ Лагард (European Banking Congress)",
+      "title_zh": "欧洲央行行长拉加德主旨演讲（欧洲银行大会）"
     },
     {
       "time": "2026-11-23T08:30:00Z",
       "title": "Germany flash PMI (Nov)",
       "title_fr": "PMI flash allemand (nov.)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "PMI preliminar de Alemania (nov.)",
+      "title_de": "Einkaufsmanagerindex Deutschland, vorläufig (Nov.)",
+      "title_ru": "Предварительный PMI Германии (нояб.)",
+      "title_zh": "德国PMI初值（11月）"
     },
     {
       "time": "2026-11-23T09:00:00Z",
       "title": "Euro-area flash PMI (Nov)",
       "title_fr": "PMI flash de la zone euro (nov.)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "PMI preliminar de la eurozona (nov.)",
+      "title_de": "Einkaufsmanagerindex Eurozone, vorläufig (Nov.)",
+      "title_ru": "Предварительный PMI еврозоны (нояб.)",
+      "title_zh": "欧元区PMI初值（11月）"
     },
     {
       "time": "2026-11-23T09:30:00Z",
       "title": "UK flash PMI (Nov)",
       "title_fr": "PMI flash britannique (nov.)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "PMI preliminar del Reino Unido (nov.)",
+      "title_de": "Einkaufsmanagerindex Großbritannien, vorläufig (Nov.)",
+      "title_ru": "Предварительный PMI Великобритании (нояб.)",
+      "title_zh": "英国PMI初值（11月）"
     },
     {
       "time": "2026-11-23T14:45:00Z",
       "title": "US flash PMI (Nov)",
       "title_fr": "PMI flash américain (nov.)",
       "level": "orange",
-      "region": "am"
+      "region": "am",
+      "title_es": "PMI preliminar de EE. UU. (nov.)",
+      "title_de": "Einkaufsmanagerindex USA, vorläufig (Nov.)",
+      "title_ru": "Предварительный PMI США (нояб.)",
+      "title_zh": "美国PMI初值（11月）"
     },
     {
       "time": "2026-11-24T00:30:00Z",
       "title": "Japan flash PMI (Nov)",
       "title_fr": "PMI flash japonais (nov.)",
       "level": "orange",
-      "region": "as"
+      "region": "as",
+      "title_es": "PMI preliminar de Japón (nov.)",
+      "title_de": "Einkaufsmanagerindex Japan, vorläufig (Nov.)",
+      "title_ru": "Предварительный PMI Японии (нояб.)",
+      "title_zh": "日本PMI初值（11月）"
     },
     {
       "time": "2026-11-24T09:00:00Z",
       "title": "German Ifo business climate (Nov)",
       "title_fr": "Climat des affaires Ifo en Allemagne (nov.)",
       "level": "orange",
-      "region": "eu"
+      "region": "eu",
+      "title_es": "Clima empresarial Ifo de Alemania (nov.)",
+      "title_de": "Ifo-Geschäftsklima (Nov.)",
+      "title_ru": "Индекс делового климата Ifo в Германии (нояб.)",
+      "title_zh": "德国Ifo商业景气指数（11月）"
     },
     {
       "time": "2026-11-25T00:30:00Z",
       "title": "Australia CPI inflation (Oct)",
       "title_fr": "Inflation australienne (IPC, oct.)",
       "level": "green",
-      "region": "as"
+      "region": "as",
+      "title_es": "IPC de Australia (oct.)",
+      "title_de": "Australische Inflation (VPI, Okt.)",
+      "title_ru": "Инфляция в Австралии (ИПЦ, окт.)",
+      "title_zh": "澳大利亚CPI通胀（10月）"
     },
     {
       "time": "2026-11-25T13:30:00Z",
       "title": "US PCE inflation (Oct)",
       "title_fr": "Inflation PCE américaine (oct.)",
       "level": "red",
-      "region": "am"
+      "region": "am",
+      "title_es": "Inflación PCE de EE. UU. (oct.)",
+      "title_de": "US-PCE-Inflation (Okt.)",
+      "title_ru": "Инфляция PCE в США (окт.)",
+      "title_zh": "美国PCE通胀（10月）"
     },
     {
       "time": "2026-11-25T13:30:00Z",
       "title": "US GDP Q3 (second estimate)",
       "title_fr": "PIB américain T3 (deuxième estimation)",
       "level": "orange",
-      "region": "am"
+      "region": "am",
+      "title_es": "PIB de EE. UU. 3T (segunda estimación)",
+      "title_de": "US-BIP Q3 (zweite Schätzung)",
+      "title_ru": "ВВП США за III кв. (вторая оценка)",
+      "title_zh": "美国第三季度GDP（第二次估算）"
     }
   ]
 }

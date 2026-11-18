@@ -26,7 +26,7 @@ Last updated: 2026-11-18
 
 ## What the site does (home page, `index.html`)
 - Live clock; language menu (English default, Français, Español, Deutsch, Русский, 中文); Auto/Light/Dark theme (both saved in the browser).
-- Site texts are translated into all 6 languages on the home and week pages. News (headlines, notes, events) exists in English + French only; other languages show the English news, and the disclaimer says so.
+- Site texts are translated into all 6 languages on the home and week pages. News (notes, headlines, why-lines, events, week) is written in all 6 languages (`*_fr`, `*_es`, `*_de`, `*_ru`, `*_zh` fields in `news.json`); English is the fallback.
 - Exchange-hours pages (`markets/`) exist only in English and French.
 - "Next to open" card with countdown; 11 exchanges grouped by region (NYSE, TSX · LSE, Xetra, Euronext Paris · TSE, HKEX, SSE, SGX, NSE, ASX) with open/closed status, lunch breaks, holidays and countdowns. Visitors can star exchanges to pin them first.
 - Per region: colour level, note, market "pulse" line, up to 5 stories (source · date, sorted red → orange → green) and up to 5 events, all from `news.json`. Shows the update time and, once 5+ days are scored, the accuracy from `news.json`.
@@ -52,7 +52,7 @@ Last updated: 2026-11-18
 
 ## To do
 - [ ] Confirm "Enforce HTTPS" is ticked in GitHub → Settings → Pages (needs the owner's browser).
-- [ ] Decide: should the news runs also write headlines in Spanish, German, Russian and Chinese?
+- [x] News in all 6 languages (2026-11-18).
 - [ ] Exchange-hours pages in ES/DE/RU/ZH (22 → 66 pages).
 - [x] Language menu with 6 languages, English default (2026-11-18).
 - [x] Link @ExchangeDial on every page + `twitter:site` tag (2026-11-18).
