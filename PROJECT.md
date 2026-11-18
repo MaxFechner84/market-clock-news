@@ -24,6 +24,16 @@ Last updated: 2026-11-18
 | X account | @ExchangeDial | Created (per owner, 2026-11-18); profile not yet linked from the site |
 | iPhone app | Started in Xcode | In progress |
 
+## What the site does (home page, `index.html`)
+- Live clock; EN/FR switch; Auto/Light/Dark theme (saved in the browser).
+- "Next to open" card with countdown; 11 exchanges grouped by region (NYSE, TSX · LSE, Xetra, Euronext Paris · TSE, HKEX, SSE, SGX, NSE, ASX) with open/closed status, lunch breaks, holidays and countdowns. Visitors can star exchanges to pin them first.
+- Per region: colour level, note, market "pulse" line, up to 5 stories (source · date, sorted red → orange → green) and up to 5 events, all from `news.json`. Shows the update time and, once 5+ days are scored, the accuracy from `news.json`.
+- Alerts: browser notification when a region turns red (opt-in; on iPhone only after "Add to Home Screen").
+- "Share today": draws a 1200×630 image of today's colours and shares or downloads it (`exchangedial-YYYY-MM-DD.png`).
+- Install button (web app), "Week ahead" link (`week.html`), "Exchange hours" link (`markets/`).
+- Visitor analytics: Savri script.
+- Not on the site yet: newsletter sign-up, Pro offer, footer, link to X, "not financial advice" disclaimer.
+
 ## Automation (Claude scheduled tasks)
 - **ExchangeDial news – morning**: weekdays 07:34 Paris. Redoes all three regions.
 - **ExchangeDial news – US pre-open**: weekdays 14:17 Paris. Redoes Americas and Europe.
@@ -39,6 +49,7 @@ Last updated: 2026-11-18
 ## To do
 - [ ] Confirm "Enforce HTTPS" is ticked in GitHub → Settings → Pages (needs the owner's browser).
 - [ ] Link @ExchangeDial from the site footer and add the `twitter:site` tag.
+- [ ] Add a short "information only, not financial advice" disclaimer (the site currently has none).
 - [ ] Review the X profile (picture, banner, bio, website link, pinned post) — needs the owner's browser or a screenshot.
 - [ ] iPhone app.
 - Business plans (launch tests, revenue ideas) are kept in Claude's private notes, not in this public file.
@@ -47,3 +58,4 @@ Last updated: 2026-11-18
 - 2026-11-15 Repo and `news.json` created.
 - 2026-11-17 Public website added; rebranded to ExchangeDial; scheduled tasks created; HTTPS check run.
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
+- 2026-11-18 Site features reviewed and written into this file.
