@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-18T13:29:10Z",
-  "edition": "us-preopen",
+  "updatedAt": "2026-11-18T17:51:04Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
@@ -10,7 +10,7 @@
       "note_de": "Nvidia erholt sich trotz SEC-Ermittlungen; Fed-Protokoll um 20 Uhr; Anthropic-Börsengang heute Abend",
       "note_ru": "Nvidia отскакивает, несмотря на проверку SEC; протокол ФРС в 22:00 (МСК); IPO Anthropic вечером",
       "note_zh": "英伟达反弹但遭SEC调查报道困扰；美联储会议纪要北京时间03:00发布；Anthropic今晚IPO定价",
-      "pulse": "S&P 500 closed −1.0% · S&P futures +0.3% · Nasdaq futures +0.8% · VIX 24.7 · US 10-yr 5.10%",
+      "pulse": "S&P 500 −0.2% · Dow −0.9% · Nasdaq +0.2% · VIX 24.8 · US 10-yr 5.06% (17:19 UTC)",
       "stories": [
         {
           "title": "Nvidia shares rise about 3% before the open after sales doubled, despite a report of an SEC probe",
@@ -29,6 +29,25 @@
           "why_ru": "Nvidia — крупнейшая бумага S&P 500, поэтому её движение влияет на весь рынок.",
           "title_zh": "英伟达营收翻倍，盘前上涨约3%，尽管有报道称SEC正对其展开调查",
           "why_zh": "英伟达是标普500中市值最大的股票，其今日走势左右整个市场。"
+        },
+        {
+          "title": "US health insurers slide on a Medicare audit crackdown plan: UnitedHealth and Humana down 6%, dragging the Dow",
+          "title_fr": "Les assureurs santé américains chutent face à un projet de durcissement des audits Medicare : UnitedHealth et Humana perdent 6 % et pèsent sur le Dow",
+          "title_es": "Las aseguradoras sanitarias de EE. UU. caen por un plan para endurecer las auditorías de Medicare: UnitedHealth y Humana ceden un 6 % y lastran al Dow",
+          "title_de": "US-Krankenversicherer unter Druck wegen geplanter schärferer Medicare-Prüfungen: UnitedHealth und Humana verlieren 6 % und belasten den Dow",
+          "title_ru": "Акции американских медстраховщиков падают из-за плана ужесточить проверки Medicare: UnitedHealth и Humana теряют 6% и тянут вниз Dow",
+          "title_zh": "美国医保机构拟加强Medicare审计，美国健康保险股下挫：联合健康和Humana跌6%，拖累道指",
+          "source": "Yahoo Finance",
+          "date": "18 Nov",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-anthropic-ipo-090613569.html",
+          "level": "orange",
+          "why": "A whole sector is falling today on a regulatory threat, and UnitedHealth weighs heavily in the Dow.",
+          "why_fr": "Tout un secteur recule aujourd'hui sous une menace réglementaire, et UnitedHealth pèse lourd dans le Dow.",
+          "why_es": "Todo un sector cae hoy por una amenaza regulatoria, y UnitedHealth tiene mucho peso en el Dow.",
+          "why_de": "Eine ganze Branche fällt heute wegen einer regulatorischen Bedrohung, und UnitedHealth hat im Dow viel Gewicht.",
+          "why_ru": "Сегодня падает целый сектор из-за регуляторной угрозы, а у UnitedHealth большой вес в Dow.",
+          "why_zh": "整个板块今日因监管威胁下跌，而联合健康在道指中权重很大。",
+          "breaking": true
         },
         {
           "title": "Fed minutes are out at 19:00 UTC, with markets almost fully pricing a quarter-point rate hike in December",
