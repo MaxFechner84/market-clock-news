@@ -1,2 +1,2 @@
 # market-clock-news
-Daily market news feed for the Market Clock app
+News feed and website for ExchangeDial (formerly Market Clock): https://exchangedial.com
