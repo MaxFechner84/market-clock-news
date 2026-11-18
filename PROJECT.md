@@ -35,7 +35,7 @@ Last updated: 2026-11-18
 - Install button (web app), "Week ahead" link (`week.html`), "Exchange hours" link (`markets/`).
 - Visitor analytics: Savri script.
 - Footer on home and week pages: colour key, update time, exchange-hours links, AI/"not investment advice" disclaimer, link to @ExchangeDial. Exchange pages end with an "information only, not investment advice" line and the X link.
-- Not on the site yet: newsletter sign-up, Pro offer.
+- Not on the site yet: newsletter sign-up (free).
 
 ## Automation (Claude scheduled tasks)
 - **ExchangeDial news – morning**: weekdays 07:34 Paris. Redoes all three regions.
@@ -47,6 +47,7 @@ Last updated: 2026-11-18
 ## Decisions
 - Name: ExchangeDial (chosen for a clean .com, same handle on X, no legal risk).
 - Public website first, then the App Store.
+- Everything is free: no paid tier, no Pro offer. Goal is to build as much traffic as possible first; advertisers come later (decided 2026-11-18).
 - Repo keeps its old name `market-clock-news` (renaming could break the site and the tasks).
 
 ## To do
@@ -64,5 +65,6 @@ Last updated: 2026-11-18
 - 2026-11-17 Public website added; rebranded to ExchangeDial; scheduled tasks created; HTTPS check run.
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
 - 2026-11-18 Site features reviewed and written into this file.
+- 2026-11-18 Decision: no paid offer; everything free, focus on traffic.
 - 2026-11-18 Language menu: EN (default), FR, ES, DE, RU, ZH.
 - 2026-11-18 X link and twitter:site tag added to all pages; disclaimer line added to exchange pages.
