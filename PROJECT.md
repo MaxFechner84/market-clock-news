@@ -68,6 +68,8 @@ Rule: any new idea goes in "Ideas inbox" straight away, even half-formed, so not
 - [ ] Bing Webmaster Tools: import from Google (Bing also feeds ChatGPT search).
 - [ ] Typefully: add the X account, so Claude can prepare posts as drafts.
 - [ ] hello@exchangedial.com forwarding points to the right inbox.
+- [ ] Project Gmail not active yet: Google refused phone verification (too many uses of the number, 2026-11-18). Retry in a few days or verify with another number. Until then the project Google account has no inbox.
+- [ ] Reddit account: sign up (with the personal email for now), warm up ~3 days with normal comments, no links.
 
 ### Growth: free channels
 - [ ] **Reddit posts** (biggest quick win): "I built a free tool that shows which markets are open and today's key news", with a screenshot, not an ad. Drafts written 2026-11-18. Where: r/Daytrading only in its weekly "Software Sunday" thread; r/SideProject (open to launches); r/eupersonalfinance, r/vosfinances, r/BourseFrance: answer "why is the exchange closed today?" questions helpfully, link only if it fits. **Never post in r/investing** (no tools/apps, permanent ban). Check r/stocks rules before posting. Claude drafts, owner posts.
