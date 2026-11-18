@@ -52,17 +52,49 @@ Last updated: 2026-11-18
 - Repo keeps its old name `market-clock-news` (renaming could break the site and the tasks).
 
 ## To do
-- [x] Enforce HTTPS confirmed on (2026-11-18).
-- [x] News in all 6 languages (2026-11-18).
-- [x] Exchange-hours pages in ES/DE/RU/ZH, sitemap updated (2026-11-18).
-- [x] Language menu with 6 languages, English default (2026-11-18).
-- [x] Link @ExchangeDial on every page + `twitter:site` tag (2026-11-18).
+Rule: any new idea goes in "Ideas inbox" straight away, even half-formed, so nothing gets lost. Tick items with the date when done.
+
+### Done
+- [x] Enforce HTTPS on (2026-11-17, re-checked 2026-11-18).
+- [x] X account @ExchangeDial: picture, banner, bio, pinned post (2026-11-17).
+- [x] Language menu with 6 languages, English default; news in 6 languages (2026-11-18).
+- [x] Exchange-hours pages in all 6 languages, sitemap updated (2026-11-18).
+- [x] @ExchangeDial linked on every page + `twitter:site` tag (2026-11-18).
 - [x] X profile reviewed (2026-11-18).
-- [x] X header banner (2026-11-17).
-- [ ] X growth: reply to traders and markets accounts around the London/New York overlap; follow more accounts in the niche.
-- [ ] Idea: a short daily market-hours fact post on X (like the overlap post). Watch the weeks when the US and Europe change clocks on different dates: overlap times shift by an hour.
-- [ ] iPhone app.
+
+### Check / confirm (owner)
+- [ ] Namecheap "Verify your contact information" email clicked (otherwise the domain can be suspended after ~15 days).
+- [ ] Google Search Console: site added, verified, `sitemap.xml` submitted.
+- [ ] Bing Webmaster Tools: import from Google (Bing also feeds ChatGPT search).
+- [ ] Typefully: add the X account, so Claude can prepare posts as drafts.
+- [ ] hello@exchangedial.com forwarding points to the right inbox.
+
+### Growth: free channels
+- [ ] **Reddit posts** (biggest quick win): "I built a free tool that shows which markets are open and today's key news", with a screenshot, not an ad. Candidates: r/Daytrading, r/stocks, r/investing, r/eupersonalfinance, r/vosfinances, r/BourseFrance. Read each subreddit's self-promotion rules first. Claude drafts, owner posts.
+- [ ] **Show HN** (Hacker News) launch post, once.
+- [ ] **Product Hunt** launch, once, ideally after the newsletter sign-up exists.
+- [ ] **X daily**: morning post with a screenshot of the three regions + the red headline (e.g. "Today's market map: … 🔴"). Could be generated from the morning news task.
+- [ ] **X daily market-hours fact** (like the London/New York overlap post). Watch the weeks when the US and Europe change clocks on different dates: overlap times shift by an hour.
+- [ ] **X engagement**: follow 20–30 markets accounts; reply early and usefully to big accounts (holiday/early-close heads-ups), no links in replies. Check headlines against a second source before repeating them.
+- [ ] **LinkedIn**: same daily market map post.
+- [ ] **Short videos** (TikTok, Reels, Shorts): 15-second screen recordings, e.g. "Which stock market opens next?" with the countdowns ticking. No face needed.
+- [ ] **More search pages**: answer searches like "is the stock market open today", "NYSE holidays 2027", "Tokyo stock exchange hours".
+- [ ] Check visitor stats in Savri every few days.
+
+### Site
+- [ ] Free newsletter sign-up (e.g. beehiiv) + a daily email of the colours and headlines.
+- [ ] Check AI headlines by hand for the first weeks; accuracy matters more than anything (one invented headline can ruin trust).
+
+### iPhone app
+- [ ] Rename the Xcode project/app to ExchangeDial.
+- [ ] Continue the app (widget, alerts), then App Store.
+
+### Later
+- [ ] Advertisers / banners (only once traffic is there).
 - Business plans (launch tests, revenue ideas) are kept in Claude's private notes, not in this public file.
+
+### Ideas inbox
+- (add new ideas here)
 
 ## Log
 - 2026-11-15 Repo and `news.json` created.
