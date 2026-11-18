@@ -40,7 +40,8 @@ Last updated: 2026-11-18
 ## Automation (Claude scheduled tasks)
 - **ExchangeDial news – morning**: weekdays 07:34 Paris. Redoes all three regions.
 - **ExchangeDial news – US pre-open**: weekdays 14:17 Paris. Redoes Americas and Europe.
-- Both run in the cloud (no access to the owner's Mac or its logged-in browser). Push notification on finish, summary in English.
+- **ExchangeDial news – breaking check**: weekdays 10:47, 12:47, 16:47, 18:47, 20:47, 22:47 Paris. Only adds NEW orange/red stories (marked `"breaking": true`) and can raise a region's colour, never lower it; changes nothing if there is no new important news. Does not touch history.json or use Alpha Vantage. Notifies only for red.
+- All run in the cloud (no access to the owner's Mac or its logged-in browser). Push notification on finish, summary in English.
 - Market data: Alpha Vantage free key (25 calls/day shared by both runs) + web search.
 - Scoring rules (tiers, size/timing/surprise points, red/orange/green thresholds) live in the task prompts.
 
@@ -66,5 +67,6 @@ Last updated: 2026-11-18
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
 - 2026-11-18 Site features reviewed and written into this file.
 - 2026-11-18 Decision: no paid offer; everything free, focus on traffic.
+- 2026-11-18 Daily tasks now write news in 6 languages; breaking check task added (6 extra checks per weekday).
 - 2026-11-18 Language menu: EN (default), FR, ES, DE, RU, ZH.
 - 2026-11-18 X link and twitter:site tag added to all pages; disclaimer line added to exchange pages.
