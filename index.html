@@ -297,6 +297,7 @@ h1 { white-space: nowrap; }
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i]").forEach(function (el) { el.textContent = t(el.dataset.i); });
     var ls = document.getElementById("langSel"); if (ls) ls.value = lang;
+    document.querySelectorAll('.links a[href^="markets/"]').forEach(function (a) { var b = a.getAttribute("href").replace(/-(fr|es|de|ru|zh)\.html$/, ".html"); a.setAttribute("href", lang === "en" ? b : b.replace(/\.html$/, "-" + lang + ".html")); });
   }
   document.getElementById("langSel").addEventListener("change", function (ev) {
       lang = ev.target.value; try { localStorage.setItem("mc-lang", lang); } catch (e) {}

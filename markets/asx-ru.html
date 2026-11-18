@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ASX: открыта ли сегодня? Часы работы и праздники (Сидней) | ExchangeDial</title>
+<meta name="description" content="Австралийская фондовая биржа (ASX): часы работы по местному времени и в вашем часовом поясе, статус в реальном времени, праздники и сокращённые дни 2026–2027.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://exchangedial.com/markets/asx-ru.html">
+<link rel="alternate" hreflang="en" href="https://exchangedial.com/markets/asx.html">
+<link rel="alternate" hreflang="fr" href="https://exchangedial.com/markets/asx-fr.html">
+<link rel="alternate" hreflang="es" href="https://exchangedial.com/markets/asx-es.html">
+<link rel="alternate" hreflang="de" href="https://exchangedial.com/markets/asx-de.html">
+<link rel="alternate" hreflang="ru" href="https://exchangedial.com/markets/asx-ru.html">
+<link rel="alternate" hreflang="zh" href="https://exchangedial.com/markets/asx-zh.html">
+<link rel="alternate" hreflang="x-default" href="https://exchangedial.com/markets/asx.html">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../icon.png">
+<meta property="og:image" content="https://exchangedial.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ExchangeDial">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Во сколько открывается Австралийская фондовая биржа (ASX)?", "acceptedAnswer": {"@type": "Answer", "text": "В 10:00 по местному времени (Australia/Sydney). Время в вашем часовом поясе указано выше."}}, {"@type": "Question", "name": "Работает ли биржа в выходные?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, по субботам и воскресеньям она закрыта."}}, {"@type": "Question", "name": "Меняется ли расписание при переводе часов?", "acceptedAnswer": {"@type": "Answer", "text": "Местные часы работы не меняются, но разница с вашим временем может измениться, когда одна из стран переводит часы. Эта страница учитывает это автоматически."}}]}</script>
+<style>
+:root {
+  --bg: #f2f2f7; --card: #ffffff; --ink: #000000; --soft: rgba(60,60,67,.85); --muted: rgba(60,60,67,.6);
+  --line: rgba(60,60,67,.18); --blue: #007aff; --green: #34c759; --orange: #ff9500; --red: #ff3b30;
+  --chip: rgba(118,118,128,.12);
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --round: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --bg: #000000; --card: #1c1c1e; --ink: #ffffff; --soft: rgba(235,235,245,.85); --muted: rgba(235,235,245,.6);
+  --line: rgba(84,84,88,.6); --blue: #0a84ff; --green: #30d158; --orange: #ff9f0a; --red: #ff453a;
+  --chip: rgba(118,118,128,.24);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); }
+body { color: var(--ink); font: 15px/1.4 var(--font); -webkit-font-smoothing: antialiased;
+  padding: calc(16px + env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) calc(32px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); }
+.num { font-family: var(--round); font-variant-numeric: tabular-nums; }
+.wrap { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+
+.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 4px 0; }
+h1 { margin: 0; font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
+.sub { margin: 2px 4px 0; color: var(--muted); font-size: 15px; }
+.tools { display: flex; align-items: center; gap: 10px; }
+.now { color: var(--muted); font-size: 15px; font-weight: 500; }
+.seg { display: inline-flex; background: var(--chip); border-radius: 9px; padding: 2px; }
+.seg button { border: 0; background: transparent; color: var(--ink); font: 500 13px var(--font); padding: 5px 10px; border-radius: 7px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--card); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+
+.card { background: var(--card); border-radius: 16px; overflow: hidden; position: relative; }
+.card.accent::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--acc); }
+
+.next { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.lbl { color: var(--muted); font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.next .row { display: flex; align-items: center; gap: 12px; }
+.next .flag { font-size: 34px; line-height: 1; }
+.next .city { font-size: 20px; font-weight: 600; }
+.next .meta { color: var(--muted); font-size: 14px; }
+.next .cd { margin-left: auto; font-size: 30px; font-weight: 600; white-space: nowrap; }
+
+.regions { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); align-items: start; }
+.rhead { padding: 18px 16px 12px; display: flex; flex-direction: column; gap: 6px; }
+.rtitle { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.rtitle h2 { margin: 0; font-size: 22px; font-weight: 700; }
+.badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--acc); background: color-mix(in srgb, var(--acc) 15%, transparent); white-space: nowrap; }
+.rline { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); }
+.rline .v { font-size: 16px; font-weight: 600; color: var(--ink); }
+.rline.live .v, .rline.live .ic { color: var(--blue); }
+.rline .cnt { margin-left: auto; }
+.note { font-size: 14px; color: var(--soft); }
+.note:empty { display: none; }
+.div { height: 1px; background: var(--line); margin-left: 16px; }
+
+.mlist { padding: 0 16px; }
+.m { display: flex; align-items: center; gap: 12px; padding: 10px 0; }
+.m + .m { border-top: 1px solid var(--line); margin-left: 40px; padding-left: 0; }
+.m + .m .flag { margin-left: -40px; }
+.m .flag { font-size: 24px; width: 28px; text-align: center; flex: none; }
+.m .mid { min-width: 0; flex: 1; }
+.m .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.m .nm b { font-weight: 400; }
+.m.open .nm b { font-weight: 600; }
+.m .nm span { font-size: 12px; color: var(--muted); margin-left: 6px; }
+.m .st { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.m.open .st { color: var(--blue); }
+.m .st.hol { color: var(--orange); }
+.dot { width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--muted); flex: none; }
+.m.open .dot { background: var(--blue); border-color: var(--blue); }
+.m.lunch .dot, .m.soon .dot { border-color: var(--blue); }
+.m .right { text-align: right; flex: none; }
+.m .lt { font-size: 17px; font-weight: 500; }
+.m .cd { font-size: 12px; color: var(--muted); }
+
+.stories { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.stories:empty { display: none; }
+.stories .lbl { margin-bottom: -2px; }
+.story { display: flex; gap: 10px; text-decoration: none; color: inherit; border-radius: 10px; }
+.story .bar { width: 4px; border-radius: 2px; background: var(--sc); flex: none; }
+.story .tx { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
+.story .t { font-size: 15px; }
+.story .s { font-size: 12px; color: var(--muted); display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.story .tag { font-size: 11px; font-weight: 700; color: var(--sc); }
+.story.red { background: color-mix(in srgb, var(--red) 10%, transparent); padding: 8px 8px 8px 0; }
+.story.red .t { font-weight: 600; }
+a.story:hover .t { text-decoration: underline; text-underline-offset: 2px; }
+.story .why { font-size: 12px; color: var(--soft); }
+.pulse { font-size: 13px; color: var(--muted); }
+.pulse:empty { display: none; }
+.events { padding: 12px 16px 0; display: flex; flex-direction: column; gap: 6px; }
+.events:empty { display: none; }
+.ev { display: flex; gap: 10px; align-items: baseline; font-size: 14px; }
+.ev .et { font-size: 13px; color: var(--muted); width: 74px; flex: none; }
+.ev .ed { width: 7px; height: 7px; border-radius: 50%; background: var(--ec); flex: none; align-self: center; }
+.ev.past { opacity: .5; }
+#acc:empty { display: none; }
+.story .arr { color: var(--muted); font-size: 13px; align-self: flex-start; }
+
+.foot { color: var(--muted); font-size: 13px; padding: 4px; display: flex; flex-direction: column; gap: 8px; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.key span { display: inline-flex; align-items: center; gap: 6px; }
+.key i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.disc { border-top: 1px solid var(--line); padding-top: 10px; }
+@media (max-width: 420px) { h1 { font-size: 30px; } .next .cd { font-size: 24px; } }
+
+.top .tools { flex-wrap: wrap; justify-content: flex-end; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 4px; }
+.chipbtn { border: 0; background: var(--card); color: var(--ink); font: 500 14px var(--font); padding: 7px 12px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; box-shadow: 0 0 0 1px var(--line) inset; }
+.chipbtn[aria-pressed="true"] { background: var(--blue); color: #fff; box-shadow: none; }
+.chipbtn[hidden] { display: none; }
+.hint { font-size: 13px; color: var(--muted); margin: 0 4px; }
+.hint:empty { display: none; }
+.m .stb { border: 0; background: none; color: var(--muted); font-size: 17px; padding: 0 2px; cursor: pointer; line-height: 1; }
+.m .stb.on { color: var(--orange); }
+.links { display: flex; gap: 16px; flex-wrap: wrap; }
+.links a { color: var(--blue); text-decoration: none; }
+.links a:hover { text-decoration: underline; }
+h1 { white-space: nowrap; }
+@media (max-width: 480px) { .top { flex-wrap: wrap; } .top .tools { width: 100%; justify-content: space-between; } }
+
+.page { max-width: 760px; }
+.card.pad { padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+.live { font-size: 20px; font-weight: 600; }
+.live.open { color: var(--blue); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; border-top: 0; }
+tr.past { display: none; }
+h3 { font-size: 16px; margin: 10px 0 2px; }
+p { margin: 0; }
+.crumbs { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 0 4px; }
+.crumbs a { color: var(--blue); text-decoration: none; }
+</style>
+<script defer data-site-id="site_mwkob8wk_lq1kchd" data-api="https://savri.io" src="https://savri.io/script.js"></script>
+</head>
+<body>
+<div class="wrap page">
+  <div class="crumbs"><a href="./">← Все биржи</a><span><a href="asx.html">English</a> · <a href="asx-fr.html">Français</a> · <a href="asx-es.html">Español</a> · <a href="asx-de.html">Deutsch</a> · <a href="asx-zh.html">中文</a></span></div>
+  <h1 style="font-size:30px">Открыта ли сегодня Австралийская фондовая биржа (ASX)?</h1>
+  <div class="card pad">
+    <div class="live" id="live">…</div>
+    <div class="note" id="yours"></div>
+  </div>
+  <p class="sub">Австралийская фондовая биржа (ASX) (Сидней, Австралия) работает с понедельника по пятницу, 10:00–16:00 по местному времени. По московскому времени: с 02:00 до 08:00 зимой и с 03:00 до 09:00 летом (в течение нескольких недель вокруг перевода часов разница может сдвигаться). Основные индексы: S&amp;P/ASX 200.</p>
+  <div class="card pad">
+    <h2 style="margin:0;font-size:20px">Праздники и сокращённые дни</h2>
+    <table><thead><tr><th>Дата</th><th>Праздник</th><th>Торги</th></tr></thead><tbody id="rows"><tr data-d="2026-12-24"><td>четверг, 24 декабря 2026</td><td>Christmas Eve</td><td>Закрытие в 14:10</td></tr><tr data-d="2026-12-25"><td>пятница, 25 декабря 2026</td><td>Christmas Day</td><td>Закрыта</td></tr><tr data-d="2026-12-28"><td>понедельник, 28 декабря 2026</td><td>Boxing Day (substitute)</td><td>Закрыта</td></tr><tr data-d="2026-12-31"><td>четверг, 31 декабря 2026</td><td>New Year&#x27;s Eve</td><td>Закрытие в 14:10</td></tr><tr data-d="2027-01-01"><td>пятница, 1 января 2027</td><td>New Year&#x27;s Day</td><td>Закрыта</td></tr><tr data-d="2027-01-26"><td>вторник, 26 января 2027</td><td>Australia Day</td><td>Закрыта</td></tr><tr data-d="2027-03-26"><td>пятница, 26 марта 2027</td><td>Good Friday</td><td>Закрыта</td></tr><tr data-d="2027-03-29"><td>понедельник, 29 марта 2027</td><td>Easter Monday</td><td>Закрыта</td></tr><tr data-d="2027-06-14"><td>понедельник, 14 июня 2027</td><td>King&#x27;s Birthday</td><td>Закрыта</td></tr><tr data-d="2027-12-24"><td>пятница, 24 декабря 2027</td><td>Christmas Eve</td><td>Закрытие в 14:10</td></tr><tr data-d="2027-12-27"><td>понедельник, 27 декабря 2027</td><td>Christmas Day (substitute)</td><td>Закрыта</td></tr><tr data-d="2027-12-28"><td>вторник, 28 декабря 2027</td><td>Boxing Day (substitute)</td><td>Закрыта</td></tr><tr data-d="2027-12-31"><td>пятница, 31 декабря 2027</td><td>New Year&#x27;s Eve</td><td>Закрытие в 14:10</td></tr></tbody></table>
+  </div>
+  <div class="card pad"><h3>Во сколько открывается Австралийская фондовая биржа (ASX)?</h3><p>В 10:00 по местному времени (Australia/Sydney). Время в вашем часовом поясе указано выше.</p><h3>Работает ли биржа в выходные?</h3><p>Нет, по субботам и воскресеньям она закрыта.</p><h3>Меняется ли расписание при переводе часов?</h3><p>Местные часы работы не меняются, но разница с вашим временем может измениться, когда одна из стран переводит часы. Эта страница учитывает это автоматически.</p></div>
+  <div class="crumbs"><a href="../">ExchangeDial: мировые биржи в реальном времени →</a></div>
+  <p style="color:var(--muted);font-size:13px;margin:16px 4px 0">Только для информации, не является инвестиционной рекомендацией. Следите за нами: <a href="https://x.com/ExchangeDial" target="_blank" rel="noopener me" style="color:var(--blue);text-decoration:none">𝕏 @ExchangeDial</a></p>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, mq = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;
+  var th = "auto"; try { th = localStorage.getItem("mc-theme") || "auto"; } catch (e) {}
+  root.dataset.theme = th === "dark" || (th === "auto" && mq && mq.matches) ? "dark" : "light";
+  /* ---------- language ---------- */
+  var I18N = {
+    en: {
+      sub: "World stock markets at a glance, and what might move them today.",
+      next: "Next to open", nextMine: "Next of your markets",
+      auto: "Auto", light: "Light", dark: "Dark",
+      am: "Americas", eu: "Europe", as: "Asia-Pacific",
+      green: "Low impact", orange: "Watch", red: "Important",
+      tagRed: "MARKET-MOVING", tagOrange: "WATCH",
+      headlines: "Headlines", scheduled: "Scheduled", why: "Why",
+      open: "Open", closed: "Closed", closing: "Closing soon", lunch: "Lunch break", soon: "Opening soon",
+      closesIn: "closes in", opensIn: "opens in", reopensIn: "reopens in",
+      ofOpen: "{n} of {t} open", allClosed: "All closed",
+      local: "local", yours: "your time",
+      closedToday: "Closed today", earlyClose: "Early close",
+      updated: "News updated {d}.", loadFail: "News couldn't be loaded right now.",
+      track: "Track record: the colours matched how markets actually moved on {h} of the last {n} region-days.",
+      mOpen: "Market open", mClosed: "Market closed",
+      times: "Times follow your device's clock and time zone. Regular sessions only; holidays and early closes are included through 2027 (India's 2027 dates are provisional).",
+      disc: "Headlines are short AI-written summaries, refreshed twice each weekday (before Europe opens and before New York opens), double-checked against their sources, with links to the original articles. They can contain mistakes. Nothing here is investment advice.",
+      star: "Pin to your markets", unstar: "Unpin",
+      alerts: "Alerts", alertsOn: "Alerts on", alertsNote: "Alerts: 5 minutes before {which} open, and when a region turns red. They work while this page or the installed app is open.",
+      allMarkets: "markets", yourMarkets: "your pinned markets",
+      alertsBlocked: "Notifications are blocked for this site in your browser settings.",
+      share: "Share today", install: "Install app",
+      iosTip: "Install on iPhone: tap Share, then “Add to Home Screen”.",
+      week: "Week ahead", hours: "Exchange hours",
+      nOpen: "{city} opens in 5 minutes", nRed: "{region} is now Important",
+      shareTitle: "Today's market map", pinHint: "Tip: tap ☆ to pin the markets you follow."
+    },
+    fr: {
+      sub: "Les bourses mondiales en un coup d'œil, et ce qui pourrait les faire bouger aujourd'hui.",
+      next: "Prochaine ouverture", nextMine: "Prochaine de vos places",
+      auto: "Auto", light: "Clair", dark: "Sombre",
+      am: "Amériques", eu: "Europe", as: "Asie-Pacifique",
+      green: "Impact faible", orange: "À surveiller", red: "Important",
+      tagRed: "IMPACT FORT", tagOrange: "À SURVEILLER",
+      headlines: "À la une", scheduled: "Agenda", why: "Pourquoi",
+      open: "Ouvert", closed: "Fermé", closing: "Ferme bientôt", lunch: "Pause déjeuner", soon: "Ouvre bientôt",
+      closesIn: "ferme dans", opensIn: "ouvre dans", reopensIn: "rouvre dans",
+      ofOpen: "{n} sur {t} ouvertes", allClosed: "Toutes fermées",
+      local: "heure locale", yours: "votre heure",
+      closedToday: "Fermé aujourd'hui", earlyClose: "Clôture anticipée",
+      updated: "Actualités mises à jour {d}.", loadFail: "Les actualités ne peuvent pas être chargées pour le moment.",
+      track: "Bilan : les couleurs ont correspondu aux mouvements réels des marchés {h} fois sur les {n} derniers jours-régions.",
+      mOpen: "Marché ouvert", mClosed: "Marché fermé",
+      times: "Les heures suivent l'horloge et le fuseau de votre appareil. Séances normales uniquement ; jours fériés et clôtures anticipées inclus jusqu'à fin 2027 (dates 2027 de l'Inde provisoires).",
+      disc: "Les titres sont de courts résumés rédigés par une IA, mis à jour deux fois par jour ouvré (avant l'ouverture de l'Europe et avant celle de New York), vérifiés auprès de leurs sources, avec un lien vers l'article d'origine. Ils peuvent contenir des erreurs. Rien ici ne constitue un conseil en investissement.",
+      star: "Épingler dans vos places", unstar: "Désépingler",
+      alerts: "Alertes", alertsOn: "Alertes activées", alertsNote: "Alertes : 5 minutes avant l'ouverture de {which}, et quand une région passe au rouge. Elles fonctionnent tant que cette page ou l'app installée est ouverte.",
+      allMarkets: "chaque place", yourMarkets: "vos places épinglées",
+      alertsBlocked: "Les notifications sont bloquées pour ce site dans les réglages de votre navigateur.",
+      share: "Partager", install: "Installer l'app",
+      iosTip: "Installer sur iPhone : touchez Partager, puis « Sur l'écran d'accueil ».",
+      week: "Semaine à venir", hours: "Horaires des bourses",
+      nOpen: "{city} ouvre dans 5 minutes", nRed: "{region} passe en Important",
+      shareTitle: "La carte des marchés du jour", pinHint: "Astuce : touchez ☆ pour épingler les places que vous suivez."
+    }
+  };
+  Object.assign(I18N, {
+    es: {"sub": "Los mercados bursátiles del mundo de un vistazo y lo que podría moverlos hoy.", "next": "Próxima apertura", "nextMine": "Próxima de tus bolsas", "auto": "Auto", "light": "Claro", "dark": "Oscuro", "am": "América", "eu": "Europa", "as": "Asia-Pacífico", "green": "Impacto bajo", "orange": "Atención", "red": "Importante", "tagRed": "MUEVE EL MERCADO", "tagOrange": "ATENCIÓN", "headlines": "Titulares", "scheduled": "Agenda", "why": "Por qué", "open": "Abierta", "closed": "Cerrada", "closing": "Cierra pronto", "lunch": "Pausa de mediodía", "soon": "Abre pronto", "closesIn": "cierra en", "opensIn": "abre en", "reopensIn": "reabre en", "ofOpen": "{n} de {t} abiertas", "allClosed": "Todas cerradas", "local": "hora local", "yours": "tu hora", "closedToday": "Cerrada hoy", "earlyClose": "Cierre anticipado", "updated": "Noticias actualizadas {d}.", "loadFail": "No se han podido cargar las noticias en este momento.", "track": "Historial: los colores coincidieron con el movimiento real de los mercados en {h} de los últimos {n} días-región.", "mOpen": "Mercado abierto", "mClosed": "Mercado cerrado", "times": "Las horas siguen el reloj y la zona horaria de tu dispositivo. Solo sesiones normales; festivos y cierres anticipados incluidos hasta 2027 (las fechas de 2027 de la India son provisionales).", "disc": "Los titulares son breves resúmenes escritos por IA, actualizados dos veces cada día laborable (antes de la apertura de Europa y de Nueva York), verificados con sus fuentes y con enlace al artículo original. Pueden contener errores. Nada de lo que aparece aquí es asesoramiento de inversión. Los titulares y las noticias se muestran en inglés.", "star": "Fijar en tus bolsas", "unstar": "Quitar", "alerts": "Alertas", "alertsOn": "Alertas activadas", "alertsNote": "Alertas: 5 minutos antes de que abran {which} y cuando una región pase a rojo. Funcionan mientras esta página o la app instalada estén abiertas.", "allMarkets": "las bolsas", "yourMarkets": "tus bolsas fijadas", "alertsBlocked": "Las notificaciones están bloqueadas para este sitio en los ajustes de tu navegador.", "share": "Compartir hoy", "install": "Instalar app", "iosTip": "Instalar en iPhone: toca Compartir y luego «Añadir a pantalla de inicio».", "week": "Semana próxima", "hours": "Horarios de bolsa", "nOpen": "{city} abre en 5 minutos", "nRed": "{region} pasa a Importante", "shareTitle": "El mapa de los mercados de hoy", "pinHint": "Consejo: toca ☆ para fijar las bolsas que sigues."},
+    de: {"sub": "Die Börsen der Welt auf einen Blick – und was sie heute bewegen könnte.", "next": "Als Nächstes öffnet", "nextMine": "Als Nächstes von deinen Börsen", "auto": "Auto", "light": "Hell", "dark": "Dunkel", "am": "Amerika", "eu": "Europa", "as": "Asien-Pazifik", "green": "Geringe Wirkung", "orange": "Beobachten", "red": "Wichtig", "tagRed": "MARKTBEWEGEND", "tagOrange": "BEOBACHTEN", "headlines": "Schlagzeilen", "scheduled": "Termine", "why": "Warum", "open": "Geöffnet", "closed": "Geschlossen", "closing": "Schließt bald", "lunch": "Mittagspause", "soon": "Öffnet bald", "closesIn": "schließt in", "opensIn": "öffnet in", "reopensIn": "öffnet wieder in", "ofOpen": "{n} von {t} geöffnet", "allClosed": "Alle geschlossen", "local": "Ortszeit", "yours": "deine Zeit", "closedToday": "Heute geschlossen", "earlyClose": "Verkürzter Handel", "updated": "News aktualisiert: {d}.", "loadFail": "Die News können gerade nicht geladen werden.", "track": "Bilanz: An {h} der letzten {n} Regionstage passten die Farben zur tatsächlichen Marktbewegung.", "mOpen": "Markt geöffnet", "mClosed": "Markt geschlossen", "times": "Die Zeiten folgen der Uhr und Zeitzone deines Geräts. Nur reguläre Handelszeiten; Feiertage und verkürzte Handelstage sind bis 2027 enthalten (Indiens Termine für 2027 sind vorläufig).", "disc": "Die Schlagzeilen sind kurze, von KI geschriebene Zusammenfassungen, zweimal pro Werktag aktualisiert (vor Handelsbeginn in Europa und in New York), mit ihren Quellen abgeglichen und mit Link zum Originalartikel. Sie können Fehler enthalten. Nichts hier ist eine Anlageberatung. Schlagzeilen und Nachrichten erscheinen auf Englisch.", "star": "An deine Börsen anheften", "unstar": "Lösen", "alerts": "Alarme", "alertsOn": "Alarme an", "alertsNote": "Alarme: 5 Minuten vor der Öffnung {which} und wenn eine Region auf Rot springt. Sie funktionieren, solange diese Seite oder die installierte App geöffnet ist.", "allMarkets": "jeder Börse", "yourMarkets": "deiner angehefteten Börsen", "alertsBlocked": "Benachrichtigungen sind für diese Seite in deinen Browsereinstellungen blockiert.", "share": "Heute teilen", "install": "App installieren", "iosTip": "Auf dem iPhone installieren: Tippe auf Teilen und dann auf „Zum Home-Bildschirm“.", "week": "Wochenvorschau", "hours": "Börsenzeiten", "nOpen": "{city} öffnet in 5 Minuten", "nRed": "{region} ist jetzt Wichtig", "shareTitle": "Die Marktkarte von heute", "pinHint": "Tipp: Tippe auf ☆, um die Börsen anzuheften, denen du folgst."},
+    ru: {"sub": "Мировые фондовые рынки с одного взгляда — и что может двигать их сегодня.", "next": "Следующей откроется", "nextMine": "Следующей из ваших бирж", "auto": "Авто", "light": "Светлая", "dark": "Тёмная", "am": "Америка", "eu": "Европа", "as": "Азия и Тихий океан", "green": "Слабое влияние", "orange": "Внимание", "red": "Важно", "tagRed": "ДВИГАЕТ РЫНОК", "tagOrange": "ВНИМАНИЕ", "headlines": "Заголовки", "scheduled": "По расписанию", "why": "Почему", "open": "Открыта", "closed": "Закрыта", "closing": "Скоро закроется", "lunch": "Обеденный перерыв", "soon": "Скоро откроется", "closesIn": "закроется через", "opensIn": "откроется через", "reopensIn": "снова откроется через", "ofOpen": "Открыто {n} из {t}", "allClosed": "Все закрыты", "local": "местное время", "yours": "ваше время", "closedToday": "Сегодня закрыта", "earlyClose": "Сокращённый день", "updated": "Новости обновлены {d}.", "loadFail": "Сейчас не удалось загрузить новости.", "track": "Точность: цвета совпали с реальным движением рынков в {h} из последних {n} дней по регионам.", "mOpen": "Рынок открыт", "mClosed": "Рынок закрыт", "times": "Время показано по часам и часовому поясу вашего устройства. Только основные сессии; праздники и сокращённые дни учтены до конца 2027 года (даты Индии на 2027 год предварительные).", "disc": "Заголовки — краткие сводки, написанные ИИ; они обновляются дважды в каждый рабочий день (перед открытием Европы и Нью-Йорка), сверяются с источниками и содержат ссылку на исходную статью. Возможны ошибки. Ничто здесь не является инвестиционной рекомендацией. Заголовки и новости публикуются на английском языке.", "star": "Закрепить в ваших биржах", "unstar": "Открепить", "alerts": "Оповещения", "alertsOn": "Оповещения вкл.", "alertsNote": "Оповещения: за 5 минут до открытия {which} и когда регион становится красным. Работают, пока открыта эта страница или установленное приложение.", "allMarkets": "любой биржи", "yourMarkets": "ваших закреплённых бирж", "alertsBlocked": "Уведомления для этого сайта заблокированы в настройках браузера.", "share": "Поделиться", "install": "Установить приложение", "iosTip": "Установка на iPhone: нажмите «Поделиться», затем «На экран „Домой“».", "week": "Календарь недели", "hours": "Часы работы бирж", "nOpen": "{city} откроется через 5 минут", "nRed": "{region}: теперь Важно", "shareTitle": "Карта рынков на сегодня", "pinHint": "Совет: нажмите ☆, чтобы закрепить биржи, за которыми следите."},
+    zh: {"sub": "一眼看清全球股市，以及今天可能影响市场的消息。", "next": "下一个开市", "nextMine": "您关注的下一个开市", "auto": "自动", "light": "浅色", "dark": "深色", "am": "美洲", "eu": "欧洲", "as": "亚太", "green": "影响较小", "orange": "值得关注", "red": "重要", "tagRed": "影响市场", "tagOrange": "关注", "headlines": "要闻", "scheduled": "日程", "why": "原因", "open": "开市", "closed": "休市", "closing": "即将收市", "lunch": "午间休市", "soon": "即将开市", "closesIn": "距收市", "opensIn": "距开市", "reopensIn": "距复市", "ofOpen": "{n}/{t} 开市", "allClosed": "全部休市", "local": "当地时间", "yours": "您的时间", "closedToday": "今日休市", "earlyClose": "提前收市", "updated": "新闻更新于 {d}。", "loadFail": "暂时无法加载新闻。", "track": "准确率：在最近 {n} 个地区日中，有 {h} 个的颜色与市场实际走势相符。", "mOpen": "开市中", "mClosed": "已休市", "times": "时间按您设备的时钟和时区显示。仅含常规交易时段；已包含截至 2027 年的节假日和提前收市（印度 2027 年日期为暂定）。", "disc": "要闻是由 AI 撰写的简短摘要，每个工作日更新两次（欧洲开市前和纽约开市前），经过来源核对，并附原文链接。内容可能有误。本页内容不构成投资建议。要闻和新闻以英文显示。", "star": "固定到我的市场", "unstar": "取消固定", "alerts": "提醒", "alertsOn": "提醒已开启", "alertsNote": "提醒：{which}开市前 5 分钟，以及某地区变为红色时。仅在本页面或已安装的应用打开时有效。", "allMarkets": "各交易所", "yourMarkets": "您固定的交易所", "alertsBlocked": "您的浏览器设置已阻止本网站的通知。", "share": "分享今日", "install": "安装应用", "iosTip": "在 iPhone 上安装：点按“分享”，然后选择“添加到主屏幕”。", "week": "本周日程", "hours": "交易所时间", "nOpen": "{city}将在 5 分钟后开市", "nRed": "{region}现为重要", "shareTitle": "今日市场地图", "pinHint": "提示：点按 ☆ 固定您关注的交易所。"}
+  });
+  var CITY_FR = { "London": "Londres", "Frankfurt": "Francfort", "Singapore": "Singapour", "Mumbai": "Bombay" };
+  var WD_FR = { Mon: "lun.", Tue: "mar.", Wed: "mer.", Thu: "jeu.", Fri: "ven.", Sat: "sam.", Sun: "dim." };
+  function savedLang() {
+    try { var l = localStorage.getItem("mc-lang"); if (l === "en" || l === "fr") return l; } catch (e) {}
+    return /^fr/i.test(navigator.language || "") ? "fr" : "en";
+  }
+  var lang = savedLang();
+  function t(k, vars) {
+    var s = (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k;
+    if (vars) Object.keys(vars).forEach(function (v) { s = s.split("{" + v + "}").join(vars[v]); });
+    return s;
+  }
+  function cityName(c) { var C = {"fr": {"London": "Londres", "Frankfurt": "Francfort", "Singapore": "Singapour", "Mumbai": "Bombay"}, "es": {"New York": "Nueva York", "London": "Londres", "Frankfurt": "Fráncfort", "Paris": "París", "Tokyo": "Tokio", "Shanghai": "Shanghái", "Singapore": "Singapur", "Mumbai": "Bombay", "Sydney": "Sídney"}, "de": {"Tokyo": "Tokio", "Singapore": "Singapur", "Hong Kong": "Hongkong"}, "ru": {"New York": "Нью-Йорк", "Toronto": "Торонто", "London": "Лондон", "Frankfurt": "Франкфурт", "Paris": "Париж", "Tokyo": "Токио", "Hong Kong": "Гонконг", "Shanghai": "Шанхай", "Singapore": "Сингапур", "Mumbai": "Мумбаи", "Sydney": "Сидней"}, "zh": {"New York": "纽约", "Toronto": "多伦多", "London": "伦敦", "Frankfurt": "法兰克福", "Paris": "巴黎", "Tokyo": "东京", "Hong Kong": "香港", "Shanghai": "上海", "Singapore": "新加坡", "Mumbai": "孟买", "Sydney": "悉尼"}}; return (C[lang] && C[lang][c]) || c; }
+  function loc(obj, key) { var v = lang !== "en" && obj && obj[key + "_" + lang]; return typeof v === "string" && v ? v : obj && obj[key]; }
+  function applyStatic() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i]").forEach(function (el) { el.textContent = t(el.dataset.i); });
+    document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.l === lang ? "true" : "false"); });
+  }
+  document.querySelectorAll(".lang button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      lang = b.dataset.l; try { localStorage.setItem("mc-lang", lang); } catch (e) {}
+      applyStatic(); if (window.__mcRelang) window.__mcRelang();
+    });
+  });
+  applyStatic();
+
+  lang = "ru"; document.documentElement.lang = lang;
+  var HOUR = 3600000, viewerTz = "UTC";
+  try { viewerTz = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; } catch (e) {}
+  var cache = {};
+  function fmt(tz) {
+    if (!cache[tz]) {
+      cache[tz] = new Intl.DateTimeFormat("en-US", {
+        timeZone: tz, hourCycle: "h23", weekday: "short",
+        year: "numeric", month: "numeric", day: "numeric",
+        hour: "numeric", minute: "numeric", second: "numeric"
+      });
+    }
+    return cache[tz];
+  }
+  function parts(ts, tz) {
+    var o = {};
+    fmt(tz).formatToParts(new Date(ts)).forEach(function (p) { o[p.type] = p.value; });
+    return o;
+  }
+  function pad(n) { return String(n).padStart(2, "0"); }
+  function offset(ts, tz) {
+    var p = parts(ts, tz);
+    var asUtc = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute, +p.second);
+    return asUtc - Math.floor(ts / 1000) * 1000;
+  }
+  function wallToUtc(y, m, d, h, mi, tz) {
+    var g = Date.UTC(y, m - 1, d, h, mi);
+    var o = offset(g, tz);
+    var t = g - o;
+    var o2 = offset(t, tz);
+    if (o2 !== o) t = g - o2;
+    return t;
+  }
+  /* Holidays and early closes, Nov 2026 to Jan 2028, from the exchanges' official calendars
+     (Shanghai follows China's official 2027 schedule; NSE India 2027 dates are provisional). */
+  var HOL = {"New York":{"closed":{"2026-11-26":"Thanksgiving","2026-12-25":"Christmas Day","2027-01-01":"New Year's Day","2027-01-18":"Martin Luther King Jr. Day","2027-02-15":"Washington's Birthday","2027-03-26":"Good Friday","2027-05-31":"Memorial Day","2027-06-18":"Juneteenth (observed)","2027-07-05":"Independence Day (observed)","2027-09-06":"Labor Day","2027-11-25":"Thanksgiving","2027-12-24":"Christmas Day (observed)"},"early":{"2026-11-27":[13,0,"Day after Thanksgiving"],"2026-12-24":[13,0,"Christmas Eve"],"2027-11-26":[13,0,"Day after Thanksgiving"]}},"Toronto":{"closed":{"2026-12-25":"Christmas Day","2026-12-28":"Boxing Day (observed)","2027-01-01":"New Year's Day","2027-02-15":"Family Day","2027-03-26":"Good Friday","2027-05-24":"Victoria Day","2027-07-01":"Canada Day","2027-08-02":"Civic Holiday","2027-09-06":"Labour Day","2027-10-11":"Thanksgiving","2027-12-27":"Christmas Day (observed)","2027-12-28":"Boxing Day (observed)"},"early":{"2026-12-24":[13,0,"Christmas Eve"],"2027-12-24":[13,0,"Christmas Eve"]}},"London":{"closed":{"2026-12-25":"Christmas Day","2026-12-28":"Boxing Day (substitute)","2027-01-01":"New Year's Day","2027-03-26":"Good Friday","2027-03-29":"Easter Monday","2027-05-03":"Early May Bank Holiday","2027-05-31":"Spring Bank Holiday","2027-08-30":"Summer Bank Holiday","2027-12-27":"Christmas Day (substitute)","2027-12-28":"Boxing Day (substitute)"},"early":{"2026-12-24":[12,30,"Christmas Eve"],"2026-12-31":[12,30,"New Year's Eve"],"2027-12-24":[12,30,"Christmas Eve"],"2027-12-31":[12,30,"New Year's Eve"]}},"Frankfurt":{"closed":{"2026-12-24":"Christmas Eve","2026-12-25":"Christmas Day","2026-12-31":"New Year's Eve","2027-01-01":"New Year's Day","2027-03-26":"Good Friday","2027-03-29":"Easter Monday","2027-12-24":"Christmas Eve","2027-12-31":"New Year's Eve"},"early":{}},"Paris":{"closed":{"2026-12-25":"Christmas Day","2027-01-01":"New Year's Day","2027-03-26":"Good Friday","2027-03-29":"Easter Monday"},"early":{"2026-12-24":[14,5,"Christmas Eve"],"2026-12-31":[14,5,"New Year's Eve"],"2027-12-24":[14,5,"Christmas Eve"],"2027-12-31":[14,5,"New Year's Eve"]}},"Tokyo":{"closed":{"2026-11-23":"Labor Thanksgiving Day","2026-12-31":"Year-end holiday","2027-01-01":"New Year's Day","2027-01-11":"Coming of Age Day","2027-02-11":"National Foundation Day","2027-02-23":"Emperor's Birthday","2027-03-22":"Vernal Equinox (observed)","2027-04-29":"Showa Day","2027-05-03":"Constitution Memorial Day","2027-05-04":"Greenery Day","2027-05-05":"Children's Day","2027-07-19":"Marine Day","2027-08-11":"Mountain Day","2027-09-20":"Respect for the Aged Day","2027-09-23":"Autumnal Equinox Day","2027-10-11":"Sports Day","2027-11-03":"Culture Day","2027-11-23":"Labor Thanksgiving Day","2027-12-31":"Year-end holiday","2028-01-03":"New Year holiday"},"early":{}},"Hong Kong":{"closed":{"2026-12-25":"Christmas Day","2027-01-01":"New Year's Day","2027-02-08":"Lunar New Year","2027-02-09":"Lunar New Year","2027-03-26":"Good Friday","2027-03-29":"Easter Monday","2027-04-05":"Ching Ming Festival","2027-05-13":"Buddha's Birthday","2027-06-09":"Tuen Ng Festival","2027-07-01":"HKSAR Establishment Day","2027-09-16":"Day after Mid-Autumn","2027-10-01":"National Day","2027-10-08":"Chung Yeung Festival","2027-12-27":"First weekday after Christmas"},"early":{"2026-12-24":[12,0,"Christmas Eve"],"2026-12-31":[12,0,"New Year's Eve"],"2027-02-05":[12,0,"Lunar New Year's Eve"],"2027-12-24":[12,0,"Christmas Eve"],"2027-12-31":[12,0,"New Year's Eve"]}},"Shanghai":{"closed":{"2027-01-01":"New Year's Day","2027-02-05":"Spring Festival","2027-02-08":"Spring Festival","2027-02-09":"Spring Festival","2027-02-10":"Spring Festival","2027-02-11":"Spring Festival","2027-02-12":"Spring Festival","2027-04-05":"Qingming Festival","2027-05-03":"Labour Day","2027-05-04":"Labour Day","2027-05-05":"Labour Day","2027-06-09":"Dragon Boat Festival","2027-09-15":"Mid-Autumn Festival","2027-10-01":"National Day","2027-10-04":"National Day","2027-10-05":"National Day","2027-10-06":"National Day","2027-10-07":"National Day"},"early":{}},"Singapore":{"closed":{"2026-12-25":"Christmas Day","2027-01-01":"New Year's Day","2027-02-08":"Chinese New Year","2027-03-10":"Hari Raya Puasa","2027-03-26":"Good Friday","2027-05-17":"Hari Raya Haji","2027-05-20":"Vesak Day","2027-08-09":"National Day","2027-10-28":"Deepavali"},"early":{"2026-12-24":[12,0,"Christmas Eve"],"2026-12-31":[12,0,"New Year's Eve"],"2027-02-05":[12,0,"Chinese New Year's Eve"],"2027-12-24":[12,0,"Christmas Eve"],"2027-12-31":[12,0,"New Year's Eve"]}},"Mumbai":{"closed":{"2026-11-24":"Guru Nanak Jayanti","2026-12-25":"Christmas","2027-01-26":"Republic Day","2027-03-10":"Id-Ul-Fitr","2027-03-22":"Holi","2027-03-26":"Good Friday","2027-04-14":"Ambedkar Jayanti","2027-04-15":"Shri Ram Navami","2027-05-17":"Bakri Id","2027-06-16":"Muharram","2027-10-29":"Diwali Laxmi Pujan"},"early":{}},"Sydney":{"closed":{"2026-12-25":"Christmas Day","2026-12-28":"Boxing Day (substitute)","2027-01-01":"New Year's Day","2027-01-26":"Australia Day","2027-03-26":"Good Friday","2027-03-29":"Easter Monday","2027-06-14":"King's Birthday","2027-12-27":"Christmas Day (substitute)","2027-12-28":"Boxing Day (substitute)"},"early":{"2026-12-24":[14,10,"Christmas Eve"],"2026-12-31":[14,10,"New Year's Eve"],"2027-12-24":[14,10,"Christmas Eve"],"2027-12-31":[14,10,"New Year's Eve"]}}};
+  function holidayNote(m, now) {
+    var p = parts(now, m.tz), key = p.year + "-" + pad(+p.month) + "-" + pad(+p.day), hol = HOL[m.city];
+    if (!hol) return "";
+    if (hol.closed[key]) return t("closedToday") + " · " + hol.closed[key];
+    if (hol.early[key]) return t("earlyClose") + " " + pad(hol.early[key][0]) + ":" + pad(hol.early[key][1]) + " · " + hol.early[key][2];
+    return "";
+  }
+  function sessionsFor(m, now, back, fwd) {
+    var p = parts(now, m.tz), y = +p.year, mo = +p.month, d = +p.day, out = [];
+    for (var k = -back; k <= fwd; k++) {
+      var base = new Date(Date.UTC(y, mo - 1, d + k));
+      var wd = base.getUTCDay();
+      if (wd === 0 || wd === 6) continue;
+      var yy = base.getUTCFullYear(), mm = base.getUTCMonth() + 1, dd = base.getUTCDate();
+      var key = yy + "-" + pad(mm) + "-" + pad(dd), hol = HOL[m.city] || { closed: {}, early: {} };
+      if (hol.closed[key]) continue;
+      var ec = hol.early[key] ? wallToUtc(yy, mm, dd, hol.early[key][0], hol.early[key][1], m.tz) : null;
+      for (var i = 0; i < m.s.length; i++) {
+        var s = m.s[i];
+        var st = wallToUtc(yy, mm, dd, s[0], s[1], m.tz), en = wallToUtc(yy, mm, dd, s[2], s[3], m.tz);
+        if (ec !== null) { if (st >= ec) continue; en = Math.min(en, ec); }
+        out.push({ day: k, start: st, end: en });
+      }
+    }
+    return out;
+  }
+  function status(m, now) {
+    var sess = sessionsFor(m, now, 1, 16), cur = null, next = null, prev = null, i;
+    for (i = 0; i < sess.length; i++) {
+      if (now >= sess[i].start && now < sess[i].end) cur = sess[i];
+      if (sess[i].end <= now) prev = sess[i];
+      if (!next && sess[i].start > now) next = sess[i];
+    }
+    if (cur) {
+      var dayEnd = sess.filter(function (s) { return s.day === cur.day; }).pop().end;
+      return { state: dayEnd === cur.end && cur.end - now < HOUR ? "closing" : "open", cur: cur, dayEnd: dayEnd };
+    }
+    var state = "closed", lunchEnd = null;
+    if (prev && next && prev.day === next.day) {
+      state = "lunch";
+      lunchEnd = sess.filter(function (s) { return s.day === next.day; }).pop().end;
+    }
+    else if (next && next.start - now < HOUR) state = "soon";
+    return { state: state, next: next, dayEnd: lunchEnd };
+  }
+  function countdown(ms) {
+    var s = Math.floor(Math.max(0, ms) / 1000);
+    var d = Math.floor(s / 86400), h = Math.floor((s % 86400) / 3600), mi = Math.floor((s % 3600) / 60), sec = s % 60;
+    return (d ? d + "d " : "") + pad(h) + ":" + pad(mi) + ":" + pad(sec);
+  }
+  function dayKey(ts, tz) { var p = parts(ts, tz); return p.year + "-" + p.month + "-" + p.day; }
+  function yourTime(ts, now) {
+    var p = parts(ts, viewerTz), t = pad(+p.hour % 24) + ":" + pad(+p.minute);
+    return dayKey(ts, viewerTz) === dayKey(now, viewerTz) ? t : (lang === "en" ? p.weekday : new Intl.DateTimeFormat({"en": "en-GB", "fr": "fr-FR", "es": "es-ES", "de": "de-DE", "ru": "ru-RU", "zh": "zh-CN"}[lang], { weekday: "short", timeZone: viewerTz }).format(new Date(ts))) + " " + t;
+  }
+  function localHm(ts, tz) { var p = parts(ts, tz); return pad(+p.hour % 24) + ":" + pad(+p.minute); }
+
+  var m = {"city": "Sydney", "ex": "ASX", "tz": "Australia/Sydney", "s": [[10, 0, 16, 0]], "region": "x", "flag": ""};
+  var live = document.getElementById("live"), yours = document.getElementById("yours");
+  var tp = parts(Date.now(), m.tz), today = tp.year + "-" + pad(+tp.month) + "-" + pad(+tp.day);
+  document.querySelectorAll("#rows tr").forEach(function (r) { if (r.dataset.d < today) r.classList.add("past"); });
+  function tick() {
+    var now = Date.now(), st = status(m, now), hn = holidayNote(m, now);
+    var open = st.state === "open" || st.state === "closing";
+    live.className = "live" + (open ? " open" : "");
+    var lv = ({"en": ["Open now · closes in ", "Lunch break · reopens in ", "Closed · opens in ", "Next session in your time zone (", "): "], "fr": ["Ouverte maintenant · ferme dans ", "Pause déjeuner · rouvre dans ", "Fermée · ouvre dans ", "Prochaine séance dans votre fuseau (", ") : "], "es": ["Abierta ahora · cierra en ", "Pausa de mediodía · reabre en ", "Cerrada · abre en ", "Próxima sesión en tu zona horaria (", "): "], "de": ["Jetzt geöffnet · schließt in ", "Mittagspause · öffnet wieder in ", "Geschlossen · öffnet in ", "Nächste Sitzung in deiner Zeitzone (", "): "], "ru": ["Открыта · закроется через ", "Обеденный перерыв · откроется через ", "Закрыта · откроется через ", "Следующая сессия в вашем часовом поясе (", "): "], "zh": ["开市中 · 距收市 ", "午间休市 · 距复市 ", "休市 · 距开市 ", "您所在时区的下一交易时段（", "）："]})[lang] || null; if (!lv) lv = ["Open now · closes in ", "Lunch break · reopens in ", "Closed · opens in ", "Next session in your time zone (", "): "];
+    if (open) live.textContent = lv[0] + countdown(st.cur.end - now);
+    else if (st.state === "lunch") live.textContent = lv[1] + countdown(st.next.start - now);
+    else live.textContent = lv[2] + countdown(st.next.start - now);
+    var next = open ? st.cur : st.next;
+    yours.textContent = (hn ? hn + " · " : "") + lv[3] + viewerTz.replace(/_/g, " ") + lv[4] +
+      yourTime(open ? st.cur.start : st.next.start, now) + "–" + yourTime((st.dayEnd && open) ? st.dayEnd : next.end, now);
+  }
+  tick(); setInterval(tick, 1000);
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("../sw.js").catch(function () {});
+})();
+</script>
+</body>
+</html>

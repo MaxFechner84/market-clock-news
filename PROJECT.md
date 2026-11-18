@@ -15,7 +15,7 @@ Last updated: 2026-11-18
 |---|---|---|
 | Public website | https://exchangedial.com (GitHub Pages, this repo, `CNAME`) | Live, loads over HTTPS (checked 2026-11-18) |
 | Domain | exchangedial.com | Bought |
-| Site pages | `index.html` (home), `week.html` (week ahead), `markets/` (22 exchange pages EN + FR, hours & holidays) | Live |
+| Site pages | `index.html` (home), `week.html` (week ahead), `markets/` (66 exchange pages: 11 exchanges × EN, FR, ES, DE, RU, ZH — hours & holidays) | Live |
 | Installable web app | `manifest.webmanifest`, `sw.js`, icons | Live |
 | SEO | `sitemap.xml`, `robots.txt`, `og.png` share image | Live |
 | News feed | `news.json` (read by the site and the app) | Updated twice per weekday |
@@ -27,7 +27,7 @@ Last updated: 2026-11-18
 ## What the site does (home page, `index.html`)
 - Live clock; language menu (English default, Français, Español, Deutsch, Русский, 中文); Auto/Light/Dark theme (both saved in the browser).
 - Site texts are translated into all 6 languages on the home and week pages. News (notes, headlines, why-lines, events, week) is written in all 6 languages (`*_fr`, `*_es`, `*_de`, `*_ru`, `*_zh` fields in `news.json`); English is the fallback.
-- Exchange-hours pages (`markets/`) exist only in English and French.
+- Exchange-hours pages (`markets/`) exist in all 6 languages (`<slug>.html` = English, `<slug>-fr/-es/-de/-ru/-zh.html`). Holiday names stay in English on every language page. Each page shows the session in a local reference time: UK (EN), Paris (FR), Madrid (ES), German time (DE), Moscow (RU), Beijing (ZH). The home page's exchange links follow the chosen language.
 - "Next to open" card with countdown; 11 exchanges grouped by region (NYSE, TSX · LSE, Xetra, Euronext Paris · TSE, HKEX, SSE, SGX, NSE, ASX) with open/closed status, lunch breaks, holidays and countdowns. Visitors can star exchanges to pin them first.
 - Per region: colour level, note, market "pulse" line, up to 5 stories (source · date, sorted red → orange → green) and up to 5 events, all from `news.json`. Shows the update time and, once 5+ days are scored, the accuracy from `news.json`.
 - Alerts: browser notification when a region turns red (opt-in; on iPhone only after "Add to Home Screen").
@@ -54,7 +54,7 @@ Last updated: 2026-11-18
 ## To do
 - [ ] Confirm "Enforce HTTPS" is ticked in GitHub → Settings → Pages (needs the owner's browser).
 - [x] News in all 6 languages (2026-11-18).
-- [ ] Exchange-hours pages in ES/DE/RU/ZH (22 → 66 pages).
+- [x] Exchange-hours pages in ES/DE/RU/ZH, sitemap updated (2026-11-18).
 - [x] Language menu with 6 languages, English default (2026-11-18).
 - [x] Link @ExchangeDial on every page + `twitter:site` tag (2026-11-18).
 - [ ] Review the X profile (picture, banner, bio, website link, pinned post) — needs the owner's browser or a screenshot.
@@ -67,6 +67,7 @@ Last updated: 2026-11-18
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
 - 2026-11-18 Site features reviewed and written into this file.
 - 2026-11-18 Decision: no paid offer; everything free, focus on traffic.
+- 2026-11-18 44 exchange-hours pages added (ES, DE, RU, ZH); sitemap now 69 URLs.
 - 2026-11-18 Daily tasks now write news in 6 languages; breaking check task added (6 extra checks per weekday).
 - 2026-11-18 Language menu: EN (default), FR, ES, DE, RU, ZH.
 - 2026-11-18 X link and twitter:site tag added to all pages; disclaimer line added to exchange pages.
