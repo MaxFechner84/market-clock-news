@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-18T06:40:46Z",
-  "edition": "morning",
+  "updatedAt": "2026-11-18T11:55:36Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
@@ -220,10 +220,29 @@
     },
     "as": {
       "level": "red",
-      "note": "Tencent reports Q3 today; Hang Seng down 1.1% at midday, Kospi up 1.3%",
-      "note_fr": "Résultats de Tencent aujourd'hui ; Hang Seng −1,1 % à la mi-séance, Kospi +1,3 %",
+      "note": "Tencent missed sales forecasts as AI spending surged; Hong Kong reacts on Thursday",
+      "note_fr": "Tencent déçoit sur ses ventes, ses dépenses IA s'envolent ; Hong Kong réagit jeudi",
       "pulse": "Nikkei +0.6% · Kospi +1.3% · Hang Seng −1.1% · Shanghai −0.4% (midday)",
       "stories": [
+        {
+          "title": "Tencent's Q3 sales missed forecasts as AI spending soared, with capex up to 81.4bn yuan from 52.8bn",
+          "title_fr": "Tencent déçoit sur ses ventes du T3 ; ses investissements bondissent à 81,4 Md de yuans, contre 52,8 Md",
+          "title_es": "Tencent no alcanza las ventas previstas del 3T; su inversión sube a 81.400 M de yuanes desde 52.800 M",
+          "title_de": "Tencent verfehlt im 3. Quartal die Umsatzprognose; Investitionen steigen auf 81,4 Mrd. von 52,8 Mrd. Yuan",
+          "title_ru": "Выручка Tencent за III квартал ниже прогнозов; капзатраты выросли до 81,4 млрд юаней с 52,8 млрд",
+          "title_zh": "腾讯第三季度营收不及预期，AI投入大增，资本开支从528亿元跃升至814亿元",
+          "source": "Reuters",
+          "date": "18 Nov",
+          "url": "https://www.marketscreener.com/news/tencent-quarterly-revenue-growth-slows-cloud-unit-benefits-from-ai-demand-ce785eddd988f620",
+          "level": "red",
+          "why": "China's biggest tech stock missed on sales and spends far more on AI; Hong Kong reacts Thursday.",
+          "why_fr": "Le géant chinois de la tech déçoit sur ses ventes et dépense bien plus en IA ; Hong Kong réagit jeudi.",
+          "why_es": "El mayor valor tecnológico de China falla en ventas y gasta mucho más en IA; Hong Kong reacciona el jueves.",
+          "why_de": "Chinas größter Tech-Wert verfehlt beim Umsatz und gibt viel mehr für KI aus; Hongkong reagiert Donnerstag.",
+          "why_ru": "Крупнейшая техкомпания Китая не дотянула по выручке и резко нарастила траты на ИИ; Гонконг отреагирует в четверг.",
+          "why_zh": "中国最大科技股营收不及预期、AI开支大增，港股周四将作出反应。",
+          "breaking": true
+        },
         {
           "title": "Asian stocks swing after Nvidia's results as early gains fade on worries over its leadership",
           "title_fr": "Les Bourses asiatiques hésitent après Nvidia, les gains initiaux s'effaçant sur fond d'inquiétudes",
@@ -339,10 +358,10 @@
           "title_zh": "日本CPI通胀（10月）"
         }
       ],
-      "note_es": "Tencent publica resultados del 3T hoy; Hang Seng −1,1 % a mediodía, Kospi +1,3 %",
-      "note_de": "Tencent legt heute Q3-Zahlen vor; Hang Seng mittags −1,1 %, Kospi +1,3 %",
-      "note_ru": "Tencent сегодня отчитывается за III квартал; Hang Seng −1,1% к полудню, Kospi +1,3%",
-      "note_zh": "腾讯今日公布第三季度业绩；恒指午间跌1.1%，韩国综合指数涨1.3%"
+      "note_es": "Tencent decepciona en ventas y dispara su gasto en IA; Hong Kong reacciona el jueves",
+      "note_de": "Tencent verfehlt Umsatzprognose, KI-Ausgaben steigen stark; Hongkong reagiert Donnerstag",
+      "note_ru": "Выручка Tencent ниже прогнозов, траты на ИИ резко выросли; Гонконг отреагирует в четверг",
+      "note_zh": "腾讯营收不及预期、AI开支激增，港股周四将作出反应"
     }
   },
   "week": [
