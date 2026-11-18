@@ -21,7 +21,7 @@ Last updated: 2026-11-18
 | News feed | `news.json` (read by the site and the app) | Updated twice per weekday |
 | Track record | `history.json` (each day's colour vs the actual market move) | Running since 2026-11-17 |
 | Private Claude page | Claude artifact `3ea0e3e2-7f19-4d5b-a5dc-69238e12a689` (database `news/am`, `news/eu`, `news/as`) | Updated by the same runs |
-| X account | @ExchangeDial | Live and linked from every page. Bio (says free + not investment advice), location "The World", pinned post (🟢🟠🔴, free, no sign-up) all good. No header banner yet; 0 followers, follows 7 (2026-11-18) |
+| X account | @ExchangeDial | Live and linked from every page. Bio (says free + not investment advice), location "The World", pinned post (🟢🟠🔴, free, no sign-up) all good. Header banner set (made 2026-11-17); 0 followers, follows 7 (2026-11-18) |
 | iPhone app | Started in Xcode | In progress |
 
 ## What the site does (home page, `index.html`)
@@ -58,7 +58,7 @@ Last updated: 2026-11-18
 - [x] Language menu with 6 languages, English default (2026-11-18).
 - [x] Link @ExchangeDial on every page + `twitter:site` tag (2026-11-18).
 - [x] X profile reviewed (2026-11-18).
-- [ ] X header banner, 1500×500 (dial / world clock + short line, e.g. "11 markets · live countdowns · free").
+- [x] X header banner (2026-11-17).
 - [ ] X growth: reply to traders and markets accounts around the London/New York overlap; follow more accounts in the niche.
 - [ ] Idea: a short daily market-hours fact post on X (like the overlap post). Watch the weeks when the US and Europe change clocks on different dates: overlap times shift by an hour.
 - [ ] iPhone app.
@@ -70,7 +70,7 @@ Last updated: 2026-11-18
 - 2026-11-18 Track record started scoring (17 Nov: 2/2 correct). Task summaries switched to English. Last "Market Clock" leftovers renamed. This file created.
 - 2026-11-18 Site features reviewed and written into this file.
 - 2026-11-18 Decision: no paid offer; everything free, focus on traffic.
-- 2026-11-18 Enforce HTTPS confirmed; X profile reviewed (needs a banner; old link preview title in the pinned post is cached by X, new posts show the current title).
+- 2026-11-18 Enforce HTTPS confirmed; X profile reviewed (banner already in place since 2026-11-17; old link preview title in the pinned post is cached by X, new posts show the current title).
 - 2026-11-18 44 exchange-hours pages added (ES, DE, RU, ZH); sitemap now 69 URLs.
 - 2026-11-18 Daily tasks now write news in 6 languages; breaking check task added (6 extra checks per weekday).
 - 2026-11-18 Language menu: EN (default), FR, ES, DE, RU, ZH.
