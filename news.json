@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-19T13:31:08Z",
-  "edition": "us-preopen",
+  "updatedAt": "2026-11-19T17:50:43Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
-      "note": "Anthropic's record IPO debuts on Nasdaq; Walmart beat; Fed hike bets firm",
-      "note_fr": "Anthropic fait ses débuts record au Nasdaq ; Walmart bat le consensus ; hausse de la Fed attendue",
-      "note_es": "Anthropic debuta en el Nasdaq tras su OPV récord; Walmart supera previsiones; se espera subida de la Fed",
-      "note_de": "Anthropic feiert Rekord-Börsengang an der Nasdaq; Walmart übertrifft Erwartungen; Fed-Zinserhöhung erwartet",
-      "note_ru": "Anthropic дебютирует на Nasdaq после рекордного IPO; Walmart превзошёл прогнозы; рынок ждёт повышения ставки ФРС",
-      "note_zh": "Anthropic创纪录IPO登陆纳斯达克；沃尔玛业绩超预期；美联储加息预期稳固",
-      "pulse": "S&P 500 closed −0.3% · S&P 500 futures +1.3% · Nasdaq 100 futures +2.3% · VIX 22.0 · US 10-yr 5.07%",
+      "note": "Wall St slides: Dow −2%, S&P 500 −1.6% as Anthropic debut fails to lift AI stocks",
+      "note_fr": "Wall Street recule : Dow −2 %, S&P 500 −1,6 %, les débuts d'Anthropic ne relancent pas l'IA",
+      "note_es": "Wall Street cae: Dow −2%, S&P 500 −1,6%; el debut de Anthropic no reactiva la IA",
+      "note_de": "Wall Street rutscht ab: Dow −2 %, S&P 500 −1,6 %; Anthropic-Debüt hilft KI-Aktien nicht",
+      "note_ru": "Уолл-стрит падает: Dow −2%, S&P 500 −1,6%; дебют Anthropic не поддержал ИИ",
+      "note_zh": "华尔街下挫：道指跌2%，标普500跌1.6%；Anthropic上市未提振AI股",
+      "pulse": "Dow −2.0% · S&P 500 −1.6% · Nasdaq −1.6% (17:18 UTC) · VIX 28.4 · US 10-yr 5.05%",
       "events": [
         {
           "time": "2026-11-19T12:00:00Z",
@@ -64,6 +64,25 @@
         }
       ],
       "stories": [
+        {
+          "title": "Wall Street slides as Anthropic's debut fails to lift AI stocks: Dow −2.0%, S&P 500 −1.6% at midday",
+          "title_fr": "Wall Street recule, les débuts d'Anthropic ne relancent pas l'IA : Dow −2,0 %, S&P 500 −1,6 % à la mi-séance",
+          "title_es": "Wall Street cae y el debut de Anthropic no reactiva la IA: Dow −2,0%, S&P 500 −1,6% a media sesión",
+          "title_de": "Wall Street rutscht ab, Anthropic-Debüt hilft KI-Aktien nicht: Dow −2,0 %, S&P 500 −1,6 % zur Handelsmitte",
+          "title_ru": "Уолл-стрит падает: дебют Anthropic не поддержал акции ИИ — Dow −2,0%, S&P 500 −1,6% к середине сессии",
+          "title_zh": "华尔街下挫，Anthropic上市未能提振AI股：盘中道指跌2.0%，标普500指数跌1.6%",
+          "source": "Reuters",
+          "date": "19 Nov",
+          "url": "https://www.koreatimes.co.kr/world/20261120/wall-st-falls-sharply-as-anthropic-debut-fails-to-reignite-ai-trade",
+          "level": "red",
+          "why": "A broad 1.6% drop in the S&P 500, with the fear gauge VIX near 28, hits almost every US stock.",
+          "why_fr": "Une baisse générale de 1,6 % du S&P 500, avec un VIX proche de 28, touche presque toutes les actions US.",
+          "why_es": "Una caída general del 1,6% del S&P 500, con el VIX cerca de 28, golpea a casi todas las acciones de EE. UU.",
+          "why_de": "Ein breites Minus von 1,6 % im S&P 500 bei einem VIX nahe 28 trifft fast alle US-Aktien.",
+          "why_ru": "Широкое падение S&P 500 на 1,6% при индексе страха VIX около 28 бьёт почти по всем акциям США.",
+          "why_zh": "标普500指数全面下跌1.6%，恐慌指数VIX接近28，几乎所有美股都受影响。",
+          "breaking": true
+        },
         {
           "title": "Anthropic's record $81 billion IPO, priced at $83 a share, starts trading on Nasdaq today as ANT",
           "source": "Yahoo Finance",
@@ -122,13 +141,13 @@
     },
     "eu": {
       "level": "orange",
-      "note": "Tech-led rebound after three losses; Lagarde speaks at 13:30 UTC and Friday",
-      "note_fr": "Rebond porté par la tech après trois baisses ; Lagarde s'exprime à 13h30 UTC et vendredi",
-      "note_es": "Rebote liderado por la tecnología tras tres caídas; Lagarde habla a las 13:30 UTC y el viernes",
-      "note_de": "Tech-getriebene Erholung nach drei Verlusttagen; Lagarde spricht um 13:30 UTC und am Freitag",
-      "note_ru": "Отскок во главе с техсектором после трёх дней падения; Лагард выступает в 13:30 UTC и в пятницу",
-      "note_zh": "科技股带动连跌三日后反弹；拉加德于UTC 13:30及周五讲话",
-      "pulse": "STOXX 600 closed −1.0% · STOXX 600 +0.2% (09:58 UTC) · Euro Stoxx 50 +0.6% (11:09 UTC)",
+      "note": "STOXX 600 closes −0.9% after early tech rebound faded; Lagarde speaks Friday",
+      "note_fr": "Le STOXX 600 finit à −0,9 % après un rebond tech avorté ; Lagarde s'exprime vendredi",
+      "note_es": "El STOXX 600 cierra en −0,9% tras diluirse el rebote tecnológico; Lagarde habla el viernes",
+      "note_de": "STOXX 600 schließt −0,9 %, früher Tech-Rebound verpufft; Lagarde spricht am Freitag",
+      "note_ru": "STOXX 600 закрылся −0,9% после угасшего отскока техсектора; Лагард выступит в пятницу",
+      "note_zh": "科技股早盘反弹消退，STOXX 600收跌0.9%；拉加德周五讲话",
+      "pulse": "STOXX 600 closed −0.9% · CAC 40 closed −0.8%",
       "events": [
         {
           "time": "2026-11-19T13:30:00Z",
@@ -172,6 +191,25 @@
         }
       ],
       "stories": [
+        {
+          "title": "European shares give up early tech-led gains and close lower: STOXX 600 −0.9%, CAC 40 −0.8%",
+          "title_fr": "Les Bourses européennes effacent leurs gains matinaux et finissent en baisse : STOXX 600 −0,9 %, CAC 40 −0,8 %",
+          "title_es": "Las bolsas europeas borran las subidas de la mañana y cierran en negativo: STOXX 600 −0,9%, CAC 40 −0,8%",
+          "title_de": "Europas Börsen geben frühe Tech-Gewinne ab und schließen im Minus: STOXX 600 −0,9 %, CAC 40 −0,8 %",
+          "title_ru": "Европейские рынки растеряли утренний рост и закрылись в минусе: STOXX 600 −0,9%, CAC 40 −0,8%",
+          "title_zh": "欧洲股市回吐早盘科技股带动的涨幅，收盘走低：STOXX 600指数跌0.9%，CAC 40指数跌0.8%",
+          "source": "Reuters",
+          "date": "19 Nov",
+          "url": "https://www.zonebourse.com/actualite-bourse/point-marches-europe-finit-dans-le-rouge-anthropic-atteint-2-000-mds-de-capitalisation-ce785ed2dd8eff23",
+          "level": "orange",
+          "why": "A near-1% fall across Europe while Wall Street slides can weigh on Friday's open.",
+          "why_fr": "Un repli de près de 1 % en Europe, avec Wall Street en baisse, peut peser sur l'ouverture de vendredi.",
+          "why_es": "Una caída de casi el 1% en Europa, con Wall Street a la baja, puede lastrar la apertura del viernes.",
+          "why_de": "Ein Minus von fast 1 % in Europa bei fallender Wall Street kann den Start am Freitag belasten.",
+          "why_ru": "Падение почти на 1% в Европе на фоне снижения Уолл-стрит может давить на открытие в пятницу.",
+          "why_zh": "欧洲股市下跌近1%，叠加华尔街走低，可能拖累周五开盘。",
+          "breaking": true
+        },
         {
           "title": "STOXX 600 snaps a three-day losing streak as chipmakers ASML and STMicro jump on Anthropic's IPO",
           "source": "Reuters (Business Recorder)",
