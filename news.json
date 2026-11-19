@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T17:50:43Z",
+  "updatedAt": "2026-11-19T21:49:20Z",
   "edition": "breaking",
   "regions": {
     "am": {
@@ -10,7 +10,7 @@
       "note_de": "Wall Street rutscht ab: Dow −2 %, S&P 500 −1,6 %; Anthropic-Debüt hilft KI-Aktien nicht",
       "note_ru": "Уолл-стрит падает: Dow −2%, S&P 500 −1,6%; дебют Anthropic не поддержал ИИ",
       "note_zh": "华尔街下挫：道指跌2%，标普500跌1.6%；Anthropic上市未提振AI股",
-      "pulse": "Dow −2.0% · S&P 500 −1.6% · Nasdaq −1.6% (17:18 UTC) · VIX 28.4 · US 10-yr 5.05%",
+      "pulse": "Dow −2.19% · S&P 500 −2.02% · Nasdaq −2.25% (close) · VIX 28.4 · US 10-yr 5.05%",
       "events": [
         {
           "time": "2026-11-19T12:00:00Z",
@@ -100,6 +100,25 @@
           "why_ru": "Крупнейшее IPO в истории оценивает Anthropic в $1,5 трлн и проверяет спрос на все акции ИИ.",
           "title_zh": "Anthropic创纪录的810亿美元IPO定价每股83美元，今日以代码ANT在纳斯达克开始交易",
           "why_zh": "史上最大IPO使Anthropic估值达1.5万亿美元，是对AI股投资热情的考验。"
+        },
+        {
+          "title": "Intuit sinks about 13% after hours as its next-quarter sales forecast misses; it sells Mailchimp for $3.68bn",
+          "title_fr": "Intuit chute d'environ 13 % après la clôture, sa prévision de chiffre d'affaires trimestriel déçoit ; Mailchimp cédé pour 3,68 Md$",
+          "title_es": "Intuit se desploma cerca de un 13% tras el cierre por una previsión de ventas trimestral decepcionante; vende Mailchimp por 3.680 M$",
+          "title_de": "Intuit fällt nachbörslich um rund 13 %, da die Umsatzprognose fürs nächste Quartal enttäuscht; Mailchimp für 3,68 Mrd. $ verkauft",
+          "title_ru": "Акции Intuit после закрытия упали примерно на 13% из-за слабого прогноза выручки на квартал; Mailchimp продан за $3,68 млрд",
+          "title_zh": "Intuit下季度营收指引不及预期，盘后股价重挫约13%；以36.8亿美元出售Mailchimp",
+          "source": "CNBC",
+          "date": "19 Nov",
+          "url": "https://www.cnbc.com/2026/11/19/intuit-mailchimp-sale-bending-spoons.html",
+          "level": "orange",
+          "why": "A big software name falling this much can weigh on tech stocks when trading resumes Friday.",
+          "why_fr": "La forte chute d'un grand nom du logiciel peut peser sur la tech à la reprise vendredi.",
+          "why_es": "La fuerte caída de un gran nombre del software puede lastrar a la tecnología el viernes.",
+          "why_de": "Ein so starker Absturz eines großen Softwarekonzerns kann am Freitag die Tech-Werte belasten.",
+          "why_ru": "Резкое падение крупной софтверной компании может давить на техсектор в пятницу.",
+          "why_zh": "大型软件公司股价大跌，可能在周五开盘时拖累科技股。",
+          "breaking": true
         },
         {
           "title": "Fed's Waller floats a half-point December hike; traders see about 90% odds of a quarter-point rise",
