@@ -26,9 +26,9 @@
       "edition": "us-preopen",
       "level": "red",
       "note": "Nvidia rebound vs SEC probe report; Fed minutes at 19:00 UTC; Anthropic IPO prices tonight",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": -0.31,
+      "hit": false
     },
     {
       "date": "2026-11-18",
@@ -36,9 +36,9 @@
       "edition": "us-preopen",
       "level": "orange",
       "note": "UK inflation at a 1-year high of 3.6%; Lagarde speaks at 14:25 UTC, Fed minutes tonight",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": -1.04,
+      "hit": true
     },
     {
       "date": "2026-11-18",
@@ -46,6 +46,36 @@
       "edition": "morning",
       "level": "red",
       "note": "Tencent reports Q3 today; Hang Seng down 1.1% at midday, Kospi up 1.3%",
+      "outcome": "scored",
+      "move": -0.32,
+      "hit": false
+    },
+    {
+      "date": "2026-11-19",
+      "region": "am",
+      "edition": "morning",
+      "level": "red",
+      "note": "Anthropic's record IPO starts trading on Nasdaq; Walmart reports at 12:00 UTC",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-19",
+      "region": "eu",
+      "edition": "morning",
+      "level": "orange",
+      "note": "Three-day slide; Lagarde speaks at 13:30 UTC; Iran strike risk for oil",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-19",
+      "region": "as",
+      "edition": "morning",
+      "level": "red",
+      "note": "Hang Seng −1.8%, Taiwan −3.1%; Trump–Xi–Putin talks today; Japan CPI at 23:30 UTC",
       "outcome": null,
       "move": null,
       "hit": null
