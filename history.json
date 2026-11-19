@@ -53,9 +53,9 @@
     {
       "date": "2026-11-19",
       "region": "am",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "red",
-      "note": "Anthropic's record IPO starts trading on Nasdaq; Walmart reports at 12:00 UTC",
+      "note": "Anthropic's record IPO debuts on Nasdaq; Walmart beat; Fed hike bets firm",
       "outcome": null,
       "move": null,
       "hit": null
@@ -63,9 +63,9 @@
     {
       "date": "2026-11-19",
       "region": "eu",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "orange",
-      "note": "Three-day slide; Lagarde speaks at 13:30 UTC; Iran strike risk for oil",
+      "note": "Tech-led rebound after three losses; Lagarde speaks at 13:30 UTC and Friday",
       "outcome": null,
       "move": null,
       "hit": null
