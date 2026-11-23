@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-23T13:26:43Z",
-  "edition": "us-preopen",
+  "updatedAt": "2026-11-23T15:49:19Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
-      "note": "Futures +2.3% after the Dow's worst week since 2020; US PMIs 14:45 UTC, HPE, Zoom tonight",
-      "note_fr": "Futures +2,3 % après la pire semaine du Dow depuis 2020 ; PMI américains à 14h45 UTC, HPE et Zoom ce soir",
-      "note_es": "Futuros +2,3% tras la peor semana del Dow desde 2020; PMI de EE. UU. a las 14:45 UTC, HPE y Zoom esta noche",
-      "note_de": "Futures +2,3% nach der schlechtesten Dow-Woche seit 2020; US-PMIs um 14:45 UTC, HPE und Zoom heute Abend",
-      "note_ru": "Фьючерсы +2,3% после худшей для Dow недели с 2020 года; PMI США в 14:45 UTC, HPE и Zoom вечером",
-      "note_zh": "道指经历2020年以来最差一周后期货涨2.3%；美国PMI于UTC 14:45公布，HPE和Zoom今晚发布财报",
-      "pulse": "S&P 500 closed −3.7% Fri · S&P 500 fut +2.3% · Nasdaq 100 fut +2.9% · Dow fut +1.7% · VIX 31.7 · US 10-yr 4.96%",
+      "note": "Nvidia brings Huang back as CEO: Nasdaq +6.6%, S&P 500 +4.6%; HPE, Zoom report tonight",
+      "note_fr": "Nvidia rappelle Huang : Nasdaq +6,6 %, S&P 500 +4,6 % ; HPE et Zoom publient ce soir",
+      "note_es": "Nvidia recupera a Huang: Nasdaq +6,6%, S&P 500 +4,6%; HPE y Zoom presentan esta noche",
+      "note_de": "Nvidia holt Huang zurück: Nasdaq +6,6 %, S&P 500 +4,6 %; HPE und Zoom berichten heute Abend",
+      "note_ru": "Nvidia вернула Хуанга: Nasdaq +6,6%, S&P 500 +4,6%; HPE и Zoom отчитаются вечером",
+      "note_zh": "英伟达迎回黄仁勋：纳指涨6.6%，标普500涨4.6%；HPE和Zoom今晚发财报",
+      "pulse": "S&P 500 +4.6% · Nasdaq +6.6% · Dow +2.7% · Nvidia +33% · US 10-yr 4.95% (15:02 UTC)",
       "events": [
         {
           "time": "2026-11-23T14:45:00Z",
@@ -65,6 +65,25 @@
       ],
       "stories": [
         {
+          "title": "Nvidia reinstates Jensen Huang as CEO; its shares jump about 33%, Nasdaq +6.6%, S&P 500 +4.6%",
+          "title_fr": "Nvidia rappelle Jensen Huang au poste de PDG ; l'action bondit d'environ 33 %, le Nasdaq +6,6 %, le S&P 500 +4,6 %",
+          "title_es": "Nvidia restituye a Jensen Huang como consejero delegado; sus acciones suben un 33%, el Nasdaq un 6,6% y el S&P 500 un 4,6%",
+          "title_de": "Nvidia holt Jensen Huang als CEO zurück; Aktie springt rund 33 %, Nasdaq +6,6 %, S&P 500 +4,6 %",
+          "title_ru": "Nvidia вернула Дженсена Хуанга на пост CEO; акции взлетели примерно на 33%, Nasdaq +6,6%, S&P 500 +4,6%",
+          "title_zh": "英伟达恢复黄仁勋首席执行官职务；股价飙升约33%，纳斯达克指数涨6.6%，标普500指数涨4.6%",
+          "source": "CNBC",
+          "date": "23 Nov",
+          "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+          "level": "red",
+          "why": "A surprise comeback at the key AI chipmaker is lifting the whole US market sharply today.",
+          "why_fr": "Le retour surprise du patron du géant des puces IA fait fortement grimper tout le marché américain.",
+          "why_es": "El regreso sorpresa al frente del gran fabricante de chips de IA dispara hoy todo el mercado de EE. UU.",
+          "why_de": "Das überraschende Comeback beim wichtigsten KI-Chiphersteller treibt heute den ganzen US-Markt kräftig an.",
+          "why_ru": "Неожиданное возвращение главы ключевого производителя ИИ-чипов резко поднимает весь рынок США.",
+          "why_zh": "关键AI芯片商掌门人意外回归，今天带动整个美国市场大幅上涨。",
+          "breaking": true
+        },
+        {
           "title": "US stock futures rebound after the Dow's worst week since 2020: S&P 500 futures +2.3%, Nasdaq 100 futures +2.9%",
           "title_fr": "Les contrats à terme américains rebondissent après la pire semaine du Dow depuis 2020 : S&P 500 +2,3 %, Nasdaq 100 +2,9 %",
           "title_es": "Los futuros de Wall Street rebotan tras la peor semana del Dow desde 2020: S&P 500 +2,3%, Nasdaq 100 +2,9%",
@@ -99,24 +118,6 @@
           "why_de": "Eine 44-Mrd.-$-Fusion bewegt Cybersecurity- und Softwarewerte, einen großen Teil des Nasdaq.",
           "why_ru": "Сделка на $44 млрд двигает акции кибербезопасности и софта — заметную часть Nasdaq.",
           "why_zh": "这笔440亿美元的并购将带动网络安全和软件股，它们在纳指中占比不小。"
-        },
-        {
-          "title": "Trump again urges Nvidia's board to rehire Jensen Huang as CEO; the board has said he will not return",
-          "title_fr": "Trump exhorte de nouveau le conseil de Nvidia à réembaucher Jensen Huang ; le conseil a exclu son retour",
-          "title_es": "Trump insta de nuevo al consejo de Nvidia a readmitir a Jensen Huang; el consejo ha descartado su vuelta",
-          "title_de": "Trump drängt Nvidias Board erneut, Jensen Huang zurückzuholen; das Board hat eine Rückkehr ausgeschlossen",
-          "title_ru": "Трамп вновь призвал совет директоров Nvidia вернуть Дженсена Хуанга; совет исключил его возвращение",
-          "title_zh": "特朗普再次敦促英伟达董事会重新聘用黄仁勋；董事会已表示他不会回归",
-          "source": "Fox Business",
-          "date": "23 Nov",
-          "url": "https://www.foxbusiness.com/politics/trump-doubles-down-call-nvidia-rehire-jensen-huang-amid-alleged-chinese-spy-scandal",
-          "level": "orange",
-          "why": "Nvidia is one of the S&P 500's heaviest stocks, so its leadership crisis sways all of tech.",
-          "why_fr": "Nvidia est l'un des plus gros poids du S&P 500 : sa crise de direction pèse sur toute la tech.",
-          "why_es": "Nvidia es uno de los mayores pesos del S&P 500, así que su crisis de liderazgo afecta a toda la tecnología.",
-          "why_de": "Nvidia gehört zu den Schwergewichten im S&P 500, daher bewegt die Führungskrise die ganze Techbranche.",
-          "why_ru": "Nvidia — одна из крупнейших бумаг S&P 500, поэтому кризис руководства влияет на весь техсектор.",
-          "why_zh": "英伟达是标普500权重最大的股票之一，其领导层危机牵动整个科技板块。"
         },
         {
           "title": "Treasury yields rise as stocks bounce; traders see about 96% odds of a quarter-point Fed hike in December",
