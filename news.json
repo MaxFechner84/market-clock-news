@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T15:49:19Z",
+  "updatedAt": "2026-11-23T17:48:55Z",
   "edition": "breaking",
   "regions": {
     "am": {
@@ -158,14 +158,14 @@
       ]
     },
     "eu": {
-      "level": "orange",
-      "note": "Tech-led rebound after the worst week since March 2025; German Ifo survey due Tuesday",
-      "note_fr": "Rebond mené par la tech après la pire semaine depuis mars 2025 ; indice Ifo allemand mardi",
-      "note_es": "Rebote liderado por la tecnología tras la peor semana desde marzo de 2025; Ifo alemán el martes",
-      "note_de": "Techgetriebene Erholung nach der schlechtesten Woche seit März 2025; Ifo-Index am Dienstag",
-      "note_ru": "Отскок во главе с техсектором после худшей недели с марта 2025 года; индекс Ifo во вторник",
-      "note_zh": "科技股带动反弹，此前经历2025年3月以来最差一周；德国Ifo指数周二公布",
-      "pulse": "STOXX 600 +0.8% · DAX +0.8% · Euro STOXX 50 +1.0% · CAC 40 +0.7% (midday)",
+      "level": "red",
+      "note": "Chip-led rally: STOXX 600 closes +1.9%, DAX +2.3% on Huang's Nvidia return; Ifo Tuesday",
+      "note_fr": "Rally des puces : STOXX 600 +1,9 %, DAX +2,3 % avec le retour de Huang ; Ifo mardi",
+      "note_es": "Rally de chips: el STOXX 600 cierra +1,9% y el DAX +2,3% por Huang; Ifo el martes",
+      "note_de": "Chip-Rally: STOXX 600 schließt 1,9 % höher, DAX +2,3 % nach Huangs Rückkehr; Ifo Dienstag",
+      "note_ru": "Ралли чипов: STOXX 600 закрылся +1,9%, DAX +2,3% после возвращения Хуанга; Ifo во вторник",
+      "note_zh": "芯片股领涨：黄仁勋回归英伟达，STOXX 600收涨1.9%，DAX涨2.3%；Ifo指数周二公布",
+      "pulse": "STOXX 600 +1.9% · DAX +2.3% · Euro STOXX 50 +2.1% · CAC 40 +1.6% · FTSE 100 +1.4% (close)",
       "events": [
         {
           "time": "2026-11-23T08:30:00Z",
