@@ -56,9 +56,9 @@
       "edition": "us-preopen",
       "level": "red",
       "note": "Anthropic's record IPO debuts on Nasdaq; Walmart beat; Fed hike bets firm",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": -1.96,
+      "hit": true
     },
     {
       "date": "2026-11-19",
@@ -66,9 +66,9 @@
       "edition": "us-preopen",
       "level": "orange",
       "note": "Tech-led rebound after three losses; Lagarde speaks at 13:30 UTC and Friday",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": -0.77,
+      "hit": true
     },
     {
       "date": "2026-11-19",
@@ -76,6 +76,26 @@
       "edition": "morning",
       "level": "red",
       "note": "Hang Seng −1.8%, Taiwan −3.1%; Trump–Xi–Putin talks today; Japan CPI at 23:30 UTC",
+      "outcome": "scored",
+      "move": -0.62,
+      "hit": false
+    },
+    {
+      "date": "2026-11-23",
+      "region": "am",
+      "edition": "us-preopen",
+      "level": "red",
+      "note": "Futures +2.3% after the Dow's worst week since 2020; US PMIs 14:45 UTC, HPE, Zoom tonight",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-23",
+      "region": "eu",
+      "edition": "us-preopen",
+      "level": "orange",
+      "note": "Tech-led rebound after the worst week since March 2025; German Ifo survey due Tuesday",
       "outcome": null,
       "move": null,
       "hit": null
