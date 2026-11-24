@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-24T19:48:56Z",
+  "updatedAt": "2026-11-24T21:49:37Z",
   "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
-      "note": "Nasdaq futures −1.6% as chip stocks cool; Dell reports tonight, PCE inflation Wednesday",
-      "note_fr": "Futures Nasdaq à −1,6 % avec le repli des valeurs des puces ; Dell ce soir, inflation PCE mercredi",
-      "note_es": "Futuros del Nasdaq −1,6% por el enfriamiento de los chips; Dell hoy tras el cierre, PCE el miércoles",
-      "note_de": "Nasdaq-Futures −1,6 %, Chipwerte kühlen ab; Dell heute Abend, PCE-Inflation am Mittwoch",
-      "note_ru": "Фьючерсы на Nasdaq −1,6% на охлаждении чипмейкеров; Dell вечером, инфляция PCE в среду",
-      "note_zh": "芯片股降温，纳指期货跌1.6%；戴尔今晚发财报，PCE通胀数据周三公布",
-      "pulse": "S&P 500 −0.6% · Nasdaq −1.7% · Dow +0.7% · Russell 2000 +0.8% · 10-yr 4.91% (~19:00 UTC)",
+      "note": "Nasdaq −1.5% as chips slide; Dell beats but shares dip late; PCE inflation Wednesday",
+      "note_fr": "Nasdaq −1,5 % sur les puces ; Dell bat les attentes mais recule hors séance ; PCE mercredi",
+      "note_es": "Nasdaq −1,5% por los chips; Dell supera previsiones pero cede fuera de hora; PCE el miércoles",
+      "note_de": "Nasdaq −1,5 % wegen Chipwerten; Dell schlägt Prognosen, fällt nachbörslich; PCE am Mittwoch",
+      "note_ru": "Nasdaq −1,5% из-за чипмейкеров; Dell выше прогнозов, но дешевеет после закрытия; PCE в среду",
+      "note_zh": "芯片股下挫，纳指跌1.5%；戴尔业绩超预期但盘后走低；PCE通胀数据周三公布",
+      "pulse": "S&P 500 −0.50% · Nasdaq −1.48% · Dow +0.85% · Russell 2000 +0.57% · VIX 26.4 · 10-yr 4.90% (close)",
       "events": [
         {
           "time": "2026-11-24T12:00:00Z",
@@ -83,6 +83,25 @@
           "why_zh": "开盘前股指期货如此下跌，通常预示科技权重指数当天走弱。"
         },
         {
+          "title": "Dell crushes forecasts with record $54.9B revenue, lifts year outlook to $202B; shares slip after hours",
+          "title_fr": "Dell pulvérise les attentes avec 54,9 Md$ de revenus record et relève sa prévision annuelle à 202 Md$ ; l'action recule hors séance",
+          "title_es": "Dell arrasa las previsiones con ingresos récord de 54.900 M$ y eleva su previsión anual a 202.000 M$; sus acciones ceden fuera de hora",
+          "title_de": "Dell übertrifft Prognosen mit Rekordumsatz von 54,9 Mrd. $, hebt Jahresausblick auf 202 Mrd. $; Aktie nachbörslich leichter",
+          "title_ru": "Dell намного превзошла прогнозы: рекордная выручка $54,9 млрд, годовой прогноз поднят до $202 млрд; акции после закрытия снижаются",
+          "title_zh": "戴尔营收创纪录达549亿美元远超预期，全年展望上调至2020亿美元；盘后股价走低",
+          "source": "CNBC",
+          "date": "24 Nov",
+          "url": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
+          "level": "orange",
+          "why": "A key AI-server bellwether beat big, but the muted share reaction keeps it to the tech sector.",
+          "why_fr": "Baromètre clé des serveurs IA, très au-dessus des attentes, mais la réaction timide de l'action limite l'effet à la tech.",
+          "why_es": "Referente clave de servidores de IA que supera con creces, pero la tibia reacción bursátil lo limita a la tecnología.",
+          "why_de": "Wichtiger KI-Server-Gradmesser schlägt Erwartungen klar, doch die verhaltene Kursreaktion begrenzt es auf Tech.",
+          "why_ru": "Ключевой ориентир рынка ИИ-серверов сильно превзошёл ожидания, но вялая реакция акций ограничивает эффект техсектором.",
+          "why_zh": "AI服务器风向标大幅超预期，但股价反应平淡，影响主要限于科技板块。",
+          "breaking": true
+        },
+        {
           "title": "Anthropic shares slide about 11% and fall below their $83 IPO price, five days after the Nasdaq debut",
           "title_fr": "L'action Anthropic chute d'environ 11 % et passe sous son prix d'introduction de 83 $, cinq jours après ses débuts au Nasdaq",
           "title_es": "Las acciones de Anthropic caen cerca de un 11% y bajan de su precio de salida de 83 $, cinco días después de debutar en el Nasdaq",
@@ -137,24 +156,6 @@
           "why_de": "Höhere Zinsen belasten Aktien; ein hoher PCE-Wert könnte Spekulation auf einen größeren Schritt anheizen.",
           "why_ru": "Высокие ставки давят на акции; горячий PCE может оживить разговоры о более крупном повышении.",
           "why_zh": "利率上升压制股市；若PCE偏高，市场可能重新押注更大幅度加息。"
-        },
-        {
-          "title": "Medtronic beats on profit but misses on revenue and keeps its annual forecast; shares fall 3% premarket",
-          "title_fr": "Medtronic bat le consensus sur le bénéfice mais pas sur le chiffre d'affaires et maintient sa prévision ; l'action perd 3 % avant Bourse",
-          "title_es": "Medtronic supera en beneficio pero no en ingresos y mantiene su previsión anual; las acciones caen un 3% antes de la apertura",
-          "title_de": "Medtronic übertrifft beim Gewinn, verfehlt beim Umsatz und bestätigt die Jahresprognose; Aktie vorbörslich 3 % tiefer",
-          "title_ru": "Medtronic превзошла прогноз по прибыли, но не по выручке и сохранила годовой прогноз; акции −3% до открытия",
-          "title_zh": "美敦力利润超预期但营收不及预期，维持全年指引；盘前股价跌3%",
-          "source": "Reuters (via Yahoo Finance)",
-          "date": "24 Nov",
-          "url": "https://finance.yahoo.com/healthcare/articles/medtronic-posts-mixed-quarterly-results-113316925.html",
-          "level": "orange",
-          "why": "A big medical-device maker; it mostly moves healthcare stocks, not the whole market.",
-          "why_fr": "Un grand fabricant de dispositifs médicaux : il fait surtout bouger la santé, pas tout le marché.",
-          "why_es": "Gran fabricante de equipos médicos: mueve sobre todo la sanidad, no todo el mercado.",
-          "why_de": "Großer Medizintechnikhersteller; bewegt vor allem Gesundheitswerte, nicht den ganzen Markt.",
-          "why_ru": "Крупный производитель медтехники: влияет в основном на сектор здравоохранения, а не на весь рынок.",
-          "why_zh": "大型医疗器械商，主要影响医疗板块而非整个市场。"
         }
       ]
     },
