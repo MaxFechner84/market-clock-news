@@ -86,9 +86,9 @@
       "edition": "us-preopen",
       "level": "red",
       "note": "Futures +2.3% after the Dow's worst week since 2020; US PMIs 14:45 UTC, HPE, Zoom tonight",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": 4.71,
+      "hit": true
     },
     {
       "date": "2026-11-23",
@@ -96,6 +96,36 @@
       "edition": "us-preopen",
       "level": "orange",
       "note": "Tech-led rebound after the worst week since March 2025; German Ifo survey due Tuesday",
+      "outcome": "scored",
+      "move": 1.98,
+      "hit": true
+    },
+    {
+      "date": "2026-11-24",
+      "region": "am",
+      "edition": "morning",
+      "level": "orange",
+      "note": "Futures flat after the S&P 500's 4.7% jump; Dell reports tonight, PCE inflation Wednesday",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-24",
+      "region": "eu",
+      "edition": "morning",
+      "level": "orange",
+      "note": "German Ifo survey at 09:00 UTC after Monday's 1.9% chip-led rally; US PCE data Wednesday",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-24",
+      "region": "as",
+      "edition": "morning",
+      "level": "red",
+      "note": "Taiex +9%, Kospi +7%, Nikkei +4.5% as Huang's return to Nvidia revives the AI trade",
       "outcome": null,
       "move": null,
       "hit": null
