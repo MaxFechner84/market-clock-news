@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-24T13:21:06Z",
-  "edition": "us-preopen",
+  "updatedAt": "2026-11-24T15:50:00Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
@@ -10,7 +10,7 @@
       "note_de": "Nasdaq-Futures −1,6 %, Chipwerte kühlen ab; Dell heute Abend, PCE-Inflation am Mittwoch",
       "note_ru": "Фьючерсы на Nasdaq −1,6% на охлаждении чипмейкеров; Dell вечером, инфляция PCE в среду",
       "note_zh": "芯片股降温，纳指期货跌1.6%；戴尔今晚发财报，PCE通胀数据周三公布",
-      "pulse": "S&P 500 closed +4.7% · S&P 500 futures −0.9% · Nasdaq futures −1.6% · VIX 28.8 (~13:00 UTC) · US 10-yr 4.92%",
+      "pulse": "S&P 500 −0.8% · Nasdaq −1.8% · Dow +0.2% · Nvidia −7.2% · AMD −10.1% (~15:20 UTC)",
       "events": [
         {
           "time": "2026-11-24T12:00:00Z",
@@ -81,6 +81,25 @@
           "why_de": "Ein solches Minus der Futures vor Börsenstart deutet meist auf einen schwachen Tag für Techwerte.",
           "why_ru": "Такое падение фьючерсов до открытия обычно сулит слабый день для технологических индексов.",
           "why_zh": "开盘前股指期货如此下跌，通常预示科技权重指数当天走弱。"
+        },
+        {
+          "title": "US consumer confidence jumps to 103.3 in November, highest since January 2025 and far above forecasts of ~92",
+          "title_fr": "La confiance des consommateurs américains bondit à 103,3 en novembre, au plus haut depuis janvier 2025, bien au-dessus des ~92 attendus",
+          "title_es": "La confianza del consumidor de EE. UU. salta a 103,3 en noviembre, máximo desde enero de 2025 y muy por encima del ~92 previsto",
+          "title_de": "US-Verbrauchervertrauen springt im November auf 103,3 – höchster Stand seit Januar 2025, weit über den erwarteten ~92",
+          "title_ru": "Индекс потребительского доверия в США в ноябре подскочил до 103,3 — максимум с января 2025 года, намного выше прогноза ~92",
+          "title_zh": "美国11月消费者信心指数跃升至103.3，创2025年1月以来新高，远超约92的预期",
+          "source": "The Conference Board",
+          "date": "24 Nov",
+          "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html",
+          "level": "orange",
+          "why": "A big upside surprise that backs Fed rate-hike bets before Wednesday's PCE inflation data.",
+          "why_fr": "Une forte surprise à la hausse qui conforte les paris sur une hausse des taux de la Fed avant l'inflation PCE de mercredi.",
+          "why_es": "Una fuerte sorpresa al alza que refuerza las apuestas por una subida de tipos de la Fed antes del dato de inflación PCE del miércoles.",
+          "why_de": "Eine deutliche positive Überraschung, die Wetten auf eine Fed-Zinserhöhung vor den PCE-Inflationsdaten am Mittwoch stützt.",
+          "why_ru": "Сильный сюрприз в лучшую сторону, который подкрепляет ожидания повышения ставки ФРС перед данными по инфляции PCE в среду.",
+          "why_zh": "数据大幅超预期，在周三PCE通胀数据公布前强化了市场对美联储加息的押注。",
+          "breaking": true
         },
         {
           "title": "Traders fully price a Fed rate hike in December; Wednesday's PCE inflation data is the last big test",
