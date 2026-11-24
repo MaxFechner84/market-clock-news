@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T17:48:59Z",
+  "updatedAt": "2026-11-24T19:48:56Z",
   "edition": "breaking",
   "regions": {
     "am": {
@@ -10,7 +10,7 @@
       "note_de": "Nasdaq-Futures −1,6 %, Chipwerte kühlen ab; Dell heute Abend, PCE-Inflation am Mittwoch",
       "note_ru": "Фьючерсы на Nasdaq −1,6% на охлаждении чипмейкеров; Dell вечером, инфляция PCE в среду",
       "note_zh": "芯片股降温，纳指期货跌1.6%；戴尔今晚发财报，PCE通胀数据周三公布",
-      "pulse": "S&P 500 −0.8% · Nasdaq −1.8% · Dow +0.2% · Nvidia −7.2% · AMD −10.1% (~15:20 UTC)",
+      "pulse": "S&P 500 −0.6% · Nasdaq −1.7% · Dow +0.7% · Russell 2000 +0.8% · 10-yr 4.91% (~19:00 UTC)",
       "events": [
         {
           "time": "2026-11-24T12:00:00Z",
@@ -83,6 +83,25 @@
           "why_zh": "开盘前股指期货如此下跌，通常预示科技权重指数当天走弱。"
         },
         {
+          "title": "Anthropic shares slide about 11% and fall below their $83 IPO price, five days after the Nasdaq debut",
+          "title_fr": "L'action Anthropic chute d'environ 11 % et passe sous son prix d'introduction de 83 $, cinq jours après ses débuts au Nasdaq",
+          "title_es": "Las acciones de Anthropic caen cerca de un 11% y bajan de su precio de salida de 83 $, cinco días después de debutar en el Nasdaq",
+          "title_de": "Anthropic-Aktie fällt um rund 11 % unter den Ausgabepreis von 83 $, fünf Tage nach dem Nasdaq-Debüt",
+          "title_ru": "Акции Anthropic падают примерно на 11% и опускаются ниже цены IPO в $83 через пять дней после дебюта на Nasdaq",
+          "title_zh": "Anthropic股价下跌约11%，跌破83美元IPO发行价，距其纳斯达克上市仅五天",
+          "source": "CNBC",
+          "date": "24 Nov",
+          "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
+          "level": "orange",
+          "why": "A new AI giant trading below its IPO price adds to doubts over the AI rally and weighs on tech.",
+          "why_fr": "Un nouveau géant de l'IA sous son prix d'introduction alimente les doutes sur le rallye IA et pèse sur la tech.",
+          "why_es": "Un nuevo gigante de la IA por debajo de su precio de salida aviva las dudas sobre el rally de la IA y lastra la tecnología.",
+          "why_de": "Ein neuer KI-Riese unter dem Ausgabepreis nährt Zweifel an der KI-Rally und belastet Techwerte.",
+          "why_ru": "Новый гигант ИИ ниже цены IPO усиливает сомнения в ИИ-ралли и давит на техсектор.",
+          "why_zh": "新晋AI巨头跌破发行价，加剧市场对AI涨势的疑虑，拖累科技股。",
+          "breaking": true
+        },
+        {
           "title": "US consumer confidence jumps to 103.3 in November, highest since January 2025 and far above forecasts of ~92",
           "title_fr": "La confiance des consommateurs américains bondit à 103,3 en novembre, au plus haut depuis janvier 2025, bien au-dessus des ~92 attendus",
           "title_es": "La confianza del consumidor de EE. UU. salta a 103,3 en noviembre, máximo desde enero de 2025 y muy por encima del ~92 previsto",
@@ -118,24 +137,6 @@
           "why_de": "Höhere Zinsen belasten Aktien; ein hoher PCE-Wert könnte Spekulation auf einen größeren Schritt anheizen.",
           "why_ru": "Высокие ставки давят на акции; горячий PCE может оживить разговоры о более крупном повышении.",
           "why_zh": "利率上升压制股市；若PCE偏高，市场可能重新押注更大幅度加息。"
-        },
-        {
-          "title": "Dell reports third-quarter results after the close today, with its call at 3:30 p.m. Central time",
-          "source": "Dell Technologies",
-          "date": "10 Nov",
-          "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1661/dell-technologies-to-hold-conference-call-nov-24-to-discuss-third-quarter-fiscal-2027-financial-results",
-          "level": "orange",
-          "why": "Dell is a big AI-server maker; its outlook tests whether the AI rebound can last.",
-          "title_fr": "Dell publie ses résultats du troisième trimestre ce soir après la clôture ; conférence à 15 h 30 (heure du Centre)",
-          "why_fr": "Dell est un grand fabricant de serveurs IA : ses prévisions testeront la solidité du rebond.",
-          "title_es": "Dell presenta hoy sus resultados del tercer trimestre tras el cierre; la conferencia será a las 15:30 hora central",
-          "why_es": "Dell es un gran fabricante de servidores de IA: sus previsiones pondrán a prueba el rebote.",
-          "title_de": "Dell legt heute nach Börsenschluss Zahlen zum dritten Quartal vor; Telefonkonferenz um 15:30 Uhr Central Time",
-          "why_de": "Dell baut viele KI-Server; der Ausblick zeigt, ob die KI-Erholung trägt.",
-          "title_ru": "Dell сегодня после закрытия торгов опубликует отчёт за третий квартал; звонок в 15:30 по центральному времени",
-          "why_ru": "Dell — крупный производитель ИИ-серверов; его прогноз проверит устойчивость отскока.",
-          "title_zh": "戴尔今日盘后公布第三季度业绩，电话会议定于美国中部时间下午3:30",
-          "why_zh": "戴尔是AI服务器大厂，其业绩指引将检验AI反弹能否持续。"
         },
         {
           "title": "Medtronic beats on profit but misses on revenue and keeps its annual forecast; shares fall 3% premarket",
