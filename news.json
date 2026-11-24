@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T15:50:00Z",
+  "updatedAt": "2026-11-24T17:48:59Z",
   "edition": "breaking",
   "regions": {
     "am": {
@@ -246,6 +246,25 @@
           "why_zh": "这是CAC 40权重股的大手笔交易，令整个医药板块今日受关注。"
         },
         {
+          "title": "US set to unveil new tariffs on 16 economies incl. the EU, Japan and China as soon as Tuesday or Wednesday",
+          "title_fr": "Les États-Unis s'apprêtent à dévoiler dès mardi ou mercredi de nouveaux droits de douane visant 16 économies, dont l'UE, le Japon et la Chine",
+          "title_es": "EE. UU. se dispone a anunciar el martes o el miércoles nuevos aranceles a 16 economías, entre ellas la UE, Japón y China",
+          "title_de": "USA wollen schon Dienstag oder Mittwoch neue Zölle gegen 16 Volkswirtschaften verkünden, darunter EU, Japan und China",
+          "title_ru": "США уже во вторник или среду объявят новые пошлины против 16 экономик, включая ЕС, Японию и Китай",
+          "title_zh": "美国最快周二或周三公布对16个经济体的新关税，包括欧盟、日本和中国",
+          "source": "Bloomberg",
+          "date": "24 Nov",
+          "url": "https://news.bgov.com/bloomberg-government-news/new-trump-tariffs-wont-top-trade-deal-levels-will-be-targeted",
+          "level": "orange",
+          "why": "New US duties could hit exporters soon, but rates are reportedly capped at existing trade-deal levels.",
+          "why_fr": "De nouveaux droits américains pourraient frapper les exportateurs, mais les taux seraient plafonnés aux niveaux des accords.",
+          "why_es": "Nuevos aranceles de EE. UU. podrían golpear a exportadores, aunque los tipos se limitarían a los de los acuerdos.",
+          "why_de": "Neue US-Zölle könnten Exporteure bald treffen, sollen aber auf dem Niveau bestehender Handelsdeals gedeckelt sein.",
+          "why_ru": "Новые пошлины США могут ударить по экспортёрам, но ставки, по данным СМИ, не превысят уровни торговых сделок.",
+          "why_zh": "美国新关税或很快冲击出口商，但据报税率不会超过现有贸易协议水平。",
+          "breaking": true
+        },
+        {
           "title": "German Ifo business climate rises to 90.6 from 90.1 as services improve, but manufacturing slips",
           "title_fr": "Le climat des affaires Ifo en Allemagne monte à 90,6 contre 90,1, porté par les services, mais l'industrie recule",
           "title_es": "El clima empresarial Ifo alemán sube a 90,6 desde 90,1 gracias a los servicios, pero la industria retrocede",
@@ -368,6 +387,25 @@
           "why_ru": "Облегчение кредита может привлечь деньги в китайские акции, которые сегодня отстают.",
           "title_zh": "中国将融资买入股票的最低保证金比例从100%下调至80%，11月30日起生效",
           "why_zh": "融资门槛降低可能为今日表现落后的中国股市带来增量资金。"
+        },
+        {
+          "title": "US set to unveil new tariffs on 16 economies incl. the EU, Japan and China as soon as Tuesday or Wednesday",
+          "title_fr": "Les États-Unis s'apprêtent à dévoiler dès mardi ou mercredi de nouveaux droits de douane visant 16 économies, dont l'UE, le Japon et la Chine",
+          "title_es": "EE. UU. se dispone a anunciar el martes o el miércoles nuevos aranceles a 16 economías, entre ellas la UE, Japón y China",
+          "title_de": "USA wollen schon Dienstag oder Mittwoch neue Zölle gegen 16 Volkswirtschaften verkünden, darunter EU, Japan und China",
+          "title_ru": "США уже во вторник или среду объявят новые пошлины против 16 экономик, включая ЕС, Японию и Китай",
+          "title_zh": "美国最快周二或周三公布对16个经济体的新关税，包括欧盟、日本和中国",
+          "source": "Bloomberg",
+          "date": "24 Nov",
+          "url": "https://news.bgov.com/bloomberg-government-news/new-trump-tariffs-wont-top-trade-deal-levels-will-be-targeted",
+          "level": "orange",
+          "why": "New US duties could hit exporters soon, but rates are reportedly capped at existing trade-deal levels.",
+          "why_fr": "De nouveaux droits américains pourraient frapper les exportateurs, mais les taux seraient plafonnés aux niveaux des accords.",
+          "why_es": "Nuevos aranceles de EE. UU. podrían golpear a exportadores, aunque los tipos se limitarían a los de los acuerdos.",
+          "why_de": "Neue US-Zölle könnten Exporteure bald treffen, sollen aber auf dem Niveau bestehender Handelsdeals gedeckelt sein.",
+          "why_ru": "Новые пошлины США могут ударить по экспортёрам, но ставки, по данным СМИ, не превысят уровни торговых сделок.",
+          "why_zh": "美国新关税或很快冲击出口商，但据报税率不会超过现有贸易协议水平。",
+          "breaking": true
         }
       ]
     }
