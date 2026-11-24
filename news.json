@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-24T09:49:40Z",
+  "updatedAt": "2026-11-24T11:49:17Z",
   "edition": "breaking",
   "regions": {
     "am": {
       "level": "orange",
-      "note": "Futures flat after the S&P 500's 4.7% jump; Dell reports tonight, PCE inflation Wednesday",
-      "note_fr": "Contrats à terme stables après le bond de 4,7 % du S&P 500 ; Dell ce soir, inflation PCE mercredi",
-      "note_es": "Futuros planos tras el salto del 4,7% del S&P 500; Dell publica hoy y la inflación PCE, el miércoles",
-      "note_de": "Futures stabil nach 4,7 % Plus im S&P 500; Dell berichtet heute Abend, PCE-Inflation am Mittwoch",
-      "note_ru": "Фьючерсы без изменений после скачка S&P 500 на 4,7%; Dell отчитается вечером, PCE — в среду",
-      "note_zh": "标普500大涨4.7%后期货持平；戴尔今晚发财报，PCE通胀数据周三公布",
-      "pulse": "S&P 500 closed +4.7% · Nasdaq +6.5% · VIX 26.6 · S&P 500 futures flat, Nasdaq futures −0.2% (early Tue) · US 10-yr 4.94%",
+      "note": "Nasdaq futures down about 1% as Nvidia gives back part of its surge; Dell tonight, PCE Wed",
+      "note_fr": "Futures Nasdaq en baisse d'env. 1 % avec le repli de Nvidia ; Dell ce soir, PCE mercredi",
+      "note_es": "Futuros del Nasdaq caen un 1% por el retroceso de Nvidia; Dell hoy, PCE el miércoles",
+      "note_de": "Nasdaq-Futures rund 1 % tiefer, Nvidia gibt Gewinne ab; Dell heute Abend, PCE am Mittwoch",
+      "note_ru": "Фьючерсы на Nasdaq теряют около 1% на откате Nvidia; Dell вечером, PCE в среду",
+      "note_zh": "英伟达回吐涨幅，纳指期货下跌约1%；戴尔今晚发财报，PCE数据周三公布",
+      "pulse": "S&P 500 closed +4.7% · Nasdaq +6.5% · S&P 500 futures −0.4%, Nasdaq futures −1.2% (~10:00 UTC Tue) · VIX 27.6 · US 10-yr 4.92%",
       "events": [
         {
           "time": "2026-11-24T15:00:00Z",
@@ -54,6 +54,25 @@
         }
       ],
       "stories": [
+        {
+          "title": "Nvidia shares drop more than 3% before the bell, giving back part of Monday's 31% comeback rally",
+          "title_fr": "L'action Nvidia recule de plus de 3 % avant l'ouverture et rend une partie de son envolée de 31 % de lundi",
+          "title_es": "Las acciones de Nvidia caen más de un 3% antes de la apertura y devuelven parte de la subida del 31% del lunes",
+          "title_de": "Nvidia-Aktie fällt vorbörslich um mehr als 3 % und gibt einen Teil des 31-%-Comebacks vom Montag ab",
+          "title_ru": "Акции Nvidia до открытия торгов падают более чем на 3%, отыгрывая часть понедельничного взлёта на 31%",
+          "title_zh": "英伟达股价盘前下跌逾3%，回吐周一因黄仁勋回归而大涨31%的部分涨幅",
+          "source": "CNBC",
+          "date": "24 Nov",
+          "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+          "level": "orange",
+          "why": "Nvidia leads the Nasdaq; a pullback after a record jump is normal but drags futures lower.",
+          "why_fr": "Nvidia mène le Nasdaq ; un repli après un bond record est normal mais pèse sur les contrats à terme.",
+          "why_es": "Nvidia lidera el Nasdaq; un retroceso tras un salto récord es normal, pero lastra los futuros.",
+          "why_de": "Nvidia führt den Nasdaq; ein Rücksetzer nach Rekordsprung ist normal, drückt aber die Futures.",
+          "why_ru": "Nvidia ведёт за собой Nasdaq; откат после рекордного скачка нормален, но тянет фьючерсы вниз.",
+          "why_zh": "英伟达引领纳指；创纪录大涨后回调属正常，但拖累股指期货走低。",
+          "breaking": true
+        },
         {
           "title": "Nvidia reinstates Jensen Huang as CEO; its stock jumps 31%, lifting the S&P 500 4.7% and Nasdaq 6.5%",
           "source": "CNBC",
