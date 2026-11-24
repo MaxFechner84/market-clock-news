@@ -103,9 +103,9 @@
     {
       "date": "2026-11-24",
       "region": "am",
-      "edition": "morning",
-      "level": "orange",
-      "note": "Futures flat after the S&P 500's 4.7% jump; Dell reports tonight, PCE inflation Wednesday",
+      "edition": "us-preopen",
+      "level": "red",
+      "note": "Nasdaq futures −1.6% as chip stocks cool; Dell reports tonight, PCE inflation Wednesday",
       "outcome": null,
       "move": null,
       "hit": null
@@ -113,9 +113,9 @@
     {
       "date": "2026-11-24",
       "region": "eu",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "orange",
-      "note": "German Ifo survey at 09:00 UTC after Monday's 1.9% chip-led rally; US PCE data Wednesday",
+      "note": "DAX down 1% as chip stocks give back gains; Sanofi up on Insmed deal; US PCE Wednesday",
       "outcome": null,
       "move": null,
       "hit": null
