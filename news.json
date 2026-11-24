@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-24T06:40:19Z",
-  "edition": "morning",
+  "updatedAt": "2026-11-24T09:49:40Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "orange",
@@ -130,13 +130,13 @@
     },
     "eu": {
       "level": "orange",
-      "note": "German Ifo survey at 09:00 UTC after Monday's 1.9% chip-led rally; US PCE data Wednesday",
-      "note_fr": "Enquête Ifo allemande à 09h00 UTC après le rebond de 1,9 % tiré par les puces ; PCE américain mercredi",
-      "note_es": "Encuesta Ifo alemana a las 09:00 UTC tras el rebote del 1,9% liderado por los chips; PCE de EE. UU. el miércoles",
-      "note_de": "Ifo-Umfrage um 09:00 UTC nach der chipgetriebenen Rally von 1,9 %; US-PCE-Daten am Mittwoch",
-      "note_ru": "Индекс Ifo в 09:00 UTC после роста на 1,9% во главе с чипмейкерами; данные PCE США в среду",
-      "note_zh": "周一芯片股领涨1.9%后，德国Ifo调查于UTC 09:00公布；美国PCE数据周三发布",
-      "pulse": "STOXX 600 +1.9% · DAX +2.3% · CAC 40 +1.6% · FTSE 100 +1.4% (Mon close)",
+      "note": "Sanofi's $41bn Insmed deal in focus as stocks pause after the rally; US PCE data Wednesday",
+      "note_fr": "Le rachat d'Insmed par Sanofi (41 Md$) en vedette, les marchés marquent une pause ; PCE américain mercredi",
+      "note_es": "La compra de Insmed por Sanofi (41.000 M$) centra la atención tras el rally; PCE de EE. UU. el miércoles",
+      "note_de": "Sanofis 41-Mrd.-$-Kauf von Insmed im Fokus, Märkte pausieren nach der Rally; US-PCE am Mittwoch",
+      "note_ru": "В центре внимания сделка Sanofi по Insmed на $41 млрд; рынки на паузе после ралли; PCE США в среду",
+      "note_zh": "赛诺菲410亿美元收购Insmed成焦点，股市涨后暂歇；美国PCE数据周三公布",
+      "pulse": "STOXX 600 +0.1% · DAX −0.3% · CAC 40 +0.2% · FTSE 100 flat (Tue ~08:10 UTC)",
       "events": [
         {
           "time": "2026-11-24T09:00:00Z",
@@ -180,6 +180,25 @@
         }
       ],
       "stories": [
+        {
+          "title": "Sanofi agrees to buy US drugmaker Insmed for $41 billion in cash, or $175 a share, its biggest deal in years",
+          "title_fr": "Sanofi va racheter l'américain Insmed pour 41 milliards de dollars en numéraire, soit 175 $ par action, sa plus grosse opération depuis des années",
+          "title_es": "Sanofi acuerda comprar la farmacéutica estadounidense Insmed por 41.000 millones de dólares en efectivo, 175 $ por acción, su mayor operación en años",
+          "title_de": "Sanofi kauft den US-Arzneimittelhersteller Insmed für 41 Mrd. Dollar in bar, 175 $ je Aktie – der größte Zukauf seit Jahren",
+          "title_ru": "Sanofi купит американскую фармкомпанию Insmed за $41 млрд наличными, по $175 за акцию — крупнейшая сделка компании за многие годы",
+          "title_zh": "赛诺菲同意以410亿美元现金（每股175美元）收购美国药企Insmed，为其多年来最大交易",
+          "source": "Reuters (via AOL)",
+          "date": "24 Nov",
+          "url": "https://www.aol.com/articles/sanofi-strikes-41-billion-deal-063559000.html",
+          "level": "orange",
+          "why": "A huge deal moves a CAC 40 heavyweight and puts the pharma sector in focus today.",
+          "why_fr": "Une opération géante qui fait bouger un poids lourd du CAC 40 et braque les projecteurs sur la pharmacie.",
+          "why_es": "Una operación enorme mueve a un peso pesado del CAC 40 y pone hoy el foco en el sector farmacéutico.",
+          "why_de": "Ein Riesendeal bewegt ein CAC-40-Schwergewicht und rückt heute die Pharmabranche in den Fokus.",
+          "why_ru": "Крупнейшая сделка двигает тяжеловеса CAC 40 и привлекает сегодня внимание к фармсектору.",
+          "why_zh": "这笔巨额交易牵动CAC 40权重股，令医药板块今日成为焦点。",
+          "breaking": true
+        },
         {
           "title": "STOXX 600 closes 1.9% higher, its best day since early May, as tech jumps 4.7% on Huang's Nvidia return",
           "source": "Reuters",
