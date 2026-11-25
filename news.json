@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-25T06:40:14Z",
-  "edition": "morning",
+  "updatedAt": "2026-11-25T09:49:26Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "red",
-      "note": "US PCE inflation and GDP at 13:30 UTC, the last big test before a likely Fed hike",
-      "note_fr": "Inflation PCE et PIB américains à 13 h 30 UTC, dernier grand test avant une probable hausse de la Fed",
-      "note_es": "Inflación PCE y PIB de EE. UU. a las 13:30 UTC, última gran prueba antes de una probable subida de la Fed",
-      "note_de": "US-PCE-Inflation und BIP um 13:30 UTC – letzter großer Test vor einer wahrscheinlichen Fed-Zinserhöhung",
-      "note_ru": "Инфляция PCE и ВВП США в 13:30 UTC — последний крупный тест перед вероятным повышением ставки ФРС",
-      "note_zh": "美国PCE通胀和GDP数据于UTC 13:30公布，是美联储可能加息前的最后一大考验",
-      "pulse": "S&P 500 closed −0.5% · Nasdaq −1.5% · Dow +0.9% (Tue) · S&P 500 futures −0.6% (Asian hours)",
+      "note": "Nasdaq futures −2.1% on AI selloff; PCE inflation and GDP at 13:30 UTC",
+      "note_fr": "Contrats sur le Nasdaq à −2,1 % sur fond de débâcle de l'IA ; inflation PCE et PIB à 13 h 30 UTC",
+      "note_es": "Futuros del Nasdaq −2,1 % por la venta de IA; inflación PCE y PIB a las 13:30 UTC",
+      "note_de": "Nasdaq-Futures −2,1 % wegen KI-Ausverkauf; PCE-Inflation und BIP um 13:30 UTC",
+      "note_ru": "Фьючерсы на Nasdaq −2,1% на распродаже ИИ; инфляция PCE и ВВП в 13:30 UTC",
+      "note_zh": "AI抛售致纳指期货跌2.1%；PCE通胀和GDP数据于UTC 13:30公布",
+      "pulse": "Nasdaq 100 futures −2.1% · S&P 500 futures −1.0% (07:35 UTC) · Nasdaq closed −1.5% (Tue)",
       "events": [
         {
           "time": "2026-11-25T13:30:00Z",
@@ -64,6 +64,25 @@
         }
       ],
       "stories": [
+        {
+          "title": "Nasdaq 100 futures slide 2.1% and S&P 500 futures 1% as the AI chip selloff spreads from Asia",
+          "title_fr": "Les contrats à terme sur le Nasdaq 100 chutent de 2,1 % et ceux sur le S&P 500 de 1 %, la débâcle des puces IA s'étendant depuis l'Asie",
+          "title_es": "Los futuros del Nasdaq 100 caen un 2,1 % y los del S&P 500 un 1 % al extenderse desde Asia la venta de chips de IA",
+          "title_de": "Nasdaq-100-Futures fallen um 2,1 %, S&P-500-Futures um 1 %, da sich der KI-Chip-Ausverkauf von Asien ausbreitet",
+          "title_ru": "Фьючерсы на Nasdaq 100 падают на 2,1%, на S&P 500 — на 1%: распродажа ИИ-чипов перекидывается из Азии",
+          "title_zh": "纳斯达克100指数期货下跌2.1%，标普500指数期货下跌1%，AI芯片抛售从亚洲蔓延",
+          "source": "Bloomberg",
+          "date": "25 Nov",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-25/us-stock-index-futures-slide-as-ai-worries-fuel-tech-losses",
+          "level": "red",
+          "why": "A 2% drop in Nasdaq futures before the open points to another heavy day for US tech.",
+          "why_fr": "Une baisse de 2 % des contrats sur le Nasdaq avant l'ouverture annonce une nouvelle séance difficile pour la tech.",
+          "why_es": "Una caída del 2 % de los futuros del Nasdaq antes de la apertura anticipa otra dura sesión para la tecnología.",
+          "why_de": "Ein Minus von 2 % bei Nasdaq-Futures vor Handelsbeginn deutet auf einen weiteren schweren Tag für US-Tech.",
+          "why_ru": "Падение фьючерсов на Nasdaq на 2% до открытия сулит американским техкомпаниям ещё один тяжёлый день.",
+          "why_zh": "开盘前纳指期货下跌2%，预示美国科技股又将迎来艰难一天。",
+          "breaking": true
+        },
         {
           "title": "PCE inflation, the Fed's preferred gauge, is out today; traders mostly price a December rate hike",
           "title_fr": "L'inflation PCE, l'indicateur préféré de la Fed, tombe aujourd'hui ; le marché anticipe en majorité une hausse des taux en décembre",
