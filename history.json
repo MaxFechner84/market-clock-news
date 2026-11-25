@@ -133,9 +133,9 @@
     {
       "date": "2026-11-25",
       "region": "am",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "red",
-      "note": "US PCE inflation and GDP at 13:30 UTC, the last big test before a likely Fed hike",
+      "note": "Core PCE 3.3% tops forecasts, GDP 4.3%; Nasdaq futures −2.8% on AI selloff",
       "outcome": null,
       "move": null,
       "hit": null
@@ -143,9 +143,9 @@
     {
       "date": "2026-11-25",
       "region": "eu",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "orange",
-      "note": "Tech-led losses and a US tariff threat; German GDP 07:00 UTC, BoE's Bailey 14:15 UTC",
+      "note": "US tariff plan and hot US inflation data in focus; carmakers rally; BoE's Bailey 14:15 UTC",
       "outcome": null,
       "move": null,
       "hit": null
