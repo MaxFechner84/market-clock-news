@@ -136,9 +136,9 @@
       "edition": "us-preopen",
       "level": "red",
       "note": "Core PCE 3.3% tops forecasts, GDP 4.3%; Nasdaq futures −2.8% on AI selloff",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": -0.29,
+      "hit": false
     },
     {
       "date": "2026-11-25",
@@ -146,9 +146,9 @@
       "edition": "us-preopen",
       "level": "orange",
       "note": "US tariff plan and hot US inflation data in focus; carmakers rally; BoE's Bailey 14:15 UTC",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": -1.08,
+      "hit": true
     },
     {
       "date": "2026-11-25",
@@ -156,6 +156,36 @@
       "edition": "morning",
       "level": "red",
       "note": "Kospi and Taiex down ~5%, Nikkei −2.8% as AI chip stocks slump again; US tariff risk",
+      "outcome": "scored",
+      "move": -1.96,
+      "hit": true
+    },
+    {
+      "date": "2026-11-26",
+      "region": "am",
+      "edition": "morning",
+      "level": "orange",
+      "note": "Wall St shut for Thanksgiving; futures +0.5% after late rebound; Friday half-day",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-26",
+      "region": "eu",
+      "edition": "morning",
+      "level": "red",
+      "note": "Futures point to a ~2% rebound as US tariffs look milder; ECB account at 12:30 UTC",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-26",
+      "region": "as",
+      "edition": "morning",
+      "level": "red",
+      "note": "Chip stocks lead a rebound: Nikkei +1.6%, Kospi +1.9%; Bank of Korea hikes to 3.25%",
       "outcome": null,
       "move": null,
       "hit": null
