@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-26T13:21:16Z",
-  "edition": "us-preopen",
+  "updatedAt": "2026-11-26T18:05:00Z",
+  "edition": "breaking",
   "regions": {
     "am": {
       "level": "orange",
@@ -233,6 +233,25 @@
           "why_de": "Einer der größten europäischen Bankendeals seit Jahren kann nun kommen – das bewegt Bankaktien.",
           "why_ru": "Одна из крупнейших банковских сделок в Европе за годы может состояться, что двигает акции банков.",
           "why_zh": "欧洲多年来最大的银行并购之一得以推进，影响银行股走势。"
+        },
+        {
+          "title": "Eurozone leaders pick Spain's Pablo Hernández de Cos, seen as a dove, to succeed Lagarde at the ECB",
+          "title_fr": "Les dirigeants de la zone euro choisissent l'Espagnol Pablo Hernández de Cos, réputé colombe, pour succéder à Lagarde à la BCE",
+          "title_es": "Los líderes de la eurozona eligen al español Pablo Hernández de Cos, considerado paloma, para suceder a Lagarde en el BCE",
+          "title_de": "Euro-Länder wählen den als Taube geltenden Spanier Pablo Hernández de Cos zum Lagarde-Nachfolger an der EZB-Spitze",
+          "title_ru": "Лидеры еврозоны выбрали испанца Пабло Эрнандеса де Коса, считающегося «голубем», преемником Лагард в ЕЦБ",
+          "title_zh": "欧元区领导人选定被视为鸽派的西班牙人巴勃罗·埃尔南德斯·德科斯接替拉加德出任欧洲央行行长",
+          "source": "AP",
+          "date": "26 Nov",
+          "url": "https://abcnews.com/International/wireStory/leaders-choose-spains-former-central-bank-head-european-138468703",
+          "level": "orange",
+          "why": "A new ECB chief from February who may favour lower rates can sway bond yields and the euro.",
+          "why_fr": "Un nouveau patron de la BCE dès février, plutôt favorable à des taux bas, peut peser sur rendements et euro.",
+          "why_es": "Un nuevo presidente del BCE desde febrero, más partidario de tipos bajos, puede mover la rentabilidad y el euro.",
+          "why_de": "Ein neuer EZB-Chef ab Februar, der eher niedrige Zinsen bevorzugt, kann Renditen und Euro bewegen.",
+          "why_ru": "Новый глава ЕЦБ с февраля, склонный к низким ставкам, может повлиять на доходность облигаций и евро.",
+          "why_zh": "明年2月上任的新行长可能偏好低利率，或影响债券收益率和欧元走势。",
+          "breaking": true
         },
         {
           "title": "German consumer sentiment edges up to −30.2 for December, slightly below forecasts",
