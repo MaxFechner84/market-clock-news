@@ -163,9 +163,9 @@
     {
       "date": "2026-11-26",
       "region": "am",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "orange",
-      "note": "Wall St shut for Thanksgiving; futures +0.5% after late rebound; Friday half-day",
+      "note": "Wall St shut for Thanksgiving; S&P futures +0.5%; half-day trading Friday",
       "outcome": null,
       "move": null,
       "hit": null
@@ -173,9 +173,9 @@
     {
       "date": "2026-11-26",
       "region": "eu",
-      "edition": "morning",
+      "edition": "us-preopen",
       "level": "red",
-      "note": "Futures point to a ~2% rebound as US tariffs look milder; ECB account at 12:30 UTC",
+      "note": "STOXX 600 up ~1.6% on tech and bank rebound; ECB account backs a December hike",
       "outcome": null,
       "move": null,
       "hit": null
