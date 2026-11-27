@@ -176,9 +176,9 @@
       "edition": "us-preopen",
       "level": "red",
       "note": "STOXX 600 up ~1.6% on tech and bank rebound; ECB account backs a December hike",
-      "outcome": null,
-      "move": null,
-      "hit": null
+      "outcome": "scored",
+      "move": 1.83,
+      "hit": true
     },
     {
       "date": "2026-11-26",
@@ -186,6 +186,36 @@
       "edition": "morning",
       "level": "red",
       "note": "Chip stocks lead a rebound: Nikkei +1.6%, Kospi +1.9%; Bank of Korea hikes to 3.25%",
+      "outcome": "scored",
+      "move": 0.89,
+      "hit": false
+    },
+    {
+      "date": "2026-11-27",
+      "region": "am",
+      "edition": "morning",
+      "level": "orange",
+      "note": "Half-day session; S&P futures +0.8%; Nvidia halts server shipments to SE Asia",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-27",
+      "region": "eu",
+      "edition": "morning",
+      "level": "orange",
+      "note": "Stocks rallied 1.8% Thursday; oil near $96 on Gulf attacks; French inflation at 08:45",
+      "outcome": null,
+      "move": null,
+      "hit": null
+    },
+    {
+      "date": "2026-11-27",
+      "region": "as",
+      "edition": "morning",
+      "level": "orange",
+      "note": "Kospi +1.9%, Nikkei +1.2% as chips rebound; Tokyo core inflation at a 16-month high",
       "outcome": null,
       "move": null,
       "hit": null
