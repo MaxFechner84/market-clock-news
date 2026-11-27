@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-27T06:40:55Z",
-  "edition": "morning",
+  "updatedAt": "2026-11-27T09:50:51Z",
+  "edition": "breaking",
   "regions": {
     "am": {
-      "level": "orange",
-      "note": "Half-day session; S&P futures +0.8%; Nvidia halts server shipments to SE Asia",
-      "note_fr": "Séance écourtée ; futures S&P +0,8 % ; Nvidia suspend ses livraisons de serveurs en Asie du Sud-Est",
-      "note_es": "Media sesión; futuros del S&P +0,8%; Nvidia frena envíos de servidores al Sudeste Asiático",
-      "note_de": "Verkürzter Handel; S&P-Futures +0,8 %; Nvidia stoppt Serverlieferungen nach Südostasien",
-      "note_ru": "Короткая сессия; фьючерсы S&P +0,8%; Nvidia остановила поставки серверов в Юго-Восточную Азию",
-      "note_zh": "美股半日交易；标普期货涨0.8%；英伟达暂停向东南亚发货服务器",
-      "pulse": "S&P 500 closed −0.3% (Wed) · S&P 500 futures +0.8% · Nasdaq futures +1.0%",
+      "level": "red",
+      "note": "Futures surge: S&P +1.7%, Nasdaq +2.4% before half-day session; Fed hike bets",
+      "note_fr": "Futures en forte hausse : S&P +1,7 %, Nasdaq +2,4 % avant la demi-séance ; hausse de la Fed attendue",
+      "note_es": "Futuros disparados: S&P +1,7%, Nasdaq +2,4% antes de la media sesión; se espera subida de la Fed",
+      "note_de": "Futures ziehen an: S&P +1,7 %, Nasdaq +2,4 % vor dem Halbtageshandel; Fed-Zinserhöhung erwartet",
+      "note_ru": "Фьючерсы взлетели: S&P +1,7%, Nasdaq +2,4% перед короткой сессией; ждут повышения ставки ФРС",
+      "note_zh": "期货大涨：半日交易前标普涨1.7%、纳指涨2.4%；市场押注美联储加息",
+      "pulse": "S&P 500 closed −0.3% (Wed) · S&P 500 futures +1.7% · Nasdaq 100 futures +2.4% · Dow futures +0.9%",
       "events": [
         {
           "time": "2026-11-27T13:30:00Z",
@@ -65,22 +65,23 @@
       ],
       "stories": [
         {
-          "title": "US stock futures rise about 0.8%, Nasdaq futures 1%, ahead of a half-day Black Friday session",
-          "source": "Reuters (via The Straits Times)",
+          "title": "US stock futures jump as Wall Street returns: S&P 500 futures up about 1.7%, Nasdaq 100 about 2.4%",
+          "title_fr": "Les futures américains bondissent au retour de Wall Street : S&P 500 environ +1,7 %, Nasdaq 100 environ +2,4 %",
+          "title_es": "Los futuros de EE. UU. se disparan a la vuelta de Wall Street: S&P 500 cerca del +1,7% y Nasdaq 100 del +2,4%",
+          "title_de": "US-Futures springen zur Rückkehr der Wall Street an: S&P 500 rund +1,7 %, Nasdaq 100 rund +2,4 %",
+          "title_ru": "Фьючерсы США резко растут перед возвращением Уолл-стрит: S&P 500 примерно +1,7%, Nasdaq 100 примерно +2,4%",
+          "title_zh": "华尔街复市前美股期货大涨：标普500期货涨约1.7%，纳指100期货涨约2.4%",
+          "source": "Reuters (via Investing.com)",
           "date": "27 Nov",
-          "url": "https://www.straitstimes.com/business/asian-shares-find-footing-after-bruising-month-us-dollar-set-for-third-monthly-gain",
-          "level": "orange",
-          "why": "Futures point to a higher open; thin holiday trading can make moves bigger than usual.",
-          "title_fr": "Les futures sur actions américaines gagnent environ 0,8 %, ceux du Nasdaq 1 %, avant une demi-séance de Black Friday",
-          "why_fr": "Les futures annoncent une ouverture en hausse ; les faibles volumes du jour férié peuvent amplifier les mouvements.",
-          "title_es": "Los futuros de la bolsa de EE. UU. suben cerca de un 0,8% y los del Nasdaq un 1% antes de la media sesión de Black Friday",
-          "why_es": "Los futuros apuntan a una apertura al alza; el escaso volumen festivo puede amplificar los movimientos.",
-          "title_de": "US-Aktienfutures steigen um rund 0,8 %, Nasdaq-Futures um 1 % – vor dem verkürzten Black-Friday-Handel",
-          "why_de": "Die Futures deuten auf einen festeren Start; dünner Feiertagshandel kann Ausschläge verstärken.",
-          "title_ru": "Фьючерсы на американские акции растут примерно на 0,8%, на Nasdaq — на 1% перед короткой сессией «чёрной пятницы»",
-          "why_ru": "Фьючерсы указывают на рост при открытии; тонкая праздничная торговля может усилить колебания.",
-          "title_zh": "黑色星期五半日交易前，美股期货上涨约0.8%，纳指期货涨1%",
-          "why_zh": "期货预示高开；节日交投清淡可能放大波动。"
+          "url": "https://za.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-4598794",
+          "level": "red",
+          "why": "A move this big before the open points to a sharp jump in thin half-day trading.",
+          "why_fr": "Une telle hausse avant l'ouverture annonce un fort bond dans une demi-séance peu liquide.",
+          "why_es": "Una subida así antes de la apertura anticipa un fuerte salto en una media sesión con poco volumen.",
+          "why_de": "Ein so großer Anstieg vor Handelsbeginn deutet auf einen kräftigen Sprung im dünnen Halbtageshandel.",
+          "why_ru": "Такой рост до открытия указывает на резкий скачок в короткой сессии с низкой ликвидностью.",
+          "why_zh": "开盘前如此大的涨幅预示清淡的半日交易中将大幅上涨。",
+          "breaking": true
         },
         {
           "title": "Nvidia tells partners to stop shipping its servers to Malaysia, Singapore, Thailand and Indonesia",
@@ -122,12 +123,12 @@
     },
     "eu": {
       "level": "orange",
-      "note": "Stocks rallied 1.8% Thursday; oil near $96 on Gulf attacks; French inflation at 08:45",
-      "note_fr": "Les actions ont bondi de 1,8 % jeudi ; pétrole vers 96 $ après des attaques dans le Golfe ; inflation française à 08h45",
-      "note_es": "Las bolsas subieron un 1,8% el jueves; el crudo, cerca de 96 $ por ataques en el Golfo; IPC francés a las 08:45",
-      "note_de": "Aktien legten Donnerstag 1,8 % zu; Öl nahe 96 $ nach Angriffen am Golf; Frankreichs Inflation um 08:45",
-      "note_ru": "В четверг акции выросли на 1,8%; нефть около $96 из-за атак в Заливе; инфляция во Франции в 08:45",
-      "note_zh": "欧股周四大涨1.8%；海湾袭击令油价逼近96美元；法国通胀数据08:45公布",
+      "note": "Stocks rallied 1.8% Thursday; French inflation cooler than expected; oil near $97",
+      "note_fr": "Les Bourses ont pris 1,8 % jeudi ; inflation française plus faible que prévu ; pétrole vers 97 $",
+      "note_es": "Las bolsas subieron un 1,8% el jueves; inflación francesa menor de lo previsto; crudo cerca de 97 $",
+      "note_de": "Aktien legten am Donnerstag 1,8 % zu; Frankreichs Inflation schwächer als erwartet; Öl nahe 97 $",
+      "note_ru": "Рынки выросли на 1,8% в четверг; инфляция во Франции ниже ожиданий; нефть около $97",
+      "note_zh": "周四股市涨1.8%；法国通胀低于预期；油价接近97美元",
       "pulse": "STOXX 600 closed +1.75% (Thu) · DAX +2.1% · CAC 40 +1.6% · FTSE 100 +1.75% · Brent $96.3",
       "events": [
         {
@@ -219,6 +220,25 @@
           "why_zh": "油价上涨推高通胀，可能促使欧洲央行进一步加息。"
         },
         {
+          "title": "French inflation slows to 3.2% in November, well below the 3.6% economists expected, as fuel prices fall",
+          "title_fr": "L'inflation française ralentit à 3,2 % en novembre, nettement sous les 3,6 % attendus, grâce au repli des carburants",
+          "title_es": "La inflación francesa se modera al 3,2% en noviembre, muy por debajo del 3,6% previsto, por el abaratamiento del combustible",
+          "title_de": "Frankreichs Inflation sinkt im November auf 3,2 % – deutlich unter den erwarteten 3,6 % – dank billigerer Kraftstoffe",
+          "title_ru": "Инфляция во Франции в ноябре замедлилась до 3,2% — заметно ниже ожидавшихся 3,6% — на фоне подешевевшего топлива",
+          "title_zh": "受燃油价格下跌推动，法国11月通胀放缓至3.2%，明显低于经济学家预期的3.6%",
+          "source": "Wall Street Journal",
+          "date": "27 Nov",
+          "url": "https://www.wsj.com/world/europe/french-inflation-slides-on-drop-in-fuel-prices-2bd7e78e",
+          "level": "orange",
+          "why": "A softer surprise for bonds and the ECB, though a December rate hike is still expected.",
+          "why_fr": "Une bonne surprise pour les obligations et la BCE, même si une hausse des taux reste attendue en décembre.",
+          "why_es": "Una sorpresa a la baja para los bonos y el BCE, aunque aún se espera una subida de tipos en diciembre.",
+          "why_de": "Eine positive Überraschung für Anleihen und EZB, auch wenn im Dezember weiter eine Zinserhöhung erwartet wird.",
+          "why_ru": "Приятный сюрприз для облигаций и ЕЦБ, хотя повышение ставки в декабре по-прежнему ожидается.",
+          "why_zh": "对债市和欧洲央行而言是偏温和的意外，但市场仍预期12月加息。",
+          "breaking": true
+        },
+        {
           "title": "UniCredit asks Commerzbank for a shareholder meeting to replace its board, with Orcel as chairman",
           "source": "Commerzbank",
           "date": "26 Nov",
@@ -257,14 +277,14 @@
       ]
     },
     "as": {
-      "level": "orange",
-      "note": "Kospi +1.9%, Nikkei +1.2% as chips rebound; Tokyo core inflation at a 16-month high",
-      "note_fr": "Kospi +1,9 %, Nikkei +1,2 % grâce au rebond des puces ; inflation sous-jacente de Tokyo au plus haut depuis 16 mois",
-      "note_es": "Kospi +1,9% y Nikkei +1,2% por el rebote de los chips; la inflación subyacente de Tokio, en máximos de 16 meses",
-      "note_de": "Kospi +1,9 %, Nikkei +1,2 % dank Chip-Erholung; Tokioter Kerninflation auf 16-Monats-Hoch",
-      "note_ru": "Kospi +1,9%, Nikkei +1,2% на отскоке чипмейкеров; базовая инфляция в Токио на 16-месячном максимуме",
-      "note_zh": "芯片股反弹，Kospi涨1.9%、日经涨1.2%；东京核心通胀创16个月新高",
-      "pulse": "Nikkei +1.2% · Kospi +1.9% · Hang Seng +0.6% · Shanghai +0.3% (Fri, 02:30 UTC)",
+      "level": "red",
+      "note": "China's biggest rally in two years on state support; Kospi +4.3%, Nikkei +2.1%",
+      "note_fr": "Plus forte hausse en Chine depuis deux ans grâce au soutien de l'État ; Kospi +4,3 %, Nikkei +2,1 %",
+      "note_es": "Mayor subida de China en dos años gracias al apoyo estatal; Kospi +4,3%, Nikkei +2,1%",
+      "note_de": "Größte China-Rally seit zwei Jahren dank Staatshilfe; Kospi +4,3 %, Nikkei +2,1 %",
+      "note_ru": "Крупнейший рост Китая за два года на господдержке; Kospi +4,3%, Nikkei +2,1%",
+      "note_zh": "国家托市推动中国股市两年来最大涨幅；韩国综指+4.3%，日经+2.1%",
+      "pulse": "Shanghai +3.7% · Shenzhen +7.2% · Kospi +4.3% · Nikkei +2.1% · Hang Seng +2.1% (Fri close)",
       "events": [
         {
           "time": "2026-11-26T23:30:00Z",
@@ -318,6 +338,25 @@
         }
       ],
       "stories": [
+        {
+          "title": "China stocks post their biggest gain in two years after Beijing pledges 'national team' market support",
+          "title_fr": "Les actions chinoises signent leur plus forte hausse en deux ans après la promesse de soutien de Pékin via l'« équipe nationale »",
+          "title_es": "Las bolsas chinas logran su mayor subida en dos años tras prometer Pekín apoyo del «equipo nacional»",
+          "title_de": "Chinas Aktien mit größtem Tagesplus seit zwei Jahren, nachdem Peking Stützung durch das „Nationalteam“ zusagt",
+          "title_ru": "Акции Китая показали крупнейший рост за два года после обещания Пекина поддержать рынок через «национальную команду»",
+          "title_zh": "北京承诺加大“国家队”稳市力度，中国股市录得两年来最大涨幅",
+          "source": "Reuters (via Yahoo Finance)",
+          "date": "27 Nov",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/china-stocks-surge-most-two-081045333.html",
+          "level": "red",
+          "why": "State-backed buying lifted the whole region: Shanghai +3.7%, Kospi +4.3%, Nikkei +2.1%.",
+          "why_fr": "Les achats soutenus par l'État ont porté toute la région : Shanghai +3,7 %, Kospi +4,3 %, Nikkei +2,1 %.",
+          "why_es": "Las compras respaldadas por el Estado impulsaron toda la región: Shanghái +3,7%, Kospi +4,3%, Nikkei +2,1%.",
+          "why_de": "Staatlich gestützte Käufe hoben die ganze Region: Shanghai +3,7 %, Kospi +4,3 %, Nikkei +2,1 %.",
+          "why_ru": "Покупки при поддержке государства подняли весь регион: Шанхай +3,7%, Kospi +4,3%, Nikkei +2,1%.",
+          "why_zh": "国家支持的买盘带动全区上涨：上证+3.7%，韩国综合指数+4.3%，日经+2.1%。",
+          "breaking": true
+        },
         {
           "title": "Asian stocks mostly rise as chipmakers rebound: Kospi up 1.9%, Nikkei up 1.2% in morning trade",
           "source": "AFP",
