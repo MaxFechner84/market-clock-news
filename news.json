@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:50:51Z",
+  "updatedAt": "2026-11-27T11:51:20Z",
   "edition": "breaking",
   "regions": {
     "am": {
@@ -239,22 +239,23 @@
           "breaking": true
         },
         {
-          "title": "UniCredit asks Commerzbank for a shareholder meeting to replace its board, with Orcel as chairman",
-          "source": "Commerzbank",
-          "date": "26 Nov",
-          "url": "https://www.commerzbank.de/group/newsroom/press-releases/egm-request.html",
-          "level": "green",
-          "why": "It mainly concerns one bank, and the takeover itself was already expected.",
-          "title_fr": "UniCredit demande à Commerzbank une assemblée pour remplacer son conseil de surveillance, avec Orcel comme président",
-          "why_fr": "Cela concerne surtout une banque, et le rachat lui-même était déjà attendu.",
-          "title_es": "UniCredit pide a Commerzbank una junta de accionistas para sustituir su consejo, con Orcel como presidente",
-          "why_es": "Afecta sobre todo a un banco y la compra en sí ya se esperaba.",
-          "title_de": "UniCredit verlangt bei der Commerzbank eine Hauptversammlung, um den Aufsichtsrat mit Orcel als Chef neu zu besetzen",
-          "why_de": "Es betrifft vor allem eine Bank, und die Übernahme selbst war bereits erwartet.",
-          "title_ru": "UniCredit требует от Commerzbank собрания акционеров, чтобы сменить набсовет и сделать Орчела председателем",
-          "why_ru": "Это касается в основном одного банка, а само поглощение уже ожидалось.",
-          "title_zh": "意大利联合信贷要求德国商业银行召开股东大会改组监事会，由奥塞尔出任主席",
-          "why_zh": "主要影响单一银行，且收购本身早在预期之中。"
+          "title": "Rheinmetall lowers its 2030 sales goal to €33–37 billion from about €45 billion, yet its shares rise about 4%",
+          "title_fr": "Rheinmetall abaisse son objectif de ventes 2030 à 33-37 milliards d'euros, contre environ 45 milliards, mais le titre gagne près de 4 %",
+          "title_es": "Rheinmetall rebaja su objetivo de ventas para 2030 a 33.000-37.000 millones de euros, desde unos 45.000 millones, pero sus acciones suben cerca de un 4%",
+          "title_de": "Rheinmetall senkt das Umsatzziel 2030 auf 33 bis 37 Mrd. Euro von rund 45 Mrd. Euro – die Aktie steigt dennoch um rund 4 %",
+          "title_ru": "Rheinmetall снизил цель по выручке на 2030 год до €33–37 млрд с примерно €45 млрд, но акции выросли примерно на 4%",
+          "title_zh": "莱茵金属将2030年销售目标从约450亿欧元下调至330亿–370亿欧元，但股价仍上涨约4%",
+          "source": "Reuters",
+          "date": "27 Nov",
+          "url": "https://live.euronext.com/en/financial-news/germanys-rheinmetall-trims-2030-ambitions-after-project-setbacks",
+          "level": "orange",
+          "why": "Europe's top defence stock cut its long-term goal; a mixed signal for the whole defence sector.",
+          "why_fr": "Le leader européen de la défense réduit son objectif à long terme : un signal mitigé pour tout le secteur.",
+          "why_es": "El mayor valor europeo de defensa recorta su meta a largo plazo: una señal mixta para todo el sector.",
+          "why_de": "Europas größter Rüstungswert senkt sein Langfristziel – ein gemischtes Signal für die ganze Branche.",
+          "why_ru": "Крупнейший оборонный концерн Европы снизил долгосрочную цель — неоднозначный сигнал для всего сектора.",
+          "why_zh": "欧洲头号军工股下调长期目标，对整个国防板块是喜忧参半的信号。",
+          "breaking": true
         },
         {
           "title": "Spain's Pablo Hernández de Cos picked as next ECB president, pointing to policy continuity",
